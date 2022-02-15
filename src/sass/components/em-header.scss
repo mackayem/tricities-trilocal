@@ -1,5 +1,6 @@
 @use "../theme/child_theme_variables" as variables;
 
+// wrapper for whole header
 header.em-header {
     background-color: #228D98;
     position: relative;
@@ -7,6 +8,7 @@ header.em-header {
     margin-bottom: 10rem;
 }
 
+// diagonal box behind logo
 div.em-nav__box {
     background-color: #228D98;
     height: 10rem;
@@ -16,6 +18,7 @@ div.em-nav__box {
     position: absolute;
 }
 
+// wrapper div for header logo
 div.em-nav__logo {
     padding-top: 5rem;
     position: absolute;
@@ -27,17 +30,19 @@ div.em-nav__logo {
     }
 }
 
+// contains the hamburger button and links
 nav#main-nav.em-nav {
     z-index: 2;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-// Mobile hamburger button
+// mobile hamburger button
 #btn-offcanvas-hamburger {
     border: none;
 }
 
+// mobile hamburger close button
 #btn-offcanvas-close {
     padding: 1rem;
 }
