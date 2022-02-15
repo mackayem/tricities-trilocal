@@ -4,6 +4,12 @@
 // =========== MOBILE LAYOUT ===============
 // ==========================================
 
+div#em-footerDiagonalBox {
+    @include em-mixins.diagonal-box-mobile(variables.$turquoise, 10rem);
+    z-index: -1;
+    position: absolute;
+}
+
 
 // =========== DESKTOP LAYOUT ===============
 // ==========================================

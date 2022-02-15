@@ -42,7 +42,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		<div id="em-headerDiagonalBox" class="em-wrapper__div--box"></div>
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary em-nav" aria-labelledby="main-nav-label">
 
-			<!-- use the navbar-collapse-bootstrap5 template in global-templates folder for the rest of the custom header styling -->
+			<!-- use the "navbar-collapse-bootstrap5" template in GLOBAL-TEMPLATES folder for the rest of the custom header styling -->
 			<?php get_template_part( 'global-templates/navbar-collapse-bootstrap5', $navbar_type . '-' . $bootstrap_version ); ?>
 		
 		</nav><!-- .site-navigation -->
