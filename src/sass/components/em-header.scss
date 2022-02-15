@@ -1,5 +1,9 @@
 @use "../theme/child_theme_variables.scss" as variables;
 
+
+// =========== MOBILE LAYOUT ===============
+// ==========================================
+
 // wrapper for whole header
 header.em-header {
     background-color: variables.$turquoise;
@@ -48,7 +52,11 @@ nav#main-nav.em-nav {
 }
 
 
-@media only screen and (min-width: 768px) {
+// =========== DESKTOP LAYOUT ===============
+// ==========================================
+
+// breakpoint for md bootstrap responsiveness
+@media (min-width: 768px) {
 
     // wrapper for whole header
     header.em-header {
