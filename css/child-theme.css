@@ -15518,20 +15518,7 @@ a.skip-link {
 
 @font-face {
   font-family: "Lobster";
-  src: url("../../../fonts/lobster/Lobster-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "League Spartan";
-  src: url("../../../fonts/league-spartan/variable/TTF/LeagueSpartan-VF.ttf") format("truetype"), url("../../../fonts/league-spartan/variable/WOFF/LeagueSpartan-VF.woff") format("woff"), url("../../../fonts/league-spartan/variable/WOFF2/LeagueSpartan-VF.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../../fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  src: url("../../../fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../../../fonts/Lobster-Regular.ttf") format("truetype");
 }
 header.em-header {
   background-color: #228D98;
@@ -15575,6 +15562,23 @@ nav#main-nav.em-nav {
   padding: 1rem;
 }
 
+ul#main-menu {
+  padding-top: 1rem;
+}
+
+ul#main-menu li {
+  padding-bottom: 1rem;
+}
+
+ul#main-menu li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #EEEEEE;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-left: 1rem;
+}
+
 @media (min-width: 768px) {
   header.em-header {
     height: 1rem;
@@ -15593,6 +15597,16 @@ nav#main-nav.em-nav {
   div.em-nav__logo img {
     height: 7rem;
     margin: 1rem;
+  }
+
+  ul#main-menu {
+    padding-top: 0;
+  }
+
+  ul#main-menu li {
+    padding-bottom: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 .has-blue-color,

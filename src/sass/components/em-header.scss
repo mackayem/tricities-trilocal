@@ -1,5 +1,11 @@
 @use "../theme/child_theme_variables.scss" as variables;
 
+@font-face {
+    font-family: "Lobster";
+    src: url('../../../fonts/Lobster-Regular.ttf') format('truetype');
+}
+
+
 
 // =========== MOBILE LAYOUT ===============
 // ==========================================
@@ -51,6 +57,21 @@ nav#main-nav.em-nav {
     padding: 1rem;
 }
 
+ul#main-menu {
+    padding-top: 1rem;
+    li {
+        padding-bottom: 1rem;
+    }
+    li a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color: variables.$lightgrey;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding-left: 1rem;
+    }
+}
+
 
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
@@ -76,6 +97,15 @@ nav#main-nav.em-nav {
         img {
             height: 7rem;
             margin: 1rem;
+        }
+    }
+
+    ul#main-menu {
+        padding-top: 0;
+        li {
+            padding-bottom: 0;
+            padding-right: 1rem;
+            padding-left: 1rem;
         }
     }
 
