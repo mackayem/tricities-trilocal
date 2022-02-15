@@ -15516,6 +15516,48 @@ a.skip-link {
   display: block;
 }
 
+header.em-header {
+  background-color: #228D98;
+  position: relative;
+  height: 5rem;
+  margin-bottom: 10rem;
+}
+
+div.em-nav__box {
+  background-color: #228D98;
+  height: 10rem;
+  width: 100%;
+  z-index: -1;
+  transform: skewY(-11deg);
+  position: absolute;
+}
+
+div.em-nav__logo {
+  padding-top: 5rem;
+  position: absolute;
+  width: 100%;
+}
+
+div.em-nav__logo img {
+  height: 10rem;
+  margin: auto;
+  display: block;
+}
+
+nav#main-nav.em-nav {
+  z-index: 2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#btn-offcanvas-hamburger {
+  border: none;
+}
+
+#btn-offcanvas-close {
+  padding: 1rem;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

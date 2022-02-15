@@ -29,6 +29,15 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar" class="em-header">
 
-		<?php get_template_part( 'global-templates/navbar-offcanvas-bootstrap5', $navbar_type . '-' . $bootstrap_version ); ?>
+		<div class="em-nav__logo">
+			<img id="header-logo" class="em-img__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/logo-blue.png" alt="Tri-Local logo">
+		</div>
+		<div class="em-nav__box"></div>
+		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary em-nav" aria-labelledby="main-nav-label">
+
+			<?php get_template_part( 'global-templates/navbar-collapse-bootstrap5', $navbar_type . '-' . $bootstrap_version ); ?>
+		
+		</nav><!-- .site-navigation -->
+
 
 	</header><!-- #wrapper-navbar end -->
