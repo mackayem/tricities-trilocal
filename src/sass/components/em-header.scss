@@ -1,8 +1,8 @@
-@use "../theme/child_theme_variables" as variables;
+@use "../theme/child_theme_variables.scss" as variables;
 
 // wrapper for whole header
 header.em-header {
-    background-color: #228D98;
+    background-color: variables.$turquoise;
     position: relative;
     height: 5rem;
     margin-bottom: 10rem;
@@ -10,7 +10,7 @@ header.em-header {
 
 // diagonal box behind logo
 div.em-nav__box {
-    background-color: #228D98;
+    background-color: variables.$turquoise;
     height: 10rem;
     width: 100%;
     z-index: -1;
