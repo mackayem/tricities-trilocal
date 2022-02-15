@@ -15516,6 +15516,23 @@ a.skip-link {
   display: block;
 }
 
+@font-face {
+  font-family: "Lobster";
+  src: url("../../../fonts/lobster/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "League Spartan";
+  src: url("../../../fonts/league-spartan/variable/TTF/LeagueSpartan-VF.ttf") format("truetype"), url("../../../fonts/league-spartan/variable/WOFF/LeagueSpartan-VF.woff") format("woff"), url("../../../fonts/league-spartan/variable/WOFF2/LeagueSpartan-VF.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  src: url("../../../fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+}
 header.em-header {
   background-color: #228D98;
   position: relative;
