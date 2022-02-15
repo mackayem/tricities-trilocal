@@ -15575,7 +15575,7 @@ ul#main-menu li a {
   font-weight: 600;
   color: #EEEEEE;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   padding-left: 1rem;
 }
 
@@ -15599,12 +15599,14 @@ ul#main-menu li a {
     margin: 1rem;
   }
 
-  ul#main-menu {
-    padding-top: 0;
-  }
-
   ul#main-menu li {
     padding-bottom: 0;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
+@media (min-width: 992px) {
+  ul#main-menu li {
     padding-right: 1rem;
     padding-left: 1rem;
   }
