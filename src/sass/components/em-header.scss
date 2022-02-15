@@ -8,7 +8,7 @@ header.em-header {
     margin-bottom: 10rem;
 }
 
-// diagonal box behind logo
+// diagonal box
 div.em-nav__box {
     background-color: variables.$turquoise;
     height: 10rem;
@@ -45,4 +45,30 @@ nav#main-nav.em-nav {
 // mobile hamburger close button
 #btn-offcanvas-close {
     padding: 1rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    // wrapper for whole header
+    header.em-header {
+        height: 1rem;
+    }
+
+    // diagonal box
+    div.em-nav__box {
+        height: 8rem;
+        transform: skewY(-2deg);
+    }
+
+    // wrapper div for header logo
+    div.em-nav__logo {
+    z-index: 3;
+    padding-top: 0;
+        img {
+            height: 7rem;
+            margin: 1rem;
+        }
+    }
+
 }
