@@ -1,0 +1,26 @@
+@use "child_theme_variables.scss" as variables;
+
+
+@mixin diagonal-box-mobile ($clr, $height) {
+    background-color: $clr;
+    height: $height;
+    width: 100%;
+    transform: skewY(-11deg);
+}
+@mixin diagonal-box-desktop ($clr, $height) {
+    background-color: $clr;
+    height: $height;
+    width: 100%;
+    transform: skewY(-2deg);  
+}
+
+
+@mixin font-navbar-links ($clr, $size) {
+    color: $clr;
+    font-size: $size;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding-left: 1rem;
+}

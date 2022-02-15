@@ -17,6 +17,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 
+    <div class="container-fluid">
+        <!-- <footer class="site-footer" id="colophon"> -->
+            <!-- <div class="site-info"> -->
+
+            <div id="footer-diagonal-box" class="em-nav__box"></div>
+
+            <!-- </div>.site-info -->
+        <!-- </footer>#colophon -->
+    </div><!-- container end -->
 
 </div><!-- wrapper end -->
 

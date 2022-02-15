@@ -34,14 +34,15 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar" class="em-header">
+	<header id="em-headerNavbar" class="em-header">
 
-		<div class="em-nav__logo">
-			<img id="header-logo" class="em-img__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/logo-blue.png" alt="Tri-Local logo">
+		<div id="em-headerLogoWrapper" class="em-wrapper__div--logo">
+			<img id="em-headerLogo" class="em-img__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/logo-blue.png" alt="Tri-Local logo">
 		</div>
-		<div class="em-nav__box"></div>
+		<div id="em-headerDiagonalBox" class="em-wrapper__div--box"></div>
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary em-nav" aria-labelledby="main-nav-label">
 
+			<!-- use the navbar-collapse-bootstrap5 template in global-templates folder for the rest of the custom header styling -->
 			<?php get_template_part( 'global-templates/navbar-collapse-bootstrap5', $navbar_type . '-' . $bootstrap_version ); ?>
 		
 		</nav><!-- .site-navigation -->
