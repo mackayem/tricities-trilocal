@@ -1,4 +1,4 @@
-<p><img src="../assets/logos/logo-blue.png" width="320" height="auto"></p>
+<p><img src="../assets/logos/logo-blue.png" width="200" height="auto"></p>
 
 # Tri-Local Custom Wordpress Theme  
 
