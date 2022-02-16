@@ -37,8 +37,6 @@ div#em-contentLanding div.row:first-child {
 
 div#wpforms-182.em-form__newsletter {
     margin-top: 2rem;
-    // padding-left: 1rem;
-    // padding-right: 1rem;
 }
 
 input#wpforms-182-field_2 {
@@ -56,6 +54,12 @@ button#wpforms-submit-182 {
     @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey, 100%);
     border: none;
     padding: 1rem 1rem;
+}
+
+@media (min-width: 576px) {
+    div#wpforms-182.em-form__newsletter {
+        max-width: 70%;
+    }
 }
 
 // =========== DESKTOP LAYOUT ===============

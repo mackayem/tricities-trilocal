@@ -15718,6 +15718,11 @@ button#wpforms-submit-182 {
   padding: 1rem 1rem;
 }
 
+@media (min-width: 576px) {
+  div#wpforms-182.em-form__newsletter {
+    max-width: 70%;
+  }
+}
 @media (min-width: 768px) {
   #em-contentLanding h2, #em-contentLanding .h2, #em-contentLanding h4, #em-contentLanding .h4 {
     display: block;
