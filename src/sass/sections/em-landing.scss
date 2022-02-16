@@ -1,0 +1,12 @@
+@use "../theme/child_theme_variables.scss" as variables;
+@use "../theme/em-mixins.scss" as em-mixins;
+
+// =========== MOBILE LAYOUT ================
+// ==========================================
+
+div#em-wrapperLanding {
+    background-color: variables.$darkblue;
+}
+
+// =========== DESKTOP LAYOUT ===============
+// ==========================================

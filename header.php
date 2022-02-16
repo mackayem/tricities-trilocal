@@ -37,7 +37,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<header id="em-headerNavbar" class="em-header">
 
 		<div id="em-headerLogoWrapper" class="em-wrapper__div--logo">
-			<img id="em-headerLogo" class="em-img__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/logo-blue.png" alt="Tri-Local logo">
+			<img id="em-headerLogo" class="em-img__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/logo-grey.png" alt="Tri-Local logo">
 		</div>
 		<div id="em-headerDiagonalBox" class="em-wrapper__div--box"></div>
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary em-nav" aria-labelledby="main-nav-label">
