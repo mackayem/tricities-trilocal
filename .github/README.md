@@ -22,12 +22,13 @@
 
 This custom theme is built using a child-theme of the open-source Understrap framework.
 
-Website: [understrap.com](https://understrap.com)
-Documentation: [Official Docs Page](https://docs.understrap.com/)
-Parent Theme Project: [github.com/understrap/understrap](https://github.com/understrap/understrap)
-Child Theme Project: [github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
+- Website: [understrap.com](https://understrap.com)
+- Documentation: [Official Docs Page](https://docs.understrap.com/)
+- Parent Theme Project: [github.com/understrap/understrap](https://github.com/understrap/understrap)
+- Child Theme Project: [github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
 
 Copyright 2022 [Howard Development & Consulting, LLC](https://howarddc.com)
+
 Understrap is free and open-source and is distributed under the terms of the [GNU GPL ver. 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 #### Understrap Credits
