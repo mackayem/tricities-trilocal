@@ -15516,6 +15516,58 @@ a.skip-link {
   display: block;
 }
 
+h1, .h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+}
+
+h2, .h2 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+h3, .h3 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h4, .h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h5, .h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h6, .h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+hr.em-hr--invisible {
+  visibility: hidden;
+}
+
 header#em-headerNavbar {
   background-color: #093A6B;
   z-index: -2;
@@ -15611,10 +15663,70 @@ ul#main-menu.em-ulist__menu li a {
     padding-left: 1rem;
   }
 }
-div#em-wrapperLanding {
-  background-color: #093A6B;
+div#em-contentLanding > div > div > * {
+  color: #EEEEEE;
+  text-align: center;
 }
 
+div#em-wrapperLanding {
+  background-color: #093A6B;
+  height: 40rem;
+  width: 100%;
+}
+
+div#em-contentLanding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+div#em-contentLanding div.row:first-child {
+  margin-top: 3rem;
+}
+
+#em-contentLanding h2, #em-contentLanding .h2, #em-contentLanding h4, #em-contentLanding .h4 {
+  display: none;
+}
+
+#em-wrapperLandingPhoto {
+  display: none;
+}
+
+div#wpforms-182.em-form__newsletter {
+  margin-top: 2rem;
+}
+
+input#wpforms-182-field_2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding: 1.5rem 1rem;
+  max-width: 100%;
+}
+
+button#wpforms-submit-182 {
+  background-color: #228D98;
+  color: #EEEEEE;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+  #em-contentLanding h2, #em-contentLanding .h2, #em-contentLanding h4, #em-contentLanding .h4 {
+    display: block;
+  }
+
+  #em-wrapperLandingPhoto {
+    display: block;
+  }
+}
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

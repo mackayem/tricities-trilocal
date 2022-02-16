@@ -4,9 +4,72 @@
 // =========== MOBILE LAYOUT ================
 // ==========================================
 
+
+// style all text in the landing page content as light grey
+div#em-contentLanding > div > div > * {
+    color: variables.$lightgrey;
+    text-align: center;
+}
+
 div#em-wrapperLanding {
     background-color: variables.$darkblue;
+    height: 40rem;
+    width: 100%;
+}
+
+div#em-contentLanding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+div#em-contentLanding div.row:first-child {
+    margin-top: 3rem;
+}
+
+// remove the taglines and photo on the mobile view
+#em-contentLanding h2, #em-contentLanding h4 {
+    display: none;
+}
+#em-wrapperLandingPhoto {
+    display: none;
+}
+
+
+div#wpforms-182.em-form__newsletter {
+    margin-top: 2rem;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
+}
+
+input#wpforms-182-field_2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+}
+
+
+button#wpforms-submit-182 {
+    @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey, 100%);
+    border: none;
+    padding: 1rem 1rem;
 }
 
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
+
+// breakpoint for md bootstrap responsiveness
+@media (min-width: 768px) {
+
+    // enable taglines and photo in desktop view
+    #em-contentLanding h2, #em-contentLanding h4 {
+        display: block;
+    }
+    #em-wrapperLandingPhoto {
+        display: block;
+    }
+
+}
