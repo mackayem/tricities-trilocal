@@ -5,26 +5,29 @@
 // ==========================================
 
 
-// style all text in the landing page content as light grey
-div#em-contentLanding * {
-    color: variables.$lightgrey;
-
-    h1, h2, h3, h4, h5, h6 {
-        text-align: center;
-    }
-}
-
-div#em-wrapperLanding {
+// whole landing section
+div#em-pageLanding {
     background-color: variables.$darkblue;
     height: 40rem;
     width: 100%;
 }
 
+// style all text in the landing page content as light grey unless otherwise changed
+div#em-contentLanding * {
+    color: variables.$lightgrey;
+    // center all the text on the landing page
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+}
+
+// all page content
 div#em-contentLanding {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
+// first row containing page content
 div#em-contentLanding div.row:first-child {
     margin-top: 3rem;
 }
@@ -34,6 +37,7 @@ div#em-contentLanding div.row:first-child {
     display: none;
 }
 
+// subscribe text above Email CTA form
 #em-wrapperLandingSubscribe h3 {
     font-size: 2rem;
 }
@@ -78,7 +82,7 @@ button#wpforms-submit-182 {
         display: block;
     }
 
-    div#em-wrapperLanding {
+    div#em-pageLanding {
         h1, h2 {
             font-size: min(max(4rem, 6vw), 4rem);
             white-space: nowrap;

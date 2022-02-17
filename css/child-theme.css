@@ -15675,6 +15675,182 @@ ul#main-menu.em-ulist__menu li a {
     padding: 0 0.3rem 0 0.3rem;
   }
 }
+div#em-pageLanding {
+  background-color: #093A6B;
+  height: 40rem;
+  width: 100%;
+}
+
+div#em-contentLanding * {
+  color: #EEEEEE;
+}
+
+div#em-contentLanding * h1, div#em-contentLanding * .h1, div#em-contentLanding * h2, div#em-contentLanding * .h2, div#em-contentLanding * h3, div#em-contentLanding * .h3, div#em-contentLanding * h4, div#em-contentLanding * .h4, div#em-contentLanding * h5, div#em-contentLanding * .h5, div#em-contentLanding * h6, div#em-contentLanding * .h6 {
+  text-align: center;
+}
+
+div#em-contentLanding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+div#em-contentLanding div.row:first-child {
+  margin-top: 3rem;
+}
+
+#em-wrapperLandingTagline, #em-wrapperLandingPhoto {
+  display: none;
+}
+
+#em-wrapperLandingSubscribe h3, #em-wrapperLandingSubscribe .h3 {
+  font-size: 2rem;
+}
+
+div#wpforms-182.em-form__newsletter {
+  margin-top: 1rem;
+}
+
+input#wpforms-182-field_2 {
+  color: black;
+  text-transform: lowercase;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0;
+  padding: 1.76rem 1rem;
+  max-width: 100%;
+}
+
+button#wpforms-submit-182 {
+  background-color: #228D98;
+  color: #EEEEEE;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  div#wpforms-182.em-form__newsletter {
+    max-width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  #em-wrapperLandingTagline {
+    display: block;
+  }
+
+  div#em-pageLanding h1, div#em-pageLanding .h1, div#em-pageLanding h2, div#em-pageLanding .h2 {
+    font-size: min(max(4rem, 6vw), 4rem);
+    white-space: nowrap;
+  }
+
+  div#em-pageLanding h4, div#em-pageLanding .h4, div#em-pageLanding h5, div#em-pageLanding .h5, div#em-pageLanding h6, div#em-pageLanding .h6 {
+    font-size: min(max(2rem, 2vw), 25px);
+  }
+
+  div#em-pageLanding h3, div#em-pageLanding .h3 {
+    font-size: min(max(2rem, 3vw), 30px);
+    white-space: nowrap;
+  }
+
+  div#em-contentLanding {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+
+  div#em-wrapperLandingTagline .em-heading__h2 {
+    margin: 0 0 2rem 0;
+  }
+
+  div#em-wrapperLandingTagline .em-heading__h4 {
+    width: 80%;
+    margin: 0 auto 1.8rem auto;
+  }
+
+  div#em-wrapperLandingTagline .em-heading__h4--bold {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    font-weight: 600;
+  }
+
+  #em-wrapperLandingSubscribe {
+    width: 80%;
+    margin: 5rem auto 0 auto;
+  }
+
+  #em-wrapperLandingSubscribe #em-landingHeadingSubscribe {
+    text-align: start;
+  }
+
+  #em-wrapperLandingSubscribe form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #em-wrapperLandingSubscribe form > div:first-of-type {
+    flex-grow: 2;
+    padding-right: 1rem;
+  }
+
+  #em-wrapperLandingSubscribe form > div:last-of-type {
+    flex-grow: 1;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  div#em-contentLanding div.row {
+    margin-top: 3rem;
+  }
+
+  div#em-wrapperLandingTagline .em-heading__h4 {
+    width: 75%;
+  }
+
+  div#em-wrapperLandingTagline .em-heading__h4--bold {
+    width: 70%;
+  }
+
+  #em-wrapperLandingSubscribe {
+    width: 100%;
+  }
+
+  #em-wrapperLandingPhoto {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  #em-wrapperLandingPhoto img {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  div#em-contentLanding {
+    width: 100%;
+  }
+
+  div#em-contentLanding > div:first-of-type {
+    width: 40%;
+  }
+
+  div#em-wrapperLandingTagline .em-heading__h4 {
+    width: 100%;
+  }
+
+  div#em-wrapperLandingTagline .em-heading__h4--bold {
+    width: 100%;
+  }
+}
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

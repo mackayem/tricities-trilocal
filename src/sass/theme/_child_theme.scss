@@ -1,4 +1,4 @@
 // Import all sub-stylesheets
 @use "em-global.scss"; // global styles
 @use "../components/em-header.scss"; // header/navbar styles
-// @use "../sections/em-landing.scss"; // landing page styles
+@use "../sections/em-landing.scss"; // landing page styles
