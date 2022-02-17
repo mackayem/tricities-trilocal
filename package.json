@@ -1,6 +1,6 @@
 {
   "name": "trilocal-child",
-  "version": "1.0",
+  "version": "1.1.0",
   "description": "Custom Theme for Tri-Local built for the Tri-Cities Chamber of Commerce",
   "main": "index.js",
   "scripts": {
