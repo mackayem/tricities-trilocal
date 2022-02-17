@@ -1,0 +1,17 @@
+@use "../theme/child_theme_variables.scss" as variables;
+@use "../theme/em-mixins.scss" as em-mixins;
+
+// *** Styles the mark-up of trilocal-child/footer.php ***
+
+
+// =========== MOBILE LAYOUT ===============
+// ==========================================
+
+
+// =========== DESKTOP LAYOUT ===============
+// ==========================================
+
+// breakpoint for md bootstrap responsiveness
+@media (min-width: 768px) {
+
+}
