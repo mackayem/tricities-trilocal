@@ -15668,11 +15668,16 @@ ul#main-menu.em-ulist__menu li a {
   }
 
   ul#main-menu.em-ulist__menu {
-    padding: 0 0 0 0;
+    padding: 0;
   }
 
   ul#main-menu.em-ulist__menu li {
-    padding: 0 0.3rem 0 0.3rem;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  ul#main-menu.em-ulist__menu li {
+    padding: 0 1rem 0 1rem;
   }
 }
 div#em-pageLanding {

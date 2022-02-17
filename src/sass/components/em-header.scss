@@ -106,19 +106,19 @@ ul#main-menu.em-ulist__menu {
 
     // menu links
     ul#main-menu.em-ulist__menu {
-        padding: 0 0 0 0;
+        padding: 0;
         li {
-            padding: 0 0.3rem 0 0.3rem;
+            padding: 0;
         }
     }
 
 }
 
 
-// // changes the navbar link spacing a little bit closer for medium-size viewports
-// @media (min-width: 992px) {
-//     ul#main-menu.em-ulist__menu li {
-//         padding-right: 1rem;
-//         padding-left: 1rem;
-//     }
-// }
+@media (min-width: 992px) {
+
+    // increases the spacing between links on larger viewports
+    ul#main-menu.em-ulist__menu li {
+        padding: 0 1rem 0 1rem;
+    }
+}
