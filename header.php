@@ -11,8 +11,11 @@
 defined( 'ABSPATH' ) || exit;
 
 $bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
-$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
+$container = get_theme_mod( 'understrap_container_type' );
+$navbar_type = get_theme_mod( 'understrap_navbar_type', 'collapse' );
+
 ?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -25,9 +28,9 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 	<?php wp_head(); ?>
 </head>
+
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
@@ -42,10 +45,32 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		<div id="em-headerDiagonalBox" class="em-wrapper__div--box"></div>
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary em-nav" aria-labelledby="main-nav-label">
 
-			<!-- use the GLOBAL-ASSETS/"navbar-collapse-bootstrap5.php" template for the rest of the custom header styling -->
-			<?php get_template_part( 'global-templates/navbar-collapse-bootstrap5', $navbar_type . '-' . $bootstrap_version ); ?>
+			<h2 id="main-nav-label" class="screen-reader-text">
+				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
+			</h2>
+
+			<div class="<?php echo esc_attr( $container ); ?>">
+				<button id="em-buttonNavHamburger" class="navbar-toggler em-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+					<span id="em-buttonNavHamburgerIcon" class="navbar-toggler-icon em-span"></span>
+				</button>
+			</div>
+
+				<!-- The WordPress Menu goes here -->
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav ms-auto em-ulist__menu',
+						'menu_id'         => 'main-menu',
+						'fallback_cb'     => '',
+						'depth'           => 2,
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+					)
+				);
+				?>
 		
 		</nav><!-- .site-navigation -->
-
 
 	</header><!-- #wrapper-navbar end -->
