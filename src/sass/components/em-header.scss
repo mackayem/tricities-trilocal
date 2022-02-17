@@ -102,6 +102,9 @@ ul#main-menu.em-ulist__menu {
     // contains the hamburger button and links
     nav#main-nav.em-nav {
         padding: 2rem 2rem 0 2rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
     }
 
     // menu links
