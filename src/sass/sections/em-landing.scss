@@ -60,7 +60,8 @@ button#wpforms-submit-182 {
     padding: 1rem 1rem;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+//prevents the CTA newsletter form from over-extending
+@media (min-width: 576px) and (max-width: 767px) {
     div#wpforms-182.em-form__newsletter {
         max-width: 70%;
     }
@@ -69,54 +70,52 @@ button#wpforms-submit-182 {
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
 
-// breakpoint for md bootstrap responsiveness
+// breakpoint starting at bootstrap md (medium)
 @media (min-width: 768px) {
 
     // enable taglines and photo in desktop view
-    #em-wrapperLandingTagline, #em-wrapperLandingPhoto {
+    #em-wrapperLandingTagline {
         display: block;
     }
 
     div#em-wrapperLanding {
         h1, h2 {
-            font-size: min(max(2rem, 6vw), 80px);
+            font-size: min(max(4rem, 6vw), 4rem);
+            white-space: nowrap;
         }
         h4, h5, h6 {
             font-size: min(max(2rem, 2vw), 25px);
         }
         h3 {
             font-size: min(max(2rem, 3vw), 30px);
+            white-space: nowrap;
         }
     }
 
     div#em-contentLanding {
         display: flex;
         justify-content: space-evenly;
+        width: 90%;
     }
 
     div#em-wrapperLandingTagline {
-        width: 70%;
-        margin: auto;
         .em-heading__h2 {
-            margin-bottom: 2rem;
+            margin: 0 0 2rem 0;
         }
         .em-heading__h4 {
-            width: 90%;
+            width: 80%;
             margin: 0 auto 1.8rem auto;
             &--bold {
+                width: 70%;
+                margin: 0 auto 0 auto;
                 font-weight: 600;
-                width: 80%;
-                margin: 0 auto 1.8rem auto;
             }
         }
     }
 
     #em-wrapperLandingSubscribe {
-        margin: 5rem 0 0 0;
-        & > div {
-            width: 80%;
-            margin: 0 auto 0 auto;
-        }
+        width: 80%;
+        margin: 5rem auto 0 auto;
 
         #em-landingHeadingSubscribe {
             text-align: start;
@@ -137,8 +136,31 @@ button#wpforms-submit-182 {
             }
         }
     }
+    
+}
+
+// breakpoint starting at bootstrap lg (large)
+@media (min-width: 992px) {
+
+    div#em-contentLanding div.row {
+        margin-top: 3rem;
+    }
+
+    div#em-wrapperLandingTagline {
+        .em-heading__h4 {
+            width: 75%;
+            &--bold {
+                width: 70%;
+            }
+        }
+    }
+
+    #em-wrapperLandingSubscribe {
+        width: 100%;
+    }
 
     #em-wrapperLandingPhoto {
+        margin-top: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -146,9 +168,30 @@ button#wpforms-submit-182 {
         overflow: hidden;
         img {
             max-width: 100%;
-            width: 500px;
+            width: 450px;
             height: auto;
         }
     }
-    
+
+}
+
+// breakpoint starting at bootstrap xl (x-large)
+@media (min-width: 1200px) {
+
+    div#em-contentLanding {
+        width: 100%;
+        & > div:first-of-type {
+            width: 40%;
+        }
+    }
+
+    div#em-wrapperLandingTagline {
+        .em-heading__h4 {
+            width: 100%;
+            &--bold {
+                width: 100%;
+            }
+        }
+    }
+
 }
