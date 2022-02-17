@@ -11,6 +11,8 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
+
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
@@ -19,16 +21,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<!-- Your site title as branding in the menu -->
+		<?php if ( ! has_custom_logo() ) { ?>
+
+			<?php if ( is_front_page() && is_home() ) : ?>
+
+				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+
+			<?php else : ?>
+
+				<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+
+			<?php endif; ?>
+
+			<?php
+		} else {
+			the_custom_logo();
+		}
+		?>
 		<!-- end custom logo -->
 
-		<button id="btn-offcanvas-hamburger" class="navbar-toggler em-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="navbarNavOffcanvas">
 
 			<div class="offcanvas-header justify-content-end">
-				<button id="btn-offcanvas-close" class="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				<button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div><!-- .offcancas-header -->
 
 			<!-- The WordPress Menu goes here -->
@@ -49,3 +68,5 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- .offcanvas -->
 
 	</div><!-- .container(-fluid) -->
+
+</nav><!-- .site-navigation -->
