@@ -24,13 +24,12 @@ get_header();
 
 	<div id="em-contentLanding" class="container-fluid em-content__div">
         <div class="row">
-            <div class="col-12 col-md-6">
-                <!-- imports the all copy shown on page + short-code for Email CTA by WPForms -->
+            <div class="col-12">
                 <?php the_content(); ?> 
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12">
                 <div id="em-wrapperLandingPhoto" class="em-wrapper__img">
                     <?php 
                         // imports the featured image on the page

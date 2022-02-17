@@ -6,9 +6,12 @@
 
 
 // style all text in the landing page content as light grey
-div#em-contentLanding > div > div > * {
+div#em-contentLanding * {
     color: variables.$lightgrey;
-    text-align: center;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
 }
 
 div#em-wrapperLanding {
@@ -27,25 +30,26 @@ div#em-contentLanding div.row:first-child {
 }
 
 // remove the taglines and photo on the mobile view
-#em-contentLanding h2, #em-contentLanding h4 {
+#em-wrapperLandingTagline, #em-wrapperLandingPhoto {
     display: none;
 }
-#em-wrapperLandingPhoto {
-    display: none;
+
+#em-wrapperLandingSubscribe h3 {
+    font-size: 2rem;
 }
 
 
 div#wpforms-182.em-form__newsletter {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 input#wpforms-182-field_2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
-    text-transform: uppercase;
+    color: black;
+    text-transform: lowercase;
+    font-size: 1rem;
     border: none;
     border-radius: 0;
-    padding: 1.5rem 1rem;
+    padding: 1.76rem 1rem;
     max-width: 100%;
 }
 
@@ -56,7 +60,7 @@ button#wpforms-submit-182 {
     padding: 1rem 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 768px) {
     div#wpforms-182.em-form__newsletter {
         max-width: 70%;
     }
@@ -69,11 +73,82 @@ button#wpforms-submit-182 {
 @media (min-width: 768px) {
 
     // enable taglines and photo in desktop view
-    #em-contentLanding h2, #em-contentLanding h4 {
-        display: block;
-    }
-    #em-wrapperLandingPhoto {
+    #em-wrapperLandingTagline, #em-wrapperLandingPhoto {
         display: block;
     }
 
+    div#em-wrapperLanding {
+        h1, h2 {
+            font-size: min(max(2rem, 6vw), 80px);
+        }
+        h4, h5, h6 {
+            font-size: min(max(2rem, 2vw), 25px);
+        }
+        h3 {
+            font-size: min(max(2rem, 3vw), 30px);
+        }
+    }
+
+    div#em-contentLanding {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    div#em-wrapperLandingTagline {
+        width: 70%;
+        margin: auto;
+        .em-heading__h2 {
+            margin-bottom: 2rem;
+        }
+        .em-heading__h4 {
+            width: 90%;
+            margin: 0 auto 1.8rem auto;
+            &--bold {
+                font-weight: 600;
+                width: 80%;
+                margin: 0 auto 1.8rem auto;
+            }
+        }
+    }
+
+    #em-wrapperLandingSubscribe {
+        margin: 5rem 0 0 0;
+        & > div {
+            width: 80%;
+            margin: 0 auto 0 auto;
+        }
+
+        #em-landingHeadingSubscribe {
+            text-align: start;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            & > div {
+                &:first-of-type {
+                    flex-grow: 2;
+                    padding-right: 1rem;
+                }
+                &:last-of-type {
+                    flex-grow: 1;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+
+    #em-wrapperLandingPhoto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            width: 500px;
+            height: auto;
+        }
+    }
+    
 }
