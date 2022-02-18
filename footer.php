@@ -28,7 +28,7 @@ $emailCTAShortCode = '[wpforms id="182"]';
 					</div>
 					<div id="" class="">
 						<i class="bi bi-envelope"></i>
-						<p>Send us an <a href="">email</a></p>
+						<p><a href="">Email Us</a></p>
 					</div>
 				</div><!-- column end -->
 

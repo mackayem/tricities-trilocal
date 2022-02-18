@@ -40,7 +40,9 @@
   "author": "Emily Mackay (https://github.com/mackayem)",
   "bugs": {},
   "homepage": "https://www.trilocal.ca",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
