@@ -34,7 +34,7 @@ $emailCTAShortCode = '[wpforms id="182"]';
 
 				<div class="col">
 					<h6 id="em-footerHeaderSocial" class="em-heading__h6">Follow the Tri-Local Collective</h6>
-					<?php get_template_part( 'sidebar-templates/sidebar', 'trilocalsocial' ); ?>
+					<?php get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalsocial' ); ?>
 				</div>
 
 				<div class="col">
