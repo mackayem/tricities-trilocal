@@ -170,5 +170,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'TRILOCAL-Social', 'understrap' ),
+				'id'            => 'trilocalsocial',
+				'description'   => __( 'Widget for Social Media Icons & Links', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="social-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .social-widget -->',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 } // End of function_exists( 'understrap_widgets_init' ).

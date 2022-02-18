@@ -15683,6 +15683,11 @@ ul#main-menu.em-ulist__menu li a {
     padding: 0 1rem 0 1rem;
   }
 }
+div#wrapper-footer-full.em-footer__wrapper {
+  background-color: #228D98;
+  color: #EEEEEE;
+}
+
 div#em-pageLanding {
   background-color: #093A6B;
   height: 40rem;
