@@ -15686,6 +15686,27 @@ ul#main-menu.em-ulist__menu li a {
 footer#em-footerNav {
   background-color: #228D98;
   color: #EEEEEE;
+  position: relative;
+}
+
+div#em-footerDiagonalBox {
+  background-color: #228D98;
+  height: 10rem;
+  width: 100%;
+  transform: skewY(-11deg);
+  z-index: 1;
+  position: absolute;
+  top: -5rem;
+}
+
+div#em-footerWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+section#em-footerContent {
+  position: relative;
+  z-index: 3;
 }
 
 div#em-pageLanding {

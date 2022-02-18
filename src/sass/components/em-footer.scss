@@ -9,8 +9,25 @@
 footer#em-footerNav {
     background-color: variables.$turquoise;
     color: variables.$lightgrey;
+    position: relative;
 }
 
+div#em-footerDiagonalBox {
+    @include em-mixins.diagonal-box-mobile(variables.$turquoise, 10rem);
+    z-index: 1;
+    position: absolute;
+    top: -5rem;
+}
+
+div#em-footerWrapper {
+    position: relative;
+    z-index: 2;
+}
+
+section#em-footerContent {
+    position: relative;
+    z-index: 3;
+}
 
 // =========== DESKTOP LAYOUT ===============
 // ==========================================

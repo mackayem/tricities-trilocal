@@ -15,6 +15,7 @@ $emailCTAShortCode = '[wpforms id="182"]';
 ?>
 
 <footer id="em-footerNav" class="site-footer">
+	<div id="em-footerDiagonalBox" class="em-wrapper__div--box"></div>
 	<div id="em-footerWrapper" class="<?php echo esc_attr( $container ); ?>">
 
 		<section id="em-footerContent" class="">
