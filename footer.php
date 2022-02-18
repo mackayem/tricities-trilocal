@@ -68,7 +68,17 @@ $emailCTAShortCode = '[wpforms id="182"]';
 			</div><!-- row ContentMain end -->
 
 			<div id="em-footerContentPartners" class="row">
-
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/austinheightsbia-white.png" alt="Austin Heights BIA logo">
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/downtownpocobia-white.png" alt="Downtown PoCo BIA logo">
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/shoplocalportmoody-white.png" alt="Shop Local Port Moody logo">
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitieschamber-white.png" alt="Tri-Cities Chamber of Commerce logo">
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitynews-white.png" alt="Tri-City News logo">
+				<!-- get better quality images for Port Moody, Poco, Coq, and Port Moody & Co. -->
+				<!-- other logos used as placeholders below -->
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitynews-white.png" alt="Tri-City News logo">
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitynews-white.png" alt="Tri-City News logo">
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitynews-white.png" alt="Tri-City News logo">
+				<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitynews-white.png" alt="Tri-City News logo">
 			</div><!-- row ContentPartners end -->
 
 		</section><!-- section end -->
