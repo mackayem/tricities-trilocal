@@ -16,35 +16,36 @@ $emailCTAShortCode = '[wpforms id="182"]';
 
 <footer id="em-footerNav" class="site-footer">
 	<div id="em-footerDiagonalBox" class="em-wrapper__div--box"></div>
+
 	<div id="em-footerWrapper" class="<?php echo esc_attr( $container ); ?>">
 
-		<section id="em-footerContent" class="">
+		<section id="em-footerContent" class="em-content__section">
 			<div id="em-footerContentMain" class="row">
 
-				<div class="col">
+				<div id="em-footerAddress" class="col em-footer__col">
 					<h6 id="em-footerHeaderAddress" class="em-heading__h6">Tri-Cities Chamber of Commerce</h6>
-					<div id="" class="">
+					<div class="d-flex">
 						<i class="bi bi-geo-alt-fill"></i>
 						<p>#205-2773 Barnet Highway<br>Coquitlam, BC V3B1C2</p>
 					</div>
-					<div id="" class="">
+					<div class="d-flex">
 						<i class="bi bi-envelope"></i>
-						<p><a href="">Email Us</a></p>
+						<a href="#">Email</a>
 					</div>
 				</div><!-- column end -->
 
-				<div class="col">
+				<div id="em-footerSocial" class="col em-footer__col">
 					<h6 id="em-footerHeaderSocial" class="em-heading__h6">Follow the Tri-Local Collective</h6>
 					<?php get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalsocial' ); ?>
 				</div>
 
-				<div class="col">
+				<div id="em-footerSocial" class="col em-footer__col">
 					<h6 id="em-footerHeaderSocial" class="em-heading__h6">Thank You</h6>
 					<p>Funded by a Federal grant distributed by the BC Chamber of Commerce, from Canada's Ministry of Innovation, Science and Economic Development.</p>
 				</div>
 
-				<div class="col">
-					<h6 id="em-footerHeaderSocial" class="em-heading__h6">Site Links</h6>
+				<div id="em-footerMenu" class="col em-footer__col">
+					<h6 id="em-footerHeaderMenu" class="em-heading__h6">Site Links</h6>
 					<?php
 					wp_nav_menu(
 						array(
@@ -61,8 +62,8 @@ $emailCTAShortCode = '[wpforms id="182"]';
 					?>
 				</div>
 
-				<div class="col">
-					<h6 id="em-footerHeaderSocial" class="em-heading__h6">Sign up for our newsletter</h6>
+				<div id="em-footerNewsletter" class="col em-footer__col">
+					<h6 id="em-footerHeaderNewsletter" class="em-heading__h6">Sign up for our newsletter</h6>
 					<?php echo do_shortcode( $emailCTAShortCode ); ?>
 				</div>
 

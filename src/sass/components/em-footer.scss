@@ -10,6 +10,14 @@ footer#em-footerNav {
     background-color: variables.$turquoise;
     color: variables.$lightgrey;
     position: relative;
+
+    h6.em-heading__h6 {
+        @include em-mixins.heading-footer-h6(variables.$lightgrey, 0.8rem);
+        margin: 0 0 1rem 0;
+    }
+    a {
+        color: variables.$lightgrey;
+    }
 }
 
 div#em-footerDiagonalBox {
@@ -22,11 +30,32 @@ div#em-footerDiagonalBox {
 div#em-footerWrapper {
     position: relative;
     z-index: 2;
+    padding: 0;
 }
 
 section#em-footerContent {
     position: relative;
     z-index: 3;
+}
+div#em-footerContentMain {
+    padding: 1rem 2rem 1rem 2rem;
+    width: 100%; // necessary to prevent horizontal overflow
+    margin: 0; // necessary to prevent horizontal overflow
+}
+
+div.col.em-footer__col {
+    flex: auto;
+    padding: 0;
+    margin: 0 0 3rem 0;
+}
+
+div#em-footerAddress {
+    i {
+        margin: 0 1rem 0 0;
+    }
+    p {
+        margin: 0;
+    }
 }
 
 // =========== DESKTOP LAYOUT ===============

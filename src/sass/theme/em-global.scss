@@ -46,6 +46,12 @@ p {
     font-family: "Montserrat", sans-serif; 
 }
 
+a {
+    font-family: "Montserrat", sans-serif;
+    color: variables.$lightgrey;
+    text-decoration: underline;
+}
+
 button {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;

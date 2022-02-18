@@ -15556,6 +15556,12 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  font-family: "Montserrat", sans-serif;
+  color: #EEEEEE;
+  text-decoration: underline;
+}
+
 button {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -15689,6 +15695,20 @@ footer#em-footerNav {
   position: relative;
 }
 
+footer#em-footerNav h6.em-heading__h6, footer#em-footerNav .em-heading__h6.h6 {
+  color: #EEEEEE;
+  font-size: 0.8rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 0 0 1rem 0;
+}
+
+footer#em-footerNav a {
+  color: #EEEEEE;
+}
+
 div#em-footerDiagonalBox {
   background-color: #228D98;
   height: 10rem;
@@ -15702,11 +15722,32 @@ div#em-footerDiagonalBox {
 div#em-footerWrapper {
   position: relative;
   z-index: 2;
+  padding: 0;
 }
 
 section#em-footerContent {
   position: relative;
   z-index: 3;
+}
+
+div#em-footerContentMain {
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  margin: 0;
+}
+
+div.col.em-footer__col {
+  flex: auto;
+  padding: 0;
+  margin: 0 0 3rem 0;
+}
+
+div#em-footerAddress i {
+  margin: 0 1rem 0 0;
+}
+
+div#em-footerAddress p {
+  margin: 0;
 }
 
 div#em-pageLanding {
