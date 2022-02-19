@@ -39,8 +39,8 @@ $emailCTAShortCode = '[wpforms id="182"]';
 					<?php get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalsocial' ); ?>
 				</div>
 
-				<div id="em-footerSocial" class="col em-footer__col">
-					<h6 id="em-footerHeaderSocial" class="em-heading__h6">Thank You</h6>
+				<div id="em-footerFunding" class="col em-footer__col">
+					<h6 id="em-footerHeaderFunding" class="em-heading__h6">Thank You</h6>
 					<p>Funded by a Federal grant distributed by the BC Chamber of Commerce, from Canada's Ministry of Innovation, Science and Economic Development.</p>
 				</div>
 

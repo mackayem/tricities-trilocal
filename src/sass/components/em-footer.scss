@@ -69,6 +69,22 @@ div#em-footerSocial {
     }
 }
 
+div#em-footerFunding {
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+div#em-footerMenu {
+    display: none; // because of floating hamburger menu, no need for menu at footer
+}
+
+div#em-footerNewsletter {
+    button {
+        background-color: variables.$darkblue;
+    }
+}
+
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
 

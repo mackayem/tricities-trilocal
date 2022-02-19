@@ -15759,6 +15759,18 @@ div#em-footerSocial ul li {
   letter-spacing: 0.1rem;
 }
 
+div#em-footerFunding p {
+  font-size: 0.8rem;
+}
+
+div#em-footerMenu {
+  display: none;
+}
+
+div#em-footerNewsletter button {
+  background-color: #093A6B;
+}
+
 div#em-pageLanding {
   background-color: #093A6B;
   height: 40rem;
