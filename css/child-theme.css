@@ -15730,6 +15730,7 @@ section#em-footerContent {
 }
 
 div#em-footerContentMain {
+  flex-direction: column;
   padding: 1rem 2rem 1rem 2rem;
   width: 100%;
   margin: 0;
@@ -15741,12 +15742,20 @@ div.col.em-footer__col {
   margin: 0 0 3rem 0;
 }
 
+div#em-footerAddress {
+  order: 0;
+}
+
 div#em-footerAddress i {
   margin: 0 1rem 0 0;
 }
 
 div#em-footerAddress p {
   margin: 0;
+}
+
+div#em-footerSocial {
+  order: 2;
 }
 
 div#em-footerSocial ul {
@@ -15759,6 +15768,10 @@ div#em-footerSocial ul li {
   letter-spacing: 0.1rem;
 }
 
+div#em-footerFunding {
+  order: 4;
+}
+
 div#em-footerFunding p {
   font-size: 0.8rem;
 }
@@ -15767,8 +15780,16 @@ div#em-footerMenu {
   display: none;
 }
 
+div#em-footerNewsletter {
+  order: 1;
+}
+
 div#em-footerNewsletter button {
   background-color: #093A6B;
+}
+
+div#em-footerPartners {
+  order: 3;
 }
 
 div#em-pageLanding {

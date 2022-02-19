@@ -67,10 +67,10 @@ $emailCTAShortCode = '[wpforms id="182"]';
 					<?php echo do_shortcode( $emailCTAShortCode ); ?>
 				</div>
 
-			</div><!-- row ContentMain end -->
+				<div id="em-footerPartners" class="col em-footer__col">
+				</div><!-- row ContentPartners end -->
 
-			<div id="em-footerContentPartners" class="row">
-			</div><!-- row ContentPartners end -->
+			</div><!-- row ContentMain end -->
 
 		</section><!-- section end -->
 

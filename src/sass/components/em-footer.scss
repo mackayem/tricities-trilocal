@@ -38,6 +38,7 @@ section#em-footerContent {
     z-index: 3;
 }
 div#em-footerContentMain {
+    flex-direction: column;
     padding: 1rem 2rem 1rem 2rem;
     width: 100%; // necessary to prevent horizontal overflow
     margin: 0; // necessary to prevent horizontal overflow
@@ -50,6 +51,7 @@ div.col.em-footer__col {
 }
 
 div#em-footerAddress {
+    order: 0;
     i {
         margin: 0 1rem 0 0;
     }
@@ -59,6 +61,7 @@ div#em-footerAddress {
 }
 
 div#em-footerSocial {
+    order: 2;
     ul {
         padding: 0;
     }
@@ -70,6 +73,7 @@ div#em-footerSocial {
 }
 
 div#em-footerFunding {
+    order: 4;
     p {
         font-size: 0.8rem;
     }
@@ -80,9 +84,14 @@ div#em-footerMenu {
 }
 
 div#em-footerNewsletter {
+    order: 1;
     button {
         background-color: variables.$darkblue;
     }
+}
+
+div#em-footerPartners {
+    order: 3;
 }
 
 // =========== DESKTOP LAYOUT ===============
