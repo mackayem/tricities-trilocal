@@ -42,12 +42,11 @@ h6 {
     font-size: 1rem;
 }
 
-p {
+p, a, ul, li {
     font-family: "Montserrat", sans-serif; 
 }
 
 a {
-    font-family: "Montserrat", sans-serif;
     color: variables.$lightgrey;
     text-decoration: underline;
 }

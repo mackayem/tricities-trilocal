@@ -58,6 +58,17 @@ div#em-footerAddress {
     }
 }
 
+div#em-footerSocial {
+    ul {
+        padding: 0;
+    }
+    ul li {
+        list-style-type: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+}
+
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
 

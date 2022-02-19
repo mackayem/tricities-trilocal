@@ -15552,12 +15552,11 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-p {
+p, a, ul, li {
   font-family: "Montserrat", sans-serif;
 }
 
 a {
-  font-family: "Montserrat", sans-serif;
   color: #EEEEEE;
   text-decoration: underline;
 }
@@ -15748,6 +15747,16 @@ div#em-footerAddress i {
 
 div#em-footerAddress p {
   margin: 0;
+}
+
+div#em-footerSocial ul {
+  padding: 0;
+}
+
+div#em-footerSocial ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 div#em-pageLanding {
