@@ -114,6 +114,25 @@ div#em-footerPartners {
     }
 }
 
+@media (min-width: 576px) {
+    div#em-footerContentMain {
+        width: 80%;
+        margin: auto;
+    }
+
+    div#em-footerSocial {
+        ul {
+            &:first-of-type {
+                justify-content: start;
+            }
+            &:last-of-type {
+                align-items: start;
+            }
+        }
+    }
+}
+
+
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
 

@@ -15816,6 +15816,20 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
   width: 70%;
 }
 
+@media (min-width: 576px) {
+  div#em-footerContentMain {
+    width: 80%;
+    margin: auto;
+  }
+
+  div#em-footerSocial ul:first-of-type {
+    justify-content: start;
+  }
+
+  div#em-footerSocial ul:last-of-type {
+    align-items: start;
+  }
+}
 div#em-pageLanding {
   background-color: #093A6B;
   height: 40rem;
