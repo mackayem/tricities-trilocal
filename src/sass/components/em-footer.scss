@@ -13,7 +13,7 @@ footer#em-footerNav {
 
     h6.em-heading__h6 {
         @include em-mixins.heading-footer-h6(variables.$lightgrey, 0.8rem);
-        margin: 0 0 1rem 0;
+        margin: 0 0 0.5rem 0;
     }
     a {
         color: variables.$lightgrey;
@@ -102,6 +102,16 @@ div#em-footerNewsletter {
 
 div#em-footerPartners {
     order: 3;
+    div#em-footerPartnersWrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        img.em-img__logo--partner {
+            width: 70%;
+        }
+    }
 }
 
 // =========== DESKTOP LAYOUT ===============

@@ -15701,7 +15701,7 @@ footer#em-footerNav h6.em-heading__h6, footer#em-footerNav .em-heading__h6.h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 footer#em-footerNav a {
@@ -15802,6 +15802,18 @@ div#em-footerNewsletter button {
 
 div#em-footerPartners {
   order: 3;
+}
+
+div#em-footerPartners div#em-footerPartnersWrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
+  width: 70%;
 }
 
 div#em-pageLanding {

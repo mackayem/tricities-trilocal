@@ -68,6 +68,18 @@ $emailCTAShortCode = '[wpforms id="182"]';
 				</div>
 
 				<div id="em-footerPartners" class="col em-footer__col">
+					<h6 id="em-footerHeaderPartners" class="em-heading__h6">Our Partners</h6>
+					<div id="em-footerPartnersWrapper" class="em-wrapper__div">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/austinheightsbia-white@1x.png" alt="Austin Heights BIA logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/downtownpocobia-white@1x.png" alt="Downtown PoCo BIA logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/shoplocalportmoody-white@1x.png" alt="Shop Local Port Moody logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitieschamber-white@1x.png" alt="Tri-Cities Chamber of Commerce logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/tricitynews-white@1x.png" alt="Tri-City News logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/portmoodyandco-white@1x.png" alt="Port Moody & Co. logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/cityofcoquitlam-white@1x.png" alt="City of Coquitlam logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/cityofportcoquitlam-white@1x.png" alt="City of Port Coquitlam logo">
+						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/cityofportmoody-white@1x.png" alt="City of Port Moody logo">
+					</div>
 				</div><!-- row ContentPartners end -->
 
 			</div><!-- row ContentMain end -->
