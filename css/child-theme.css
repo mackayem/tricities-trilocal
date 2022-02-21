@@ -15871,7 +15871,7 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
   footer#em-footerNav div#em-footerContentMain {
     width: 100%;
     grid-template-rows: 0.5fr 0.8fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 
   footer#em-footerNav div#em-footerAddress {
