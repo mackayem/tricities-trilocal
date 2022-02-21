@@ -15662,10 +15662,9 @@ ul#main-menu.em-ulist__menu li a {
 
   div#em-headerDiagonalBox {
     background-color: #228D98;
-    height: 8rem;
+    height: 6rem;
     width: 100%;
     transform: skewY(-2deg);
-    height: 6rem;
   }
 
   nav#main-nav.em-nav {
@@ -15755,7 +15754,7 @@ div#em-footerAddress p {
 }
 
 div#em-footerSocial {
-  order: 2;
+  order: 1;
 }
 
 div#em-footerSocial ul {
@@ -15793,7 +15792,7 @@ div#em-footerMenu {
 }
 
 div#em-footerNewsletter {
-  order: 1;
+  order: 2;
 }
 
 div#em-footerNewsletter button {
@@ -15828,6 +15827,93 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
 
   div#em-footerSocial ul:last-of-type {
     align-items: start;
+  }
+}
+@media (min-width: 768px) {
+  footer#em-footerNav div#em-footerDiagonalBox.em-wrapper__div--box {
+    background-color: #228D98;
+    height: 8rem;
+    width: 100%;
+    transform: skewY(-2deg);
+  }
+
+  footer#em-footerNav div#em-footerContentMain {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer#em-footerNav div.col.em-footer__col {
+    margin: 0 0 0.5rem 0;
+  }
+
+  footer#em-footerNav div#em-footerAddress {
+    grid-column: 1/2;
+  }
+
+  footer#em-footerNav div#em-footerSocial {
+    grid-column: 2/3;
+  }
+
+  footer#em-footerNav div#em-footerNewsletter {
+    grid-column: 1/3;
+  }
+
+  footer#em-footerNav div#em-footerPartners {
+    grid-column: 1/3;
+  }
+
+  footer#em-footerNav div#em-footerFunding {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 992px) {
+  footer#em-footerNav div#em-footerContentMain {
+    width: 100%;
+    grid-template-rows: 0.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  footer#em-footerNav div#em-footerAddress {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  footer#em-footerNav div#em-footerSocial {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  footer#em-footerNav div#em-footerFunding {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  footer#em-footerNav div#em-footerMenu {
+    display: block;
+    grid-row: 1/2;
+    grid-column: 4/5;
+  }
+
+  footer#em-footerNav div#em-footerNewsletter {
+    grid-row: 1/2;
+    grid-column: 5/6;
+  }
+
+  footer#em-footerNav div#em-footerPartners {
+    grid-row: 2/3;
+    grid-column: 2/5;
+  }
+
+  footer#em-footerNav div#em-footerPartners div#em-footerPartnersWrapper {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  footer#em-footerNav div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
+    width: 50%;
   }
 }
 div#em-pageLanding {
@@ -15896,6 +15982,7 @@ button#wpforms-submit-182 {
 @media (min-width: 768px) {
   #em-wrapperLandingTagline {
     display: block;
+    height: 50rem;
   }
 
   div#em-pageLanding h1, div#em-pageLanding .h1, div#em-pageLanding h2, div#em-pageLanding .h2 {

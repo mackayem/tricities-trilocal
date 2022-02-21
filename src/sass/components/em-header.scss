@@ -94,8 +94,7 @@ ul#main-menu.em-ulist__menu {
 
     // diagonal box
     div#em-headerDiagonalBox {
-        @include em-mixins.diagonal-box-desktop (variables.$turquoise, 8rem);
-        height: 6rem;
+        @include em-mixins.diagonal-box-desktop (variables.$turquoise, 6rem);
     }
     
 
