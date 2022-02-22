@@ -15791,6 +15791,16 @@ div#em-footerMenu {
   display: none;
 }
 
+div#em-footerMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+div#em-footerMenu a {
+  padding: 0.5rem 0 0 0;
+  text-decoration: underline;
+}
+
 div#em-footerNewsletter {
   order: 2;
 }
@@ -15870,8 +15880,12 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
 @media (min-width: 992px) {
   footer#em-footerNav div#em-footerContentMain {
     width: 100%;
-    grid-template-rows: 0.5fr 0.8fr;
+    grid-template-rows: 0.5fr 0.3fr;
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  footer#em-footerNav div#em-footerContentMain div.col.em-footer__col {
+    padding: 0 2rem 0 2rem;
   }
 
   footer#em-footerNav div#em-footerAddress {
@@ -15893,6 +15907,7 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
     display: block;
     grid-row: 1/2;
     grid-column: 4/5;
+    margin: 0 0 0 5rem;
   }
 
   footer#em-footerNav div#em-footerNewsletter {
