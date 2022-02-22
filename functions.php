@@ -87,3 +87,25 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+
+
+// Get the Gallery Images from a Page
+// function em_get_gallery_images_from_page($page_id) {
+// 	$page = get_post($page_id);
+// 	$count = 0;
+
+// 	if ( !(has_shortcode($page->post_content, 'gallery') ) {
+// 		return;
+// 	}
+
+// 	$gallery = get_post_galleries_images($page);
+
+// 	foreach ($gallery as $image) {
+// 		if ($count == 0) {
+// 			return;
+// 		}
+// 		echo '<img class="em-img" src=" '.$image' " alt="">';
+// 		count++;
+// 	}
+// }

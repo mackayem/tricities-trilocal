@@ -1,0 +1,18 @@
+@use "../theme/child_theme_variables.scss" as variables;
+@use "../theme/em-mixins.scss" as em-mixins;
+
+// =========== MOBILE LAYOUT ===============
+// ==========================================
+
+// main#em-main {
+//     height: 100vh;
+// }
+
+
+// =========== DESKTOP LAYOUT ===============
+// ==========================================
+
+// breakpoint for md bootstrap responsiveness
+@media (min-width: 768px) {
+
+}
