@@ -148,8 +148,6 @@ div#em-footerPartners {
 @media (min-width: 768px) {
 
     footer#em-footerNav {
-        position: fixed;
-        bottom: 0;
 
         div#em-footerDiagonalBox.em-wrapper__div--box {
             @include em-mixins.diagonal-box-desktop (variables.$turquoise, 8rem);

@@ -15519,13 +15519,13 @@ a.skip-link {
 h1, .h1 {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
-  font-size: 12rem;
+  font-size: 8rem;
 }
 
 h2, .h2 {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
-  font-size: 10rem;
+  font-size: 6rem;
 }
 
 h3, .h3 {
@@ -15841,11 +15841,6 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
   }
 }
 @media (min-width: 768px) {
-  footer#em-footerNav {
-    position: fixed;
-    bottom: 0;
-  }
-
   footer#em-footerNav div#em-footerDiagonalBox.em-wrapper__div--box {
     background-color: #228D98;
     height: 8rem;
