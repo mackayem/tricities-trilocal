@@ -9,6 +9,10 @@
 defined( 'ABSPATH' ) || exit;
 
 
+// ==================================================
+// ============== UNDERSTRAP FUNCTIONS ==============
+// ==================================================
+
 
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
@@ -91,6 +95,16 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 
 
+
+
+
+// ==============================================================
+// ============== TRI-LOCAL CUSTOM PLUGIN FUNCTIONS =============
+// ==============================================================
+
+
+// Installs plugin "Carbon Fields"
+// ********************************
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
@@ -101,80 +115,98 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'crb_text', 'Text Field' ),
         ) );
 }
+// Source: https://docs.carbonfields.net/plugin-quickstart.html#without-composer
 
+
+
+// ==============================================================
+// ============== TRI-LOCAL CUSTOM THEME FUNCTIONS ==============
+// =========== All Code Below Written By Emily Mackay ===========
+// ==============================================================
 
 
 // All Tri-Local Custom Posts for use in Custom Theme
 // **************************************************
-add_theme_support('post-thumbnails');
-
-function em_custom_post_partners() {
-	$args = array(
-		'public' => true,
-		'has_archive' => true,
-		'support' => array('title', 'editor', 'thumbnail'),
-		'menu_icon' => 'dashicons-index-card',
-		'labels' => array(
-				'name' => 'TriLocal Partners',
-				'singular_name' => 'TriLocal Partner',
-		),
-	);
-	register_post_type('partners', $args);
-
-}
-add_action('init', 'em_custom_post_partners');
 
 
-function em_custom_post_education() {
-	$args = array(
-		'public' => true,
-		'has_archive' => true,
-		'support' => array('title', 'editor', 'thumbnail'),
-		'menu_icon' => 'dashicons-lightbulb',
-		'labels' => array(
-				'name' => 'TriLocal Facts',
-				'singular_name' => 'TriLocal Fact',
-		),
-	);
-	register_post_type('facts', $args);
+// // CUSTOM POST TYPE: PARTNERS
+// function em_custom_post_partners() {
+// 	$args = array(
+// 		'public' => true,
+// 		'has_archive' => true,
+// 		'support' => array('title', 'editor', 'thumbnail'),
+// 		'menu_icon' => 'dashicons-index-card',
+// 		'labels' => array(
+// 				'name' => 'TriLocal Partners',
+// 				'singular_name' => 'TriLocal Partner',
+// 		),
+// 	);
+// 	register_post_type('partners', $args);
 
-}
-add_action('init', 'em_custom_post_education');
+// }
+// add_action('init', 'em_custom_post_partners');
+
+// // CUSTOM POST TYPE: EDUCATION (FACTS)
+// function em_custom_post_education() {
+// 	$args = array(
+// 		'public' => true,
+// 		'has_archive' => true,
+// 		'support' => array('title', 'editor', 'thumbnail'),
+// 		'menu_icon' => 'dashicons-lightbulb',
+// 		'labels' => array(
+// 				'name' => 'TriLocal Facts',
+// 				'singular_name' => 'TriLocal Fact',
+// 		),
+// 	);
+// 	register_post_type('facts', $args);
+
+// }
+// add_action('init', 'em_custom_post_education');
 
 
+
+
+
+// CUSTOM POST TYPE: BUSINESSES (For Directory)
 function em_custom_post_business() {
+	$labels = array(
+		'name' => 'Businesses',
+		'singular_name' => 'Business',
+		'all_items' => 'All Businesses',
+		'view_item' => 'View Business',
+		'add_new_item' => 'Add New Business',
+		'search_items' => 'Search Businesses',
+	);
 	$args = array(
+		'labels' => $labels,
 		'public' => true,
 		'has_archive' => true,
-		'description' => 'Local Businesses in the Tri-Cities for use in the Business Directory',
+		// 'show_in_rest' => true,
+		'description' => 'Local Tri-City Businesses for use in the Business Directory',
 		'support' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
 		'menu_icon' => 'dashicons-store',
-		'labels' => array(
-				'name' => 'TriLocal Businesses',
-				'singular_name' => 'TriLocal Business',
-		),
 	);
-	register_post_type('businesses', $args);
+	register_post_type('em_businesses', $args); // this registers a custom post called 'businesses'
 
 }
+add_theme_support('post-thumbnails', array('businesses'));
 add_action('init', 'em_custom_post_business');
-
 
 function em_custom_taxonomy_business() {
 	$args_location = array(
 		'labels' => array(
 			'name' => 'Locations',
 			'singular_name' => 'Location',
-			'edit_item' => __('Edit Location'), 
-			'update_item' => __('Update Location'),
-			'add_new_item' => __('Add New Location'),
-			'new_item_name' => __('New Location Name'),
-			'menu_name' => __('Locations'),
+			'edit_item' => 'Edit Location', 
+			'update_item' => 'Update Location',
+			'add_new_item' => 'Add New Location',
+			'new_item_name' => 'New Location Name',
+			'menu_name' => 'Locations',
 		),
 		'public' => true,
 		'hierarchical' => true,
 	);
-	register_taxonomy('locations', array('businesses'), $args_location);
+	register_taxonomy('locations', array('em_businesses'), $args_location);
 
 	$args_category = array(
 		'labels' => array(
@@ -184,6 +216,6 @@ function em_custom_taxonomy_business() {
 		'public' => true,
 		'hierarchical' => true,
 	);
-	register_taxonomy('categories', array('businesses'), $args_category);
+	register_taxonomy('categories', array('em_businesses'), $args_category);
 }
 add_action('init', 'em_custom_taxonomy_business');
