@@ -15939,8 +15939,8 @@ div#em-pageLanding {
 }
 
 div#em-contentLanding {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin: 3rem 0 0 0;
+  padding: 0 1.5rem 0 1.5rem;
 }
 
 div#em-contentLanding * {
@@ -15951,10 +15951,6 @@ div#em-contentLanding * h1, div#em-contentLanding * .h1, div#em-contentLanding *
   text-align: center;
 }
 
-div#em-contentLanding {
-  margin: 3rem 0 0 0;
-}
-
 div#em-wrapperLandingCopy, div#em-wrapperLandingPhoto {
   display: none;
 }
@@ -15963,12 +15959,12 @@ div#em-wrapperLandingCTA h3, div#em-wrapperLandingCTA .h3 {
   font-size: 2rem;
 }
 
-div#em-wrapperNewsletterWidget input {
+div#em-wrapperLandingCTA div#em-wrapperNewsletterWidget input {
   border: none;
   padding: 1rem;
 }
 
-div#em-wrapperNewsletterWidget button {
+div#em-wrapperLandingCTA div#em-wrapperNewsletterWidget button {
   background-color: #228D98;
   color: #EEEEEE;
   width: 100%;

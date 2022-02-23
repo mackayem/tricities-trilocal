@@ -12,24 +12,19 @@ div#em-pageLanding {
     width: 100%;
 }
 
-// all landing page content
-div#em-contentLanding {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-// style all text in the landing page content as light grey unless otherwise changed
-div#em-contentLanding * {
-    color: variables.$lightgrey;
-    // center all the text on the landing page
-    h1, h2, h3, h4, h5, h6, p {
-        text-align: center;
-    }
-}
-
 // space out the content on mobile view
-div#em-contentLanding  {
+div#em-contentLanding {
     margin: 3rem 0 0 0;
+    padding: 0 1.5rem 0 1.5rem;
+    
+    // style all text in the landing page content as light grey unless otherwise changed
+    * {
+        color: variables.$lightgrey;
+        // center all the text on the landing page
+        h1, h2, h3, h4, h5, h6, p {
+            text-align: center;
+        }
+    }
 }
 
 // remove the taglines and photo on the mobile view
@@ -38,50 +33,24 @@ div#em-wrapperLandingCopy, div#em-wrapperLandingPhoto {
 }
 
 // subscribe text above Email CTA form
-div#em-wrapperLandingCTA h3 {
-    font-size: 2rem;
+div#em-wrapperLandingCTA {
+    h3 {
+        font-size: 2rem;
+    }
+    div#em-wrapperNewsletterWidget {
+        input {
+            border: none;
+            padding: 1rem;
+        }
+        button {
+            @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey, 100%);
+            border-radius: 0;
+            padding: 1rem;
+        }
+    }
 }
 
-div#em-wrapperNewsletterWidget {
-    input {
-        border: none;
-        padding: 1rem;
-    }
-    button {
-        @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey, 100%);
-        border-radius: 0;
-        padding: 1rem;
-    }
-}
 
-
-// div#wpforms-182.em-form__newsletter {
-//     margin-top: 1rem;
-// }
-
-// input#wpforms-182-field_2 {
-//     color: black;
-//     text-transform: lowercase;
-//     font-size: 1rem;
-//     border: none;
-//     border-radius: 0;
-//     padding: 1.76rem 1rem;
-//     max-width: 100%;
-// }
-
-
-// button#wpforms-submit-182 {
-//     @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey, 100%);
-//     border: none;
-//     padding: 1rem 1rem;
-// }
-
-//prevents the CTA newsletter form from over-extending
-// @media (min-width: 576px) and (max-width: 767px) {
-//     div#wpforms-182.em-form__newsletter {
-//         max-width: 70%;
-//     }
-// }
 
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
