@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
-$emailCTAShortCode = '[wpforms id="182"]';
+$emailCTAShortCode = '[yikes-mailchimp form="1"]';
 ?>
 
 <footer id="em-footerNav" class="site-footer">
@@ -87,6 +87,13 @@ $emailCTAShortCode = '[wpforms id="182"]';
 		</section><!-- section end -->
 
 		<section id="em-footerSiteInfo" class="">
+		<?php
+			// get the field value
+			$copyright = carbon_get_theme_option( 'crb_footer_copyright' );
+
+			// output the field value
+			echo $copyright;
+		?>
 		</section><!-- section end -->
 
 	</div><!-- container end -->

@@ -194,5 +194,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'TRILOCAL-Newsletter', 'understrap' ),
+				'id'            => 'trilocalnewsletter',
+				'description'   => __( 'Widget for MailChimp Newsletter Form', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="newsletter-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .newsletter-widget -->',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 } // End of function_exists( 'understrap_widgets_init' ).

@@ -105,17 +105,26 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 // Installs plugin "Carbon Fields"
 // ********************************
-use Carbon_Fields\Container;
 use Carbon_Fields\Field;
+use Carbon_Fields\Container;
 
 add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
     Container::make( 'theme_options', __( 'Theme Options' ) )
         ->add_fields( array(
-            Field::make( 'text', 'crb_text', 'Text Field' ),
+            Field::make( 'rich_text', 'crb_footer_copyright', 'Copyright' ),
         ) );
 }
 // Source: https://docs.carbonfields.net/plugin-quickstart.html#without-composer
+
+// add_action( 'carbon_fields_register_fields', 'crb_attach_post_meta' );
+// function crb_attach_post_meta() {
+//     Container::make( 'post_meta', __( 'Post Options' ) )
+//         ->where( 'post_type', '=', 'post' )
+//         ->add_fields( array(
+//             Field::make( 'text', 'crb_venue', 'Venue' ),
+//         ) );
+// }
 
 
 
@@ -137,8 +146,9 @@ function crb_attach_theme_options() {
 // 		'support' => array('title', 'editor', 'thumbnail'),
 // 		'menu_icon' => 'dashicons-index-card',
 // 		'labels' => array(
-// 				'name' => 'TriLocal Partners',
-// 				'singular_name' => 'TriLocal Partner',
+// 				'name' => 'Partners',
+// 				'singular_name' => 'Partner',
+//				'menu_name' => 'Tri-Local Partner',
 // 		),
 // 	);
 // 	register_post_type('partners', $args);
@@ -154,8 +164,9 @@ function crb_attach_theme_options() {
 // 		'support' => array('title', 'editor', 'thumbnail'),
 // 		'menu_icon' => 'dashicons-lightbulb',
 // 		'labels' => array(
-// 				'name' => 'TriLocal Facts',
-// 				'singular_name' => 'TriLocal Fact',
+// 				'name' => 'Facts',
+// 				'singular_name' => 'Fact',
+//				'menu_name' => 'Tri-Local Education',
 // 		),
 // 	);
 // 	register_post_type('facts', $args);
@@ -168,10 +179,21 @@ function crb_attach_theme_options() {
 
 
 // CUSTOM POST TYPE: BUSINESSES (For Directory)
+// function em_add_metaboxes_business() {
+// 	add_meta_box(
+// 		'wpt_events_location',
+// 		'Event Location',
+// 		'wpt_events_location',
+// 		'events',
+// 		'side',
+// 		'default'
+// 	);
+// }
 function em_custom_post_business() {
 	$labels = array(
 		'name' => 'Businesses',
 		'singular_name' => 'Business',
+		'menu_name' => 'Tri-Local Business',
 		'all_items' => 'All Businesses',
 		'view_item' => 'View Business',
 		'add_new_item' => 'Add New Business',
@@ -181,17 +203,18 @@ function em_custom_post_business() {
 		'labels' => $labels,
 		'public' => true,
 		'has_archive' => true,
-		// 'show_in_rest' => true,
+		'show_in_rest' => false, // if true, switches to gutenberg block editor
+		'capability_type' => 'post',
 		'description' => 'Local Tri-City Businesses for use in the Business Directory',
 		'support' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
 		'menu_icon' => 'dashicons-store',
+		// 'register_meta_box_cb' => 'em_add_metaboxes_business',
 	);
 	register_post_type('em_businesses', $args); // this registers a custom post called 'businesses'
 
 }
 add_theme_support('post-thumbnails', array('businesses'));
 add_action('init', 'em_custom_post_business');
-
 function em_custom_taxonomy_business() {
 	$args_location = array(
 		'labels' => array(
