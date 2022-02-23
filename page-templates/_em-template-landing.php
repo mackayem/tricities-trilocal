@@ -37,16 +37,14 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="row">
                 <div class="col-12">
                     <div id="em-wrapperLandingCopy" class="wrapper em-wrapper">
-                        <?php 
-                            the_content(); 
-                        ?>
-                    </div><!-- wrapperLandingCopy --> 
+                        <?php the_content(); ?>
+                    </div>
+                    <!-- wrapperLandingCopy --> 
                     <div id="em-wrapperLandingCTA" class="wrapper em-wrapper">
                         <h3 id="em-landingHeadingCTA" class="em-heading__h3">Subscribe for Tri-Local News</h3>
-                        <?php 
-                            get_template_part('sidebar-templates/_em-sidebar', 'trilocalnewsletter'); 
-                        ?>
-                    </div><!-- wrapperLandingCTA --> 
+                        <?php get_template_part('sidebar-templates/_em-sidebar', 'trilocalnewsletter'); ?>
+                    </div>
+                    <!-- wrapperLandingCTA --> 
                 </div><!-- col -->
                 <div class="col-12">
                     <div id="em-wrapperLandingPhoto" class="wrapper em-wrapper">
@@ -61,7 +59,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <?php
                             }
                         ?>
-                    </div><!-- wrapperLandingPhoto -->
+                    </div>
+                    <!-- wrapperLandingPhoto -->
                 </div><!-- col -->
             </div><!-- row -->
         </div><!-- contentLanding -->
