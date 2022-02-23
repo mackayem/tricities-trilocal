@@ -90,22 +90,54 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 
 
-// Get the Gallery Images from a Page
-// function em_get_gallery_images_from_page($page_id) {
-// 	$page = get_post($page_id);
-// 	$count = 0;
+// All Tri-Local Custom Posts for use in Custom Theme
+// **************************************************
+function em_custom_post_partners() {
+	$args = array(
+		'public' => true,
+		'has_archive' => true,
+		'support' => array('title', 'editor', 'thumbnail'),
+		'menu_icon' => 'dashicons-index-card',
+		'labels' => array(
+				'name' => 'TriLocal Partners',
+				'singular_name' => 'TriLocal Partner',
+		),
+	);
+	register_post_type('partners', $args);
 
-// 	if ( !(has_shortcode($page->post_content, 'gallery') ) {
-// 		return;
-// 	}
+}
+add_action('init', 'em_custom_post_partners');
 
-// 	$gallery = get_post_galleries_images($page);
 
-// 	foreach ($gallery as $image) {
-// 		if ($count == 0) {
-// 			return;
-// 		}
-// 		echo '<img class="em-img" src=" '.$image' " alt="">';
-// 		count++;
-// 	}
-// }
+function em_custom_post_education() {
+	$args = array(
+		'public' => true,
+		'has_archive' => true,
+		'support' => array('title', 'editor', 'thumbnail'),
+		'menu_icon' => 'dashicons-lightbulb',
+		'labels' => array(
+				'name' => 'TriLocal Facts',
+				'singular_name' => 'TriLocal Fact',
+		),
+	);
+	register_post_type('facts', $args);
+
+}
+add_action('init', 'em_custom_post_education');
+
+
+function em_custom_post_business() {
+	$args = array(
+		'public' => true,
+		'has_archive' => true,
+		'support' => array('title', 'editor', 'thumbnail'),
+		'menu_icon' => 'dashicons-store',
+		'labels' => array(
+				'name' => 'TriLocal Businesses',
+				'singular_name' => 'TriLocal Business',
+		),
+	);
+	register_post_type('businesses', $args);
+
+}
+add_action('init', 'em_custom_post_business');
