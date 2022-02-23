@@ -15938,46 +15938,37 @@ div#em-pageLanding {
   width: 100%;
 }
 
-div#em-contentLanding * {
-  color: #EEEEEE;
-}
-
-div#em-contentLanding * h1, div#em-contentLanding * .h1, div#em-contentLanding * h2, div#em-contentLanding * .h2, div#em-contentLanding * h3, div#em-contentLanding * .h3, div#em-contentLanding * h4, div#em-contentLanding * .h4, div#em-contentLanding * h5, div#em-contentLanding * .h5, div#em-contentLanding * h6, div#em-contentLanding * .h6 {
-  text-align: center;
-}
-
 div#em-contentLanding {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-div#em-contentLanding div.row:first-child {
-  margin-top: 3rem;
+div#em-contentLanding * {
+  color: #EEEEEE;
 }
 
-#em-wrapperLandingTagline, #em-wrapperLandingPhoto {
+div#em-contentLanding * h1, div#em-contentLanding * .h1, div#em-contentLanding * h2, div#em-contentLanding * .h2, div#em-contentLanding * h3, div#em-contentLanding * .h3, div#em-contentLanding * h4, div#em-contentLanding * .h4, div#em-contentLanding * h5, div#em-contentLanding * .h5, div#em-contentLanding * h6, div#em-contentLanding * .h6, div#em-contentLanding * p {
+  text-align: center;
+}
+
+div#em-contentLanding {
+  margin: 3rem 0 0 0;
+}
+
+div#em-wrapperLandingCopy, div#em-wrapperLandingPhoto {
   display: none;
 }
 
-#em-wrapperLandingSubscribe h3, #em-wrapperLandingSubscribe .h3 {
+div#em-wrapperLandingCTA h3, div#em-wrapperLandingCTA .h3 {
   font-size: 2rem;
 }
 
-div#wpforms-182.em-form__newsletter {
-  margin-top: 1rem;
-}
-
-input#wpforms-182-field_2 {
-  color: black;
-  text-transform: lowercase;
-  font-size: 1rem;
+div#em-wrapperNewsletterWidget input {
   border: none;
-  border-radius: 0;
-  padding: 1.76rem 1rem;
-  max-width: 100%;
+  padding: 1rem;
 }
 
-button#wpforms-submit-182 {
+div#em-wrapperNewsletterWidget button {
   background-color: #228D98;
   color: #EEEEEE;
   width: 100%;
@@ -15986,15 +15977,10 @@ button#wpforms-submit-182 {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   font-size: 1rem;
-  border: none;
-  padding: 1rem 1rem;
+  border-radius: 0;
+  padding: 1rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  div#wpforms-182.em-form__newsletter {
-    max-width: 70%;
-  }
-}
 @media (min-width: 768px) {
   #em-wrapperLandingTagline {
     display: block;

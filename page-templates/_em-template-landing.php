@@ -30,38 +30,44 @@ $container = get_theme_mod( 'understrap_container_type' );
 // }
 ?>
 
+<main id="em-main" class="em-main site-main">
+    <div id="em-pageLanding" class="wrapper em-wrapper">
 
-<div id="em-pageLanding" class="wrapper em-wrapper__div">
+        <div id="em-contentLanding" class="<?php echo esc_attr( $container ); ?> em-content__div">
+            <div class="row">
+                <div class="col-12">
+                    <div id="em-wrapperLandingCopy" class="wrapper em-wrapper">
+                        <?php 
+                            the_content(); 
+                        ?>
+                    </div><!-- wrapperLandingCopy --> 
+                    <div id="em-wrapperLandingCTA" class="wrapper em-wrapper">
+                        <h3 id="em-landingHeadingCTA" class="em-heading__h3">Subscribe for Tri-Local News</h3>
+                        <?php 
+                            get_template_part('sidebar-templates/_em-sidebar', 'trilocalnewsletter'); 
+                        ?>
+                    </div><!-- wrapperLandingCTA --> 
+                </div><!-- col -->
+                <div class="col-12">
+                    <div id="em-wrapperLandingPhoto" class="wrapper em-wrapper">
+                        <?php 
+                            // imports the featured image on the page
+                            if (has_post_thumbnail()) {
+                                the_post_thumbnail();
+                            } else {
+                                ?>
+                                <!-- if no featured image set, use one from the assets folder -->
+                                <img id="em-landingElsePhoto" class="em-img--circle" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_markus-spiske-mvu1-Gzg1tg-unsplash.png" alt="placeholder">
+                                <?php
+                            }
+                        ?>
+                    </div><!-- wrapperLandingPhoto -->
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- contentLanding -->
 
-    <div id="em-contentLanding" class="<?php echo esc_attr( $container ); ?> em-content__div">
-        <div class="row">
-            <div class="col-12">
-                <?php 
-                    the_content();
-                    get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalnewsletter' );
-                ?> 
-            </div><!-- col -->
-        </div><!-- row -->
-        <div class="row">
-            <div class="col-12">
-                <div id="em-wrapperLandingPhoto" class="em-wrapper__img">
-                    <?php 
-                        // imports the featured image on the page
-                        if (has_post_thumbnail()) {
-                            the_post_thumbnail();
-                        } else {
-                            ?>
-                            <!-- if no featured image set, use one from the assets folder -->
-                            <img id="em-landingElsePhoto" class="em-img--circle" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_markus-spiske-mvu1-Gzg1tg-unsplash.png" alt="placeholder">
-                            <?php
-                        }
-                    ?>
-                </div><!-- wrapperLandingPhoto -->
-            </div><!-- col -->
-        </div><!-- row -->
-	</div><!-- contentLanding -->
-
-</div><!-- pageLanding (full-page-width wrapper) -->
+    </div><!-- pageLanding (full-page-width wrapper) -->
+</main><!-- main -->
 
 
 <?php

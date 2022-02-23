@@ -8,15 +8,12 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
-
 ?>
 
 <?php if ( is_active_sidebar( 'trilocalnewsletter' ) ) : ?>
 
-	<!-- ******************* Social Widget Area ******************* -->
-
-	<div id="em-newsletterWidget" class="">
+	<!-- ********** "TRILOCAL-Newsletter" Widget (imported as a template part) ********** -->
+	<div id="em-wrapperNewsletterWidget" class="wrapper em-wrapper">
 
         <?php dynamic_sidebar( 'trilocalnewsletter' ); ?>
 

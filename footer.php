@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<footer id="em-footerNav" class="site-footer">
+<footer id="em-footerNav" class="em-footer site-footer">
 	<div id="em-footerDiagonalBox" class="em-wrapper__div--box"></div>
 
 	<div id="em-footerWrapper" class="<?php echo esc_attr( $container ); ?>">
@@ -86,13 +86,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</section><!-- section end -->
 
 		<section id="em-footerSiteInfo" class="">
-		<?php
-			// get the field value
-			$copyright = carbon_get_theme_option( 'crb_footer_copyright' );
-
-			// output the field value
-			echo $copyright;
-		?>
 		</section><!-- section end -->
 
 	</div><!-- container end -->
