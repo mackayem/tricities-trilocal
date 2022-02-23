@@ -36,7 +36,10 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div id="em-contentLanding" class="<?php echo esc_attr( $container ); ?> em-content__div">
         <div class="row">
             <div class="col-12">
-                <?php the_content(); ?> 
+                <?php 
+                    the_content();
+                    get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalnewsletter' );
+                ?> 
             </div><!-- col -->
         </div><!-- row -->
         <div class="row">

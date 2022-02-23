@@ -11,7 +11,6 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
-$emailCTAShortCode = '[yikes-mailchimp form="1"]';
 ?>
 
 <footer id="em-footerNav" class="site-footer">
@@ -64,7 +63,7 @@ $emailCTAShortCode = '[yikes-mailchimp form="1"]';
 
 				<div id="em-footerNewsletter" class="col em-footer__col">
 					<h6 id="em-footerHeaderNewsletter" class="em-heading__h6">Sign up for our newsletter</h6>
-					<?php echo do_shortcode( $emailCTAShortCode ); ?>
+					<?php get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalnewsletter' ); ?>
 				</div>
 
 				<div id="em-footerPartners" class="col em-footer__col">
