@@ -90,8 +90,24 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 
 
+
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+function crb_attach_theme_options() {
+    Container::make( 'theme_options', __( 'Theme Options' ) )
+        ->add_fields( array(
+            Field::make( 'text', 'crb_text', 'Text Field' ),
+        ) );
+}
+
+
+
 // All Tri-Local Custom Posts for use in Custom Theme
 // **************************************************
+add_theme_support('post-thumbnails');
+
 function em_custom_post_partners() {
 	$args = array(
 		'public' => true,
@@ -130,7 +146,8 @@ function em_custom_post_business() {
 	$args = array(
 		'public' => true,
 		'has_archive' => true,
-		'support' => array('title', 'editor', 'thumbnail'),
+		'description' => 'Local Businesses in the Tri-Cities for use in the Business Directory',
+		'support' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
 		'menu_icon' => 'dashicons-store',
 		'labels' => array(
 				'name' => 'TriLocal Businesses',
@@ -141,3 +158,32 @@ function em_custom_post_business() {
 
 }
 add_action('init', 'em_custom_post_business');
+
+
+function em_custom_taxonomy_business() {
+	$args_location = array(
+		'labels' => array(
+			'name' => 'Locations',
+			'singular_name' => 'Location',
+			'edit_item' => __('Edit Location'), 
+			'update_item' => __('Update Location'),
+			'add_new_item' => __('Add New Location'),
+			'new_item_name' => __('New Location Name'),
+			'menu_name' => __('Locations'),
+		),
+		'public' => true,
+		'hierarchical' => true,
+	);
+	register_taxonomy('locations', array('businesses'), $args_location);
+
+	$args_category = array(
+		'labels' => array(
+			'name' => 'Categories',
+			'singular_name' => 'Category'
+		),
+		'public' => true,
+		'hierarchical' => true,
+	);
+	register_taxonomy('categories', array('businesses'), $args_category);
+}
+add_action('init', 'em_custom_taxonomy_business');
