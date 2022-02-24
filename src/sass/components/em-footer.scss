@@ -166,10 +166,12 @@ div#em-footerPartners {
     
         div#em-footerAddress {
             grid-column: 1 / 2;
+            margin-right: 2rem;
         }
     
         div#em-footerSocial {
             grid-column: 2 / 3;
+            margin-left: 2rem;
         }
     
         div#em-footerNewsletter {

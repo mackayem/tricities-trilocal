@@ -15873,10 +15873,12 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
 
   footer#em-footerNav div#em-footerAddress {
     grid-column: 1/2;
+    margin-right: 2rem;
   }
 
   footer#em-footerNav div#em-footerSocial {
     grid-column: 2/3;
+    margin-left: 2rem;
   }
 
   footer#em-footerNav div#em-footerNewsletter {

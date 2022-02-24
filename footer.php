@@ -36,12 +36,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div id="em-footerSocial" class="col em-footer__col">
 					<h6 id="em-footerHeaderSocial" class="em-heading__h6">Follow the Tri-Local Collective</h6>
 					<?php get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalsocial' ); ?>
-				</div>
+				</div><!-- column end -->
 
 				<div id="em-footerFunding" class="col em-footer__col">
 					<h6 id="em-footerHeaderFunding" class="em-heading__h6">Thank You</h6>
 					<p>Funded by a Federal grant distributed by the BC Chamber of Commerce, from Canada's Ministry of Innovation, Science and Economic Development.</p>
-				</div>
+				</div><!-- column end -->
 
 				<div id="em-footerMenu" class="col em-footer__col">
 					<h6 id="em-footerHeaderMenu" class="em-heading__h6">Site Links</h6>
@@ -59,12 +59,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						)
 					);
 					?>
-				</div>
+				</div><!-- column end -->
 
 				<div id="em-footerNewsletter" class="col em-footer__col">
 					<h6 id="em-footerHeaderNewsletter" class="em-heading__h6">Sign up for our newsletter</h6>
 					<?php get_template_part( 'sidebar-templates/_em-sidebar', 'trilocalnewsletter' ); ?>
-				</div>
+				</div><!-- column end -->
 
 				<div id="em-footerPartners" class="col em-footer__col">
 					<h6 id="em-footerHeaderPartners" class="em-heading__h6">Our Partners</h6>
@@ -78,7 +78,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/cityofcoquitlam-white@1x.png" alt="City of Coquitlam logo">
 						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/cityofportcoquitlam-white@1x.png" alt="City of Port Coquitlam logo">
 						<img id="" class="em-img__logo--partner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/partners/cityofportmoody-white@1x.png" alt="City of Port Moody logo">
-					</div>
+					</div><!-- column end -->
 				</div><!-- row ContentPartners end -->
 
 			</div><!-- row ContentMain end -->
