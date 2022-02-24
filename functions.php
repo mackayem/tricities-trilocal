@@ -117,15 +117,6 @@ function crb_attach_theme_options() {
 }
 // Source: https://docs.carbonfields.net/plugin-quickstart.html#without-composer
 
-// add_action( 'carbon_fields_register_fields', 'crb_attach_post_meta' );
-// function crb_attach_post_meta() {
-//     Container::make( 'post_meta', __( 'Post Options' ) )
-//         ->where( 'post_type', '=', 'post' )
-//         ->add_fields( array(
-//             Field::make( 'text', 'crb_venue', 'Venue' ),
-//         ) );
-// }
-
 
 
 // ==============================================================
@@ -191,7 +182,8 @@ add_action('init', 'em_custom_post_education');
 
 
 // ----------------- CUSTOM POST TYPE: BUSINESSES (For Directory)
-function em_custom_post_business() {
+// --------------------------------------------------------------
+function em_custom_post_businesses() {
 	$labels = array(
 		'name' => 'Businesses',
 		'singular_name' => 'Business',
@@ -200,6 +192,9 @@ function em_custom_post_business() {
 		'view_item' => 'View Business',
 		'add_new_item' => 'Add New Business',
 		'search_items' => 'Search Businesses',
+		'featured_image' => 'Business Image',
+		'set_featured_image' => 'Set a business image',
+		'remove_featured_image' => 'Remove business image',
 	);
 	$args = array(
 		'labels' => $labels,
@@ -208,38 +203,26 @@ function em_custom_post_business() {
 		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Local Tri-City Businesses for use in the Business Directory',
-		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
+		'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+		'rewrite' => array('slug' => 'businesses'),
 		'menu_icon' => 'dashicons-store',
 	);
-	register_post_type('em_businesses', $args); // this registers a custom post called 'em_business'
-
+	register_post_type('em_businesses', $args); // this registers a custom post called 'em_businesses'
 }
-add_theme_support('post-thumbnails', array('businesses'));
-add_action('init', 'em_custom_post_business');
+add_action('init', 'em_custom_post_businesses');
 
-
-
-
-
-
-
+function em_custom_business_change_options($title) {
+	$screen = get_current_screen();
+  
+	if ('em_businesses' == $screen->post_type ) {
+		$title = 'Business Name'; // changes the placeholder text for Post Title
+		remove_action('media_buttons', 'media_buttons'); // removes the Media button
+	}
+	return $title; 	// changes the placeholder text for Post Title
+}
+add_filter( 'enter_title_here', 'em_custom_business_change_options' );
 
 function em_custom_taxonomy_business() {
-	$args_location = array(
-		'labels' => array(
-			'name' => 'Locations',
-			'singular_name' => 'Location',
-			'edit_item' => 'Edit Location', 
-			'update_item' => 'Update Location',
-			'add_new_item' => 'Add New Location',
-			'new_item_name' => 'New Location Name',
-			'menu_name' => 'Locations',
-		),
-		'public' => true,
-		'hierarchical' => true,
-	);
-	register_taxonomy('locations', array('em_businesses'), $args_location);
-
 	$args_category = array(
 		'labels' => array(
 			'name' => 'Categories',
@@ -249,5 +232,56 @@ function em_custom_taxonomy_business() {
 		'hierarchical' => true,
 	);
 	register_taxonomy('categories', array('em_businesses'), $args_category);
+
+	$args_keyword = array(
+		'labels' => array(
+			'name' => 'Keywords',
+			'singular_name' => 'Keyword'
+		),
+		'public' => true,
+		'hierarchical' => false,
+	);
+	register_taxonomy('keywords', array('em_businesses'), $args_keyword);
 }
 add_action('init', 'em_custom_taxonomy_business');
+
+function em_custom_carbonfields_business() {
+	
+	Container::make('post_meta', 'Business City')
+		->add_fields(array(
+			Field::make( 'radio', 'crb_radio', 'Choose a Tri-City')
+				->set_options(array(
+					'coquitlam' => 'Coquitlam',
+					'portcoquitlam' => 'Port Coquitlam',
+					'portmoody' => 'Port Moody',
+				))
+		)); // end add_fields
+
+	Container::make('post_meta', 'Business Details')
+		->add_fields(array(
+			// Phone Number
+			Field::make('text', 'business_phone', 'Phone Number')
+				->set_attribute( 'placeholder', '(###) ###-####'),
+			// Website
+			Field::make('text', 'business_website', 'Website Link')
+				->set_attribute( 'placeholder', 'https://'),
+			// Address
+			Field::make('complex', 'business_address', 'Address')
+				->set_duplicate_groups_allowed(false)
+				->set_collapsed(false)
+				->add_fields(array(
+					Field::make('text', 'business_address_street', 'Street Address')
+						->set_attribute( 'placeholder', 'e.g. 123 Main Street'),
+					Field::make('text', 'business_address_city', 'City')
+						->set_attribute( 'placeholder', 'e.g. Vancouver'),
+					Field::make('text', 'business_address_postalcode', 'Postal Code')
+						->set_attribute( 'placeholder', 'e.g. V3B 1C2'),
+				))
+				->setup_labels(array(
+					'plural_name' => 'Business Address',
+					'singular_name' => 'Business Address',
+				))
+		)); // end add_fields
+	
+} // end em_attach_post_meta_business
+add_action('carbon_fields_register_fields', 'em_custom_carbonfields_business');
