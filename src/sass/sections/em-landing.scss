@@ -38,10 +38,6 @@ div#em-wrapperLandingCTA {
         font-size: 2rem;
     }
     div#em-wrapperNewsletterWidget {
-        input {
-            border: none;
-            padding: 1rem;
-        }
         button {
             @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey, 100%);
         }
