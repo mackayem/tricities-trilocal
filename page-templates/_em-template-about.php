@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="" class="<?php echo esc_attr( $container ); ?> em-container" tabindex="-1">
 
         <div id="em-contentAbout" class="wrapper em-wrapper__div">
-            <div id="em-aboutBackgroundCircles" class="">
+            <div id="em-aboutTitle" class="">
                 <h2 id="em-aboutHeading" class="em-heading__h2">The Tri-Local Collective</h2>
                 <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-spiral-white@2x.png" alt="Decorative background circle">
                 <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-thin-white@2x.png" alt="Decorative background circle">

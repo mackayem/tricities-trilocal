@@ -15,62 +15,66 @@ div#em-contentAbout {
     flex-direction: column;
     align-items: center;
     margin: 0 0 15rem 0;
-}
 
-div#em-aboutBackgroundCircles {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 1.5rem;
-    h2 {
-        font-size: 2.8rem;
-        text-align: center;
-        position: absolute;
-        top: 3.8rem;
-        z-index: 2;
-    }
-    img:not(:first-of-type) {
-        display: none; //removes all circles except the first spiral one
-        z-index: 1;
-    }
-    img:first-of-type{
-        width: 14rem;
-        height: auto;
-    }
-}
-
-div#em-aboutCopy {
-    margin: 18rem 0 5rem 0;
-    text-align: justify;
-}
-
-div#em-aboutImages {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    width: 100%;
-
-    div#em-backgroundBox {
-        z-index: 1;
-        height: 100%;
-        width: 100%;
+    // styles the heading and background circles
+    div#em-aboutTitle {
         display: flex;
-        background-color: variables.$turquoise;
-        background-clip: content-box;
+        justify-content: center;
         position: absolute;
-        top: -2rem;
-        padding-right: 2rem;
-        margin-left: 2rem;
+        top: 1.5rem;
+        h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            position: absolute;
+            top: 3.8rem;
+            z-index: 2;
+        }
+        img:not(:first-of-type) {
+            display: none; //removes all circles except the first spiral one
+            z-index: 1;
+        }
+        img:first-of-type{
+            width: 14rem;
+            height: auto;
+        }
     }
-    div.img-wrapper {
-        z-index: 2;
-        height: 100%;
+
+    // styles the content imported from the Wordpress Page
+    div#em-aboutCopy {
+        margin: 18rem 0 5rem 0;
+        text-align: justify;
+    }
+
+    
+    // styles the images and turquoise background div
+    div#em-aboutImages {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 70%;
         width: 100%;
-        flex: 1;
-        padding-right: 2rem;
-        img {
+    
+        div#em-backgroundBox {
+            z-index: 1;
             height: 100%;
+            width: 100%;
+            display: flex;
+            background-color: variables.$turquoise;
+            background-clip: content-box; //clips the div to make padding transparent
+            position: absolute;
+            top: -2rem;
+            padding-right: 2rem;
+            margin-left: 2rem;
+        }
+        div.img-wrapper {
+            z-index: 2;
+            height: 100%;
+            width: 100%;
+            flex: 1;
+            padding-right: 2rem;
+            img {
+                height: 100%;
+            }
         }
     }
 }
