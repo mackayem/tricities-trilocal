@@ -38,8 +38,11 @@ div#em-wrapperLandingCTA {
         font-size: 2rem;
     }
     div#em-wrapperNewsletterWidget {
+        input {
+            @include em-mixins.form-input();
+        }
         button {
-            @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey, 100%);
+            @include em-mixins.bold-button (variables.$turquoise, variables.$lightgrey);
         }
     }
 }

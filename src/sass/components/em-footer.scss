@@ -104,11 +104,11 @@ div#em-footerMenu {
 div#em-footerNewsletter {
     order: 2;
     input {
-        border: none;
-        padding: 1rem;
+        @include em-mixins.form-input();
     }
     button {
-        @include em-mixins.bold-button (variables.$darkblue, variables.$lightgrey, 100%);
+        @include em-mixins.bold-button (variables.$darkblue, variables.$lightgrey);
+        margin-top: 0;
     }
 }
 
