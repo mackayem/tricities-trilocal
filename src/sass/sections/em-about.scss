@@ -52,7 +52,6 @@ div#em-contentAbout {
         display: flex;
         flex-direction: column;
         height: 70%;
-        width: 100%;
     
         div#em-backgroundBox {
             z-index: 1;
@@ -77,6 +76,14 @@ div#em-contentAbout {
             }
         }
     }
+}
+
+@media (min-width: 576px) {
+
+    div#em-aboutImages.em-section__div {
+        width: 70%;
+    }
+
 }
 
 

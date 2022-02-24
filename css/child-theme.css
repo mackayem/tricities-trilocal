@@ -16121,7 +16121,6 @@ div#em-contentAbout div#em-aboutImages {
   display: flex;
   flex-direction: column;
   height: 70%;
-  width: 100%;
 }
 
 div#em-contentAbout div#em-aboutImages div#em-backgroundBox {
@@ -16149,6 +16148,11 @@ div#em-contentAbout div#em-aboutImages div.em-img__wrapper img {
   height: 100%;
 }
 
+@media (min-width: 576px) {
+  div#em-aboutImages.em-section__div {
+    width: 70%;
+  }
+}
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
