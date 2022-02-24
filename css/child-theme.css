@@ -15898,49 +15898,70 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
     width: 100%;
     grid-template-rows: 0.5fr 0.3fr;
     grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+    -moz-column-gap: 2rem;
   }
 
-  footer#em-footerNav div#em-footerAddress {
+  footer#em-footerNav div#em-footerContentMain div#em-footerAddress {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin-right: 0;
   }
 
-  footer#em-footerNav div#em-footerSocial {
+  footer#em-footerNav div#em-footerContentMain div#em-footerSocial {
     grid-row: 1/2;
     grid-column: 2/3;
+    margin-left: 0;
   }
 
-  footer#em-footerNav div#em-footerFunding {
+  footer#em-footerNav div#em-footerContentMain div#em-footerFunding {
     grid-row: 1/2;
     grid-column: 3/4;
   }
 
-  footer#em-footerNav div#em-footerMenu {
+  footer#em-footerNav div#em-footerContentMain div#em-footerFunding p {
+    width: 70%;
+  }
+
+  footer#em-footerNav div#em-footerContentMain div#em-footerMenu {
     display: block;
     grid-row: 1/2;
-    grid-column: 4/5;
-    margin: 0 0 0 5rem;
-  }
-
-  footer#em-footerNav div#em-footerNewsletter {
-    grid-row: 1/2;
     grid-column: 5/6;
+    padding-left: 2rem;
   }
 
-  footer#em-footerNav div#em-footerPartners {
+  footer#em-footerNav div#em-footerContentMain div#em-footerNewsletter {
+    grid-row: 1/2;
+    grid-column: 4/5;
+  }
+
+  footer#em-footerNav div#em-footerContentMain div#em-footerPartners {
     grid-row: 2/3;
     grid-column: 2/5;
   }
 
-  footer#em-footerNav div#em-footerPartners div#em-footerPartnersWrapper {
+  footer#em-footerNav div#em-footerContentMain div#em-footerPartners div#em-footerPartnersWrapper {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(9, 1fr);
     align-items: center;
     justify-items: center;
   }
 
-  footer#em-footerNav div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
+  footer#em-footerNav div#em-footerContentMain div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
     width: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  div#em-footerContentMain.row {
+    padding: 1rem 5rem 1rem 5rem;
+  }
+
+  div#em-footerContentMain.row div.em-footer__col {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  div#em-footerContentMain.row div#em-footerMenu h6, div#em-footerContentMain.row div#em-footerMenu .h6, div#em-footerContentMain.row div#em-footerMenu div {
+    padding-left: 2rem;
   }
 }
 div#em-pageLanding {
