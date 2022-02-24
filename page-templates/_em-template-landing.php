@@ -34,8 +34,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div id="em-pageLanding" class="wrapper em-wrapper">
 
         <div id="em-contentLanding" class="<?php echo esc_attr( $container ); ?> em-content__div">
-            <div class="row">
-                <div class="col-12">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-6">
                     <div id="em-wrapperLandingCopy" class="wrapper em-wrapper">
                         <?php the_content(); ?>
                     </div>
@@ -46,19 +46,21 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     <!-- wrapperLandingCTA --> 
                 </div><!-- col -->
-                <div class="col-12">
+                <div class="col-12 col-lg-6">
                     <div id="em-wrapperLandingPhoto" class="wrapper em-wrapper">
-                        <?php 
-                            // imports the featured image on the page
-                            if (has_post_thumbnail()) {
-                                the_post_thumbnail();
-                            } else {
-                                ?>
-                                <!-- if no featured image set, use one from the assets folder -->
-                                <img id="em-landingElsePhoto" class="em-img--circle" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_markus-spiske-mvu1-Gzg1tg-unsplash.png" alt="placeholder">
-                                <?php
-                            }
-                        ?>
+                        <div id="em-containerLandingPhoto">
+                            <?php 
+                                // imports the featured image on the page
+                                if (has_post_thumbnail()) {
+                                    the_post_thumbnail();
+                                } else {
+                                    ?>
+                                    <!-- if no featured image set, use one from the assets folder -->
+                                    <img id="em-landingElsePhoto" class="em-img--circle" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_markus-spiske-mvu1-Gzg1tg-unsplash.png" alt="placeholder">
+                                    <?php
+                                }
+                            ?>
+                        </div>
                     </div>
                     <!-- wrapperLandingPhoto -->
                 </div><!-- col -->
