@@ -138,57 +138,59 @@ function crb_attach_theme_options() {
 // **************************************************
 
 
-// CUSTOM POST TYPE: PARTNERS
+// ----------------- CUSTOM POST TYPE: PARTNERS
 function em_custom_post_partners() {
+	$labels = array(
+		'name' => 'Partners',
+		'singular_name' => 'Partner',
+		'menu_name' => 'TriLocal Partners',
+		'all_items' => 'All Partners',
+		'view_item' => 'View Partner',
+		'add_new_item' => 'Add New Partner',
+		'search_items' => 'Search Partners',
+	);
 	$args = array(
+		'labels' => $labels,
 		'public' => true,
 		'has_archive' => true,
-		'supports' => array('title', 'editor', 'thumbnail'),
+		'show_in_rest' => false, // if true, switches to gutenberg block editor
+		'capability_type' => 'post',
+		'description' => 'Tri-Local partners',
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
 		'menu_icon' => 'dashicons-index-card',
-		'labels' => array(
-				'name' => 'Partners',
-				'singular_name' => 'Partner',
-				'menu_name' => 'TriLocal Partner',
-		),
 	);
-	register_post_type('partners', $args);
-
+	register_post_type('em_partners', $args); // this registers a custom post called 'em_partners'
 }
 add_action('init', 'em_custom_post_partners');
 
-// CUSTOM POST TYPE: EDUCATION (FACTS)
+
+// ----------------- CUSTOM POST TYPE: EDUCATION (FACTS)
 function em_custom_post_education() {
+	$labels = array(
+		'name' => 'Facts',
+		'singular_name' => 'Fact',
+		'menu_name' => 'TriLocal Education',
+		'all_items' => 'All Facts',
+		'view_item' => 'View Fact',
+		'add_new_item' => 'Add New Fact',
+		'search_items' => 'Search Facts',
+	);
 	$args = array(
+		'labels' => $labels,
 		'public' => true,
 		'has_archive' => true,
-		'supports' => array('title', 'editor', 'thumbnail'),
+		'show_in_rest' => false, // if true, switches to gutenberg block editor
+		'capability_type' => 'post',
+		'description' => 'Facts about buying local',
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
 		'menu_icon' => 'dashicons-lightbulb',
-		'labels' => array(
-				'name' => 'Facts',
-				'singular_name' => 'Fact',
-				'menu_name' => 'TriLocal Education',
-		),
 	);
-	register_post_type('facts', $args);
-
+	register_post_type('em_education', $args); // this registers a custom post called 'em_education'
 }
 add_action('init', 'em_custom_post_education');
 
 
-
-
-
-// CUSTOM POST TYPE: BUSINESSES (For Directory)
-// function em_add_metaboxes_business() {
-// 	add_meta_box(
-// 		'wpt_events_location',
-// 		'Event Location',
-// 		'wpt_events_location',
-// 		'events',
-// 		'side',
-// 		'default'
-// 	);
-// }
+// ----------------- CUSTOM POST TYPE: BUSINESSES (For Directory)
 function em_custom_post_business() {
 	$labels = array(
 		'name' => 'Businesses',
@@ -206,15 +208,20 @@ function em_custom_post_business() {
 		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Local Tri-City Businesses for use in the Business Directory',
-		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions', 'page-attributes'),
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
 		'menu_icon' => 'dashicons-store',
-		// 'register_meta_box_cb' => 'em_add_metaboxes_business',
 	);
-	register_post_type('em_businesses', $args); // this registers a custom post called 'businesses'
+	register_post_type('em_businesses', $args); // this registers a custom post called 'em_business'
 
 }
 add_theme_support('post-thumbnails', array('businesses'));
 add_action('init', 'em_custom_post_business');
+
+
+
+
+
+
 
 
 function em_custom_taxonomy_business() {
