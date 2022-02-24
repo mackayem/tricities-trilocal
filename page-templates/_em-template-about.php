@@ -39,15 +39,15 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div id="em-aboutImages" class="">
                 <div id="em-backgroundBox" class="em-div__box--bg"></div>
                 <!-- <div id="em-aboutImagesWrapper" class="em-wrapper"> -->
-                    <div class="img-wrapper">
+                    <div class="em-img__wrapper">
                         <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_tim-mossholder-3asJCQUw9VA-unsplash.jpg" alt="placeholder"> 
                     </div>
 
-                    <div class="img-wrapper">
+                    <div class="em-img__wrapper">
                         <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_joshua-rodriguez-f7zm5TDOi4g-unsplash.jpg" alt="placeholder">
                     </div>
 
-                    <div class="img-wrapper">
+                    <div class="em-img__wrapper">
                         <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg" alt="placeholder"> 
                     </div>
                 <!-- </div> -->

@@ -16137,7 +16137,7 @@ div#em-contentAbout div#em-aboutImages div#em-backgroundBox {
   margin-left: 2rem;
 }
 
-div#em-contentAbout div#em-aboutImages div.img-wrapper {
+div#em-contentAbout div#em-aboutImages div.em-img__wrapper {
   z-index: 2;
   height: 100%;
   width: 100%;
@@ -16145,7 +16145,7 @@ div#em-contentAbout div#em-aboutImages div.img-wrapper {
   padding-right: 2rem;
 }
 
-div#em-contentAbout div#em-aboutImages div.img-wrapper img {
+div#em-contentAbout div#em-aboutImages div.em-img__wrapper img {
   height: 100%;
 }
 
