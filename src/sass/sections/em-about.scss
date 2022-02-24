@@ -4,9 +4,9 @@
 // =========== MOBILE LAYOUT ================
 // ==========================================
 
-// div#em-main {
-//     height: 100vh;
-// }
+div.em-container {
+    padding: 0 2rem 0 2rem;
+}
 
 div#em-contentAbout {
     position: relative;
@@ -42,28 +42,36 @@ div#em-aboutBackgroundCircles {
 div#em-aboutCopy {
     margin: 18rem 0 5rem 0;
     text-align: justify;
-    p {
-        padding: 0 1rem 0 1rem;
-    }
 }
 
 div#em-aboutImages {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 70%;
+    width: 100%;
+
     div#em-backgroundBox {
         z-index: 1;
-        height: 35rem;
-        width: 70vw;
+        height: 100%;
+        width: 100%;
+        display: flex;
         background-color: variables.$turquoise;
+        background-clip: content-box;
         position: absolute;
-        margin: 0 0 0 2rem;
+        top: -2rem;
+        padding-right: 2rem;
+        margin-left: 2rem;
     }
-    div#em-aboutImagesWrapper {
+    div.img-wrapper {
         z-index: 2;
-        width: 70vw;
-        margin: 1rem 1rem 0 0;
+        height: 100%;
+        width: 100%;
+        flex: 1;
+        padding-right: 2rem;
+        img {
+            height: 100%;
+        }
     }
 }
 
