@@ -27,18 +27,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="" class="<?php echo esc_attr( $container ); ?> em-container" tabindex="-1">
 
         <div id="em-contentAbout" class="wrapper em-wrapper__div">
-            <div id="em-aboutTitle" class="">
+            <div id="em-aboutTitle" class="em-section__div">
                 <h2 id="em-aboutHeading" class="em-heading__h2">The Tri-Local Collective</h2>
                 <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-spiral-white@2x.png" alt="Decorative background circle">
                 <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-thin-white@2x.png" alt="Decorative background circle">
                 <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-bold-white@2x.png" alt="Decorative background circle">
             </div><!-- col -->
-            <div id="em-aboutCopy" class="">
+            <div id="em-aboutCopy" class="em-section__div">
                 <?php the_content(); ?>
             </div><!-- col -->
-            <div id="em-aboutImages" class="">
+            <div id="em-aboutImages" class="em-section__div">
                 <div id="em-backgroundBox" class="em-div__box--bg"></div>
-                <!-- <div id="em-aboutImagesWrapper" class="em-wrapper"> -->
                     <div class="em-img__wrapper">
                         <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_tim-mossholder-3asJCQUw9VA-unsplash.jpg" alt="placeholder"> 
                     </div>
@@ -50,7 +49,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="em-img__wrapper">
                         <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg" alt="placeholder"> 
                     </div>
-                <!-- </div> -->
             </div><!-- col -->
 
         </div><!-- wrapper -->
