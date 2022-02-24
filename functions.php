@@ -138,41 +138,41 @@ function crb_attach_theme_options() {
 // **************************************************
 
 
-// // CUSTOM POST TYPE: PARTNERS
-// function em_custom_post_partners() {
-// 	$args = array(
-// 		'public' => true,
-// 		'has_archive' => true,
-// 		'support' => array('title', 'editor', 'thumbnail'),
-// 		'menu_icon' => 'dashicons-index-card',
-// 		'labels' => array(
-// 				'name' => 'Partners',
-// 				'singular_name' => 'Partner',
-//				'menu_name' => 'Tri-Local Partner',
-// 		),
-// 	);
-// 	register_post_type('partners', $args);
+// CUSTOM POST TYPE: PARTNERS
+function em_custom_post_partners() {
+	$args = array(
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'menu_icon' => 'dashicons-index-card',
+		'labels' => array(
+				'name' => 'Partners',
+				'singular_name' => 'Partner',
+				'menu_name' => 'TriLocal Partner',
+		),
+	);
+	register_post_type('partners', $args);
 
-// }
-// add_action('init', 'em_custom_post_partners');
+}
+add_action('init', 'em_custom_post_partners');
 
-// // CUSTOM POST TYPE: EDUCATION (FACTS)
-// function em_custom_post_education() {
-// 	$args = array(
-// 		'public' => true,
-// 		'has_archive' => true,
-// 		'support' => array('title', 'editor', 'thumbnail'),
-// 		'menu_icon' => 'dashicons-lightbulb',
-// 		'labels' => array(
-// 				'name' => 'Facts',
-// 				'singular_name' => 'Fact',
-//				'menu_name' => 'Tri-Local Education',
-// 		),
-// 	);
-// 	register_post_type('facts', $args);
+// CUSTOM POST TYPE: EDUCATION (FACTS)
+function em_custom_post_education() {
+	$args = array(
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'menu_icon' => 'dashicons-lightbulb',
+		'labels' => array(
+				'name' => 'Facts',
+				'singular_name' => 'Fact',
+				'menu_name' => 'TriLocal Education',
+		),
+	);
+	register_post_type('facts', $args);
 
-// }
-// add_action('init', 'em_custom_post_education');
+}
+add_action('init', 'em_custom_post_education');
 
 
 
@@ -193,7 +193,7 @@ function em_custom_post_business() {
 	$labels = array(
 		'name' => 'Businesses',
 		'singular_name' => 'Business',
-		'menu_name' => 'Tri-Local Business',
+		'menu_name' => 'TriLocal Business',
 		'all_items' => 'All Businesses',
 		'view_item' => 'View Business',
 		'add_new_item' => 'Add New Business',
@@ -206,7 +206,7 @@ function em_custom_post_business() {
 		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Local Tri-City Businesses for use in the Business Directory',
-		'support' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions', 'page-attributes'),
 		'menu_icon' => 'dashicons-store',
 		// 'register_meta_box_cb' => 'em_add_metaboxes_business',
 	);
@@ -215,6 +215,8 @@ function em_custom_post_business() {
 }
 add_theme_support('post-thumbnails', array('businesses'));
 add_action('init', 'em_custom_post_business');
+
+
 function em_custom_taxonomy_business() {
 	$args_location = array(
 		'labels' => array(
