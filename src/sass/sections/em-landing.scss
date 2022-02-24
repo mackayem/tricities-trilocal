@@ -50,9 +50,11 @@ div#em-wrapperLandingCTA {
 
 // breakpoint starting at bootstrap sm (small)
 @media (min-width: 576px) {
-    div#em-wrapperNewsletterWidget {
-        width: 60%;
-        margin: auto;
+    div#em-pageLanding {
+        div#em-wrapperNewsletterWidget {
+            width: 60%;
+            margin: auto;
+        }
     }
 }
 

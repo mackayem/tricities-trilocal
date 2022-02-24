@@ -103,8 +103,12 @@ div#em-footerMenu {
 
 div#em-footerNewsletter {
     order: 2;
+    input {
+        border: none;
+        padding: 1rem;
+    }
     button {
-        background-color: variables.$darkblue;
+        @include em-mixins.bold-button (variables.$darkblue, variables.$lightgrey, 100%);
     }
 }
 
