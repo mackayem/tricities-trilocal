@@ -139,6 +139,9 @@ function em_custom_post_partners() {
 		'view_item' => 'View Partner',
 		'add_new_item' => 'Add New Partner',
 		'search_items' => 'Search Partners',
+		'featured_image' => 'Partner Logo',
+		'set_featured_image' => 'Set a partner logo',
+		'remove_featured_image' => 'Remove partner logo',
 	);
 	$args = array(
 		'labels' => $labels,
@@ -147,12 +150,33 @@ function em_custom_post_partners() {
 		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Tri-Local partners',
-		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
+		'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
 		'menu_icon' => 'dashicons-index-card',
 	);
 	register_post_type('em_partners', $args); // this registers a custom post called 'em_partners'
 }
 add_action('init', 'em_custom_post_partners');
+
+function em_custom_partners_change_options($title) {
+	$screen = get_current_screen();
+  
+	if ('em_partners' == $screen->post_type ) {
+		$title = 'Partner Name'; // changes the placeholder text for Post Title
+		remove_action('media_buttons', 'media_buttons'); // removes the Media button
+	}
+	return $title; 	// changes the placeholder text for Post Title
+}
+add_filter('enter_title_here', 'em_custom_partners_change_options');
+
+function em_custom_carbonfields_partners() {
+	Container::make('post_meta', 'Partner Details')
+		->where('post_type', '=', 'em_partners')
+		->add_fields(array(
+			Field::make('text', 'partner_website', 'Website Link')
+				->set_attribute( 'placeholder', 'https://')
+		)); // end add_fields
+} // end em_attach_post_meta_partners
+add_action('carbon_fields_register_fields', 'em_custom_carbonfields_partners');
 
 
 // ----------------- CUSTOM POST TYPE: EDUCATION (FACTS)
@@ -173,12 +197,35 @@ function em_custom_post_education() {
 		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Facts about buying local',
-		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
+		'supports' => array('title', 'revisions'),
 		'menu_icon' => 'dashicons-lightbulb',
 	);
 	register_post_type('em_education', $args); // this registers a custom post called 'em_education'
 }
 add_action('init', 'em_custom_post_education');
+
+function em_custom_education_change_options($title) {
+	$screen = get_current_screen();
+  
+	if ('em_education' == $screen->post_type ) {
+		$title = 'Fact Title'; // changes the placeholder text for Post Title
+		remove_action('media_buttons', 'media_buttons'); // removes the Media button
+	}
+	return $title; 	// changes the placeholder text for Post Title
+}
+add_filter('enter_title_here', 'em_custom_education_change_options');
+
+function em_custom_carbonfields_education() {
+	Container::make('post_meta', 'Fact Details')
+		->where('post_type', '=', 'em_education')
+		->add_fields(array(
+			Field::make('textarea', 'fact_blurb', 'Fact Blurb')
+				->set_attribute( 'placeholder', 'Blurb that displays under the title'),
+			Field::make('textarea', 'fact_learnmore', 'Learn More')
+				->set_attribute( 'placeholder', 'Detailed info to display after user clicks LEARN MORE')
+		)); // end add_fields
+} // end em_attach_post_meta_education
+add_action('carbon_fields_register_fields', 'em_custom_carbonfields_education');
 
 
 // ----------------- CUSTOM POST TYPE: BUSINESSES (For Directory)
@@ -203,7 +250,7 @@ function em_custom_post_businesses() {
 		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Local Tri-City Businesses for use in the Business Directory',
-		'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+		'supports' => array('title', 'thumbnail', 'revisions'),
 		'rewrite' => array('slug' => 'businesses'),
 		'menu_icon' => 'dashicons-store',
 	);
