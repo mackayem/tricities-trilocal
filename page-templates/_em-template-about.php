@@ -29,9 +29,9 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div id="em-contentAbout" class="wrapper em-wrapper__div">
             <div id="em-aboutTitle" class="em-section__div">
                 <h2 id="em-aboutHeading" class="em-heading__h2">The Tri-Local Collective</h2>
-                <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-spiral-white@2x.png" alt="Decorative background circle">
-                <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-thin-white@2x.png" alt="Decorative background circle">
-                <img id="" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-bold-white@2x.png" alt="Decorative background circle">
+                <img id="em-aboutTitleCircle1" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-spiral-white@2x.png" alt="Decorative background circle">
+                <img id="em-aboutTitleCircle2" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-thin-white@2x.png" alt="Decorative background circle">
+                <img id="em-aboutTitleCircle3" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-bold-white@2x.png" alt="Decorative background circle">
             </div><!-- col -->
             <div id="em-aboutCopy" class="em-section__div">
                 <?php the_content(); ?>
