@@ -151,6 +151,7 @@ function em_custom_post_partners() {
 		'capability_type' => 'post',
 		'description' => 'Tri-Local partners',
 		'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+		'rewrite' => array('slug' => 'partners'),
 		'menu_icon' => 'dashicons-index-card',
 	);
 	register_post_type('em_partners', $args); // this registers a custom post called 'em_partners'
@@ -198,6 +199,7 @@ function em_custom_post_education() {
 		'capability_type' => 'post',
 		'description' => 'Facts about buying local',
 		'supports' => array('title', 'revisions'),
+		'rewrite' => array('slug' => 'education'),
 		'menu_icon' => 'dashicons-lightbulb',
 	);
 	register_post_type('em_education', $args); // this registers a custom post called 'em_education'
