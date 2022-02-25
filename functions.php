@@ -220,7 +220,7 @@ function em_custom_business_change_options($title) {
 	}
 	return $title; 	// changes the placeholder text for Post Title
 }
-add_filter( 'enter_title_here', 'em_custom_business_change_options' );
+add_filter('enter_title_here', 'em_custom_business_change_options');
 
 function em_custom_taxonomy_business() {
 	$args_category = array(
@@ -246,8 +246,8 @@ function em_custom_taxonomy_business() {
 add_action('init', 'em_custom_taxonomy_business');
 
 function em_custom_carbonfields_business() {
-	
 	Container::make('post_meta', 'Business City')
+		->where('post_type', '=', 'em_businesses')
 		->add_fields(array(
 			Field::make( 'radio', 'crb_radio', 'Choose a Tri-City')
 				->set_options(array(
@@ -256,8 +256,8 @@ function em_custom_carbonfields_business() {
 					'portmoody' => 'Port Moody',
 				))
 		)); // end add_fields
-
 	Container::make('post_meta', 'Business Details')
+		->where('post_type', '=', 'em_businesses')
 		->add_fields(array(
 			// Phone Number
 			Field::make('text', 'business_phone', 'Phone Number')
@@ -282,6 +282,5 @@ function em_custom_carbonfields_business() {
 					'singular_name' => 'Business Address',
 				))
 		)); // end add_fields
-	
 } // end em_attach_post_meta_business
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_business');
