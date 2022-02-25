@@ -39,15 +39,15 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div id="em-aboutImages" class="em-section__div">
                 <div id="em-backgroundBox" class="em-div__box--bg"></div>
                     <div class="em-img__wrapper">
-                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_tim-mossholder-3asJCQUw9VA-unsplash.jpg" alt="placeholder"> 
+                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-team 1@1x.png" alt="The Tri-Local team presenting a Tri-Local branded sign"> 
                     </div>
 
                     <div class="em-img__wrapper">
-                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_joshua-rodriguez-f7zm5TDOi4g-unsplash.jpg" alt="placeholder">
+                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-logo 1@1x.png" alt="The Tri-Local logo">
                     </div>
 
                     <div class="em-img__wrapper">
-                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/placeholder_jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg" alt="placeholder"> 
+                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-shop 1@1x.png" alt="A shopkeeper hanging an open sign on a door"> 
                     </div>
             </div><!-- col -->
 
