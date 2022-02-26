@@ -85,5 +85,5 @@ $navbar_type = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 
 
 
-	<!-- <div class="site" id="page"> -->
+	
 	<main id="em-main" class="em-main site-main">

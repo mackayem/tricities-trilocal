@@ -21,7 +21,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 </main><!-- end .site-main -->
-<!-- </div>div.site -->
 
 
 <footer id="em-footerNav" class="em-footer site-footer">
