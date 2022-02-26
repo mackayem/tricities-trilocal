@@ -206,5 +206,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'TRILOCAL-FeaturedPosts', 'understrap' ),
+				'id'            => 'trilocalfeaturedposts',
+				'description'   => __( 'Widget for Featured Posts', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="featuredposts-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .featuredposts-widget -->',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 } // End of function_exists( 'understrap_widgets_init' ).
