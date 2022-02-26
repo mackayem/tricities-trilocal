@@ -187,6 +187,9 @@ div#em-contentAbout {
         div#em-aboutCopy {
             width: 50%;
             margin: 15rem 0 0 8rem;
+            h5 strong {
+                display: unset;
+            }
         }
         div#em-aboutImages {
             width: 33%;

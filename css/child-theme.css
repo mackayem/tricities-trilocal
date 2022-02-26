@@ -16240,6 +16240,10 @@ div#em-contentAbout div#em-aboutImages div.em-img__wrapper img {
     margin: 15rem 0 0 8rem;
   }
 
+  div#em-contentAbout div#em-aboutCopy h5 strong, div#em-contentAbout div#em-aboutCopy .h5 strong {
+    display: unset;
+  }
+
   div#em-contentAbout div#em-aboutImages {
     width: 33%;
     margin: 8rem 0 0 0;
