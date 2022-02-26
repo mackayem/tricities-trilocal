@@ -6,7 +6,7 @@
 
 
 // whole landing section
-div#em-pageLanding {
+div#em-wrapperLanding {
     background-color: variables.$darkblue;
     height: 100vh;
     width: 100%;
@@ -49,7 +49,7 @@ div#em-wrapperLandingCTA {
 
 // breakpoint starting at bootstrap sm (small)
 @media (min-width: 576px) {
-    div#em-pageLanding {
+    div#em-wrapperLanding {
         div#em-wrapperNewsletterWidget {
             width: 60%;
             margin: auto;
@@ -65,7 +65,7 @@ div#em-wrapperLandingCTA {
 // breakpoint starting at bootstrap md (medium)
 @media (min-width: 768px) {
 
-    div#em-pageLanding {
+    div#em-wrapperLanding {
         div#em-contentLanding {
             display: flex;
             justify-content: space-evenly;

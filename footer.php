@@ -3,7 +3,14 @@
  * The template for displaying the footer
  *
  * Contains the closing of the #content div and all content after
- *
+ * 
+ * -----------------IMPORTANT NOTES---------------
+ * DO NOT REMOVE THE <main> CLOSING TAG FOUND AT THE TOP OF THIS FILE
+ * It is opened in header.php
+ * DO NOT REMOVE THE </div> CLOSING TAG FOUND AT THE END OF THIS FILE
+ * It is opened in the header.php
+ * 
+ * 
  * @package Understrap
  */
 
@@ -12,6 +19,10 @@ defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
+
+</main><!-- end .site-main -->
+<!-- </div>div.site -->
+
 
 <footer id="em-footerNav" class="em-footer site-footer">
 	<div id="em-footerDiagonalBox" class="em-wrapper__div--box"></div>
@@ -89,12 +100,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</section><!-- section end -->
 
 	</div><!-- container end -->
-</footer><!-- footerNav -->
+</footer><!-- end .site-footer -->
 
 
 
 
-</div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
 

@@ -30,8 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 // }
 ?>
 
-<main id="em-main" class="em-main site-main">
-    <div id="em-pageLanding" class="wrapper em-wrapper">
+    <div id="em-wrapperLanding" class="wrapper em-wrapper">
 
         <div id="em-contentLanding" class="<?php echo esc_attr( $container ); ?> em-content__div">
             <div class="row d-flex align-items-center">
@@ -68,7 +67,6 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div><!-- contentLanding -->
 
     </div><!-- pageLanding (full-page-width wrapper) -->
-</main><!-- main -->
 
 
 <?php

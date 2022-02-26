@@ -9,7 +9,7 @@ div.em-container {
     padding: 0 2rem 0 2rem;
 }
 
-div#em-contentAbout {
+div#em-wrapperAbout {
     color: variables.$lightgrey;
     position: relative;
     display: flex;
@@ -101,7 +101,7 @@ div#em-contentAbout {
 
 // SMALL (sm) viewport using Bootstrap breakpoints
 @media screen and (min-width: 576px) {
-    div#em-contentAbout {
+    div#em-wrapperAbout {
         // slightly adjusts heading size larger
         div#em-aboutTitle > h2 {
             top: 4.2rem;
@@ -125,7 +125,7 @@ div#em-contentAbout {
 
 // MEDIUM (md) viewport using Bootstrap breakpoints
 @media screen and (min-width: 768px) {
-    div#em-contentAbout {
+    div#em-wrapperAbout {
 
         div#em-aboutTitle {
             justify-content: unset;
@@ -166,7 +166,7 @@ div#em-contentAbout {
 
 // LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 992px) {
-    div#em-contentAbout {
+    div#em-wrapperAbout {
 
         div#em-aboutCopy {
             width: 70%;
@@ -180,7 +180,7 @@ div#em-contentAbout {
 
 // EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1200px) {
-    div#em-contentAbout {
+    div#em-wrapperAbout {
         flex-direction: row;
         justify-content: space-between;
         align-items: unset;
@@ -201,7 +201,7 @@ div#em-contentAbout {
 
 // EXTRA-EXTRA LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1400px) {
-    div#em-contentAbout {
+    div#em-wrapperAbout {
         div#em-aboutCopy {
             margin: 15rem 0 1rem 8rem;
         }

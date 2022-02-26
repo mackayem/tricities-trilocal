@@ -2,7 +2,13 @@
 /**
  * The header for our theme
  *
- * Displays all of the <head> section and everything up till <div id="content">
+ * Displays all of the <head> and <header> sections and everything up till <main id="em-main">
+ * 
+ * -----------------IMPORTANT NOTES---------------
+ * DO NOT REMOVE THE <main> OPENING TAG FOUND AT THE END OF THIS FILE
+ * It is closed at the beginning of the footer.php file
+ * DO NOT REMOVE THE <div> OPENING TAG FOUND AFTER THE <body> TAG
+ * It is closed at the end of the footer.php file
  *
  * @package Understrap
  */
@@ -35,9 +41,9 @@ $navbar_type = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
+
+
 	<header id="em-headerNavbar" class="em-header site-header">
 
 		<div id="em-headerLogoWrapper" class="em-wrapper__div--logo">
@@ -73,6 +79,11 @@ $navbar_type = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 				);
 				?>
 		
-		</nav><!-- .site-navigation -->
+		</nav><!-- end #main-nav -->
 
-	</header><!-- #wrapper-navbar end -->
+	</header><!-- end .site-header -->
+
+
+
+	<!-- <div class="site" id="page"> -->
+	<main id="em-main" class="em-main site-main">

@@ -22,39 +22,37 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 
-<main id="em-main" class="site-main">
 
-	<div id="" class="<?php echo esc_attr( $container ); ?> em-container" tabindex="-1">
+<div id="em-containerAbout" class="<?php echo esc_attr( $container ); ?> em-container" tabindex="-1">
 
-        <div id="em-contentAbout" class="wrapper em-wrapper__div">
-            <div id="em-aboutTitle" class="em-section__div">
-                <h2 id="em-aboutHeading" class="em-heading__h2">The Tri-Local Collective</h2>
-                <img id="em-aboutTitleCircle1" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-spiral-white@2x.png" alt="Decorative background circle">
-                <img id="em-aboutTitleCircle2" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-thin-white@2x.png" alt="Decorative background circle">
-                <img id="em-aboutTitleCircle3" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-bold-white@2x.png" alt="Decorative background circle">
-            </div><!-- col -->
-            <div id="em-aboutCopy" class="em-section__div">
-                <?php the_content(); ?>
-            </div><!-- col -->
-            <div id="em-aboutImages" class="em-section__div">
-                <div id="em-backgroundBox" class="em-div__box--bg"></div>
-                    <div class="em-img__wrapper">
-                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-team 1@1x.png" alt="The Tri-Local team presenting a Tri-Local branded sign"> 
-                    </div>
+    <div id="em-wrapperAbout" class="wrapper em-wrapper__div">
+        <div id="em-aboutTitle" class="em-section__div">
+            <h2 id="em-aboutHeading" class="em-heading__h2">The Tri-Local Collective</h2>
+            <img id="em-aboutTitleCircle1" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-spiral-white@2x.png" alt="Decorative background circle">
+            <img id="em-aboutTitleCircle2" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-thin-white@2x.png" alt="Decorative background circle">
+            <img id="em-aboutTitleCircle3" class="em-img--decorative" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/decorative/circle-outline-bold-white@2x.png" alt="Decorative background circle">
+        </div><!-- col -->
+        <div id="em-aboutCopy" class="em-section__div">
+            <?php the_content(); ?>
+        </div><!-- col -->
+        <div id="em-aboutImages" class="em-section__div">
+            <div id="em-backgroundBox" class="em-div__box--bg"></div>
+                <div class="em-img__wrapper">
+                    <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-team 1@1x.png" alt="The Tri-Local team presenting a Tri-Local branded sign"> 
+                </div>
 
-                    <div class="em-img__wrapper">
-                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-logo 1@1x.png" alt="The Tri-Local logo">
-                    </div>
+                <div class="em-img__wrapper">
+                    <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-logo 1@1x.png" alt="The Tri-Local logo">
+                </div>
 
-                    <div class="em-img__wrapper">
-                        <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-shop 1@1x.png" alt="A shopkeeper hanging an open sign on a door"> 
-                    </div>
-            </div><!-- col -->
+                <div class="em-img__wrapper">
+                    <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-shop 1@1x.png" alt="A shopkeeper hanging an open sign on a door"> 
+                </div>
+        </div><!-- col -->
 
-        </div><!-- wrapper -->
+    </div><!-- wrapper -->
 
-	</div><!-- container -->
-</main><!-- main -->
+</div><!-- container -->
 
 
 <?php
