@@ -94,13 +94,26 @@ div#em-contentAbout {
     }
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
 
-    div#em-aboutImages.em-section__div {
-        max-width: 60%;
+    div#em-contentAbout {
+
+        div#em-aboutTitle > h2 {
+            top: 4.2rem;
+            font-size: 3.7rem;
+            white-space: nowrap;
+        }
+
+        div#em-aboutImages {
+            max-width: 80%;
+        }
     }
 
-}
+} // end media-query
+
+
+
+
 
 
 // =========== DESKTOP LAYOUT ===============
