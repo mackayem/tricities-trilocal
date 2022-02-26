@@ -16078,8 +16078,8 @@ div.em-container {
 }
 
 div#em-contentAbout {
-  position: relative;
   color: #EEEEEE;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16087,23 +16087,23 @@ div#em-contentAbout {
 }
 
 div#em-contentAbout div#em-aboutTitle {
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 div#em-contentAbout div#em-aboutTitle h2, div#em-contentAbout div#em-aboutTitle .h2 {
-  font-size: 2.8rem;
-  text-align: center;
+  z-index: 2;
   position: absolute;
   top: 3.8rem;
-  z-index: 2;
+  font-size: 2.7rem;
+  text-align: center;
 }
 
 div#em-contentAbout div#em-aboutTitle img:not(:first-of-type) {
-  display: none;
   z-index: 1;
+  display: none;
 }
 
 div#em-contentAbout div#em-aboutTitle img:first-of-type {
@@ -16113,7 +16113,28 @@ div#em-contentAbout div#em-aboutTitle img:first-of-type {
 
 div#em-contentAbout div#em-aboutCopy {
   margin: 18rem 0 5rem 0;
+}
+
+div#em-contentAbout div#em-aboutCopy h5, div#em-contentAbout div#em-aboutCopy .h5 {
+  font-family: "Lobster", sans-serif;
+  font-size: 30px;
+  margin: 2.5rem 0 1rem 0;
+}
+
+div#em-contentAbout div#em-aboutCopy h5 strong, div#em-contentAbout div#em-aboutCopy .h5 strong {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: block;
+}
+
+div#em-contentAbout div#em-aboutCopy h6, div#em-contentAbout div#em-aboutCopy .h6 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+div#em-contentAbout div#em-aboutCopy p {
   text-align: justify;
+  text-justify: inter-character;
 }
 
 div#em-contentAbout div#em-aboutImages {
@@ -16125,22 +16146,22 @@ div#em-contentAbout div#em-aboutImages {
 
 div#em-contentAbout div#em-aboutImages div#em-backgroundBox {
   z-index: 1;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  background-color: #228D98;
-  background-clip: content-box;
   position: absolute;
   top: -2rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #228D98;
+  background-clip: content-box;
   padding-right: 2rem;
   margin-left: 2rem;
 }
 
 div#em-contentAbout div#em-aboutImages div.em-img__wrapper {
   z-index: 2;
+  flex: 1;
   height: 100%;
   width: 100%;
-  flex: 1;
   padding-right: 2rem;
 }
 

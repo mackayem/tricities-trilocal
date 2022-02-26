@@ -9,8 +9,8 @@ div.em-container {
 }
 
 div#em-contentAbout {
-    position: relative;
     color: variables.$lightgrey;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,20 +18,20 @@ div#em-contentAbout {
 
     // styles the heading and background circles
     div#em-aboutTitle {
-        display: flex;
-        justify-content: center;
         position: absolute;
         top: 1.5rem;
+        display: flex;
+        justify-content: center;
         h2 {
-            font-size: 2.8rem;
-            text-align: center;
+            z-index: 2;
             position: absolute;
             top: 3.8rem;
-            z-index: 2;
+            font-size: 2.7rem;
+            text-align: center;
         }
         img:not(:first-of-type) {
-            display: none; //removes all circles except the first spiral one
             z-index: 1;
+            display: none; // removes all circles except the first spiral one
         }
         img:first-of-type{
             width: 14rem;
@@ -42,7 +42,23 @@ div#em-contentAbout {
     // styles the content imported from the Wordpress Page
     div#em-aboutCopy {
         margin: 18rem 0 5rem 0;
-        text-align: justify;
+        h5 {
+            font-family: "Lobster", sans-serif;
+            font-size: 30px;
+            margin: 2.5rem 0 1rem 0;
+            strong {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                display: block;
+            }
+        }
+        h6 {
+            margin: 1.5rem 0 1rem 0; 
+        }
+        p {
+            @include em-mixins.text-justify-and-intercharacter();
+        }
     }
 
     
@@ -55,21 +71,21 @@ div#em-contentAbout {
     
         div#em-backgroundBox {
             z-index: 1;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            background-color: variables.$turquoise;
-            background-clip: content-box; //clips the div to make padding transparent
             position: absolute;
             top: -2rem;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-color: variables.$turquoise;
+            background-clip: content-box; //clips the div to make padding transparent
             padding-right: 2rem;
             margin-left: 2rem;
         }
         div.em-img__wrapper {
             z-index: 2;
+            flex: 1;
             height: 100%;
             width: 100%;
-            flex: 1;
             padding-right: 2rem;
             img {
                 height: 100%;
