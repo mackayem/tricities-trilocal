@@ -4,6 +4,7 @@
 // =========== MOBILE LAYOUT ================
 // ==========================================
 
+// Default EXTRA-SMALL viewport using Bootstrap breakpoints
 div.em-container {
     padding: 0 2rem 0 2rem;
 }
@@ -15,6 +16,7 @@ div#em-contentAbout {
     flex-direction: column;
     align-items: center;
     margin: 0 0 15rem 0;
+
 
     // styles the heading and background circles
     div#em-aboutTitle {
@@ -38,6 +40,7 @@ div#em-contentAbout {
             height: auto;
         }
     }
+
 
     // styles the content imported from the Wordpress Page
     div#em-aboutCopy {
@@ -92,24 +95,25 @@ div#em-contentAbout {
             }
         }
     }
-}
 
+} // end #contentAbout
+
+
+// SMALL (sm) viewport using Bootstrap breakpoints
 @media screen and (min-width: 576px) {
-
     div#em-contentAbout {
-
+        // slightly adjusts heading size larger
         div#em-aboutTitle > h2 {
             top: 4.2rem;
             font-size: 3.7rem;
             white-space: nowrap;
         }
-
+        // prevents responsive images from being overlarge
         div#em-aboutImages {
             max-width: 80%;
         }
     }
-
-} // end media-query
+} // end SMALL viewport media-query
 
 
 
@@ -119,7 +123,7 @@ div#em-contentAbout {
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
 
-// breakpoint starting at bootstrap md (medium)
+// MEDIUM (md) viewport using Bootstrap breakpoints
 @media (min-width: 768px) {
 
     div#em-contentAbout {
@@ -129,7 +133,7 @@ div#em-contentAbout {
             h2 {
                 font-size: 4rem;
                 top: 4.7rem;
-                left: 9.4rem;
+                left: 7.3rem;
             }
             img.em-img--decorative {
                 display: block;
@@ -138,17 +142,17 @@ div#em-contentAbout {
             #em-aboutTitleCircle1 {
                 width: 10rem;
                 top: 2rem;
-                left: 5rem;
+                left: 3rem;
             }
             #em-aboutTitleCircle2 {
                 width: 7rem;
                 top: 0;
-                left: 1rem;
+                left: 0;
             }
             #em-aboutTitleCircle3 {
                 width: 4.5rem;
-                top: 10rem;
-                left: 4rem;
+                top: 9.5rem;
+                left: 3rem;
             }
         }
 
