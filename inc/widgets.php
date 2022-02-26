@@ -184,18 +184,6 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'TRILOCAL-PartnerLogos', 'understrap' ),
-				'id'            => 'trilocalpartnerlogos',
-				'description'   => __( 'Widget for Partner Logos', 'understrap' ),
-				'before_widget' => '<div id="%1$s" class="partnerlogo-widget %2$s dynamic-classes">',
-				'after_widget'  => '</div><!-- .partnerlogo-widget -->',
-				'before_title'  => '<h3 class="widget-title">',
-				'after_title'   => '</h3>',
-			)
-		);
-
-		register_sidebar(
-			array(
 				'name'          => __( 'TRILOCAL-Newsletter', 'understrap' ),
 				'id'            => 'trilocalnewsletter',
 				'description'   => __( 'Widget for MailChimp Newsletter Form', 'understrap' ),
