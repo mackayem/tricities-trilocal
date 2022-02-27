@@ -22,7 +22,9 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    <div class="entry-photo em-blogPost__photo--excerpt">
+        <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    </div>
 
 	<div class="entry-content em-blogPost__content--excerpt">
 

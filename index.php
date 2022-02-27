@@ -21,10 +21,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- use the index.php file to theme the "Posts" page (which is set to page: Blog) -->
 	<div id="em-containerBlog" class="<?php echo esc_attr( $container ); ?> em-container" tabindex="-1">
+		<div id="em-blogHeadingWrapper" class="wrapper">
+			<h1 id="em-blogHeading" class="em-heading__h1">Tri-Local Blog</h1>
+		</div>		
 		<div id="em-wrapperBlog" class="wrapper em-wrapper__div">
-			<div id="em-blogHeadingWrapper" class="wrapper">
-				<h1 id="em-blogHeading" class="em-heading__h1">Tri-Local Blog</h1>
-			</div>
 			<?php
 				if ( have_posts() ) {
 					while ( have_posts() ) {
