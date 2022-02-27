@@ -20,14 +20,6 @@ defined( 'ABSPATH' ) || exit;
 		);
 		?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-
-			<div class="entry-meta em-blogPost__meta--excerpt">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
-		<?php endif; ?>
-
 	</header><!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
@@ -35,10 +27,22 @@ defined( 'ABSPATH' ) || exit;
 	<div class="entry-content em-blogPost__content--excerpt">
 
 		<?php
-		the_excerpt();
-		understrap_link_pages();
+            the_excerpt();
+            understrap_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
+
+    <footer class="entry-footer em-blogPost__footer--excerpt">
+
+        <?php if ( 'post' === get_post_type() ) : ?>
+
+            <div class="entry-meta em-blogPost__meta--excerpt">
+                <?php em_posted_on_excerpt(); ?>
+            </div><!-- .entry-meta -->
+
+        <?php endif; ?>
+
+	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

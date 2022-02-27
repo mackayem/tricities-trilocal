@@ -16259,16 +16259,61 @@ div#em-wrapperAbout div#em-aboutImages div.em-img__wrapper img {
   }
 }
 div#em-wrapperBlog article.post.type-post.status-publish {
+  display: grid;
+  grid-template-rows: repeat(4 1fr);
+  grid-template-columns: 1fr;
   background-color: #EEEEEE;
   margin: 2rem 0 2rem 0;
 }
 
-div#em-wrapperBlog article.post.type-post.status-publish a, div#em-wrapperBlog article.post.type-post.status-publish header h5 a {
+div#em-wrapperBlog article.post.type-post.status-publish a, div#em-wrapperBlog article.post.type-post.status-publish h5 a {
   color: #093A6B;
 }
 
-div#em-wrapperBlog article.post.type-post.status-publish div.entry-content {
+div#em-wrapperBlog article.post.type-post.status-publish header.em-blogPost__header--excerpt {
+  grid-row: 2/3;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish header.em-blogPost__header--excerpt h5.em-blogPost__title--excerpt, div#em-wrapperBlog article.post.type-post.status-publish header.em-blogPost__header--excerpt .em-blogPost__title--excerpt.h5 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 2rem 1rem 0 1rem;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish header.em-blogPost__header--excerpt h5.em-blogPost__title--excerpt a, div#em-wrapperBlog article.post.type-post.status-publish header.em-blogPost__header--excerpt .em-blogPost__title--excerpt.h5 a {
+  text-decoration: none;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish img {
+  grid-row: 1/2;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish div.em-blogPost__content--excerpt {
+  grid-row: 3/4;
   padding: 1rem;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish div.em-blogPost__content--excerpt p:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish div.em-blogPost__content--excerpt a {
+  font-weight: 700;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish footer.em-blogPost__footer--excerpt {
+  grid-row: 4/5;
+  padding: 0 1rem 1rem 1rem;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish footer.em-blogPost__footer--excerpt div.em-blogPost__meta--excerpt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish footer.em-blogPost__footer--excerpt a {
+  text-decoration: none;
 }
 
 .has-blue-color,

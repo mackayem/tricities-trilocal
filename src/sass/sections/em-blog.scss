@@ -10,15 +10,54 @@ div#em-wrapperBlog {
 
 
     article.post.type-post.status-publish {
+        display: grid;
+        grid-template-rows: repeat(4 1fr);
+        grid-template-columns: 1fr;
         background-color: variables.$lightgrey;
         margin: 2rem 0 2rem 0;
 
-        a, header h5 a {
+        a, h5 a {
             color: variables.$darkblue;
         }
 
-        div.entry-content {
+        header.em-blogPost__header--excerpt {
+            grid-row: 2 / 3;
+            h5.em-blogPost__title--excerpt {
+                margin: 0;
+                font-weight: 700;
+                font-size: 25px;
+                padding: 2rem 1rem 0 1rem;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        img {
+            grid-row: 1 / 2;
+        }
+
+        div.em-blogPost__content--excerpt {
+            grid-row: 3 / 4;
             padding: 1rem;
+            p:first-of-type {
+                margin-bottom: 0.5rem;
+            }
+            a {
+                font-weight: 700;
+            }
+        }
+
+        footer.em-blogPost__footer--excerpt {
+            grid-row: 4 / 5;
+            padding: 0 1rem 1rem 1rem;
+            div.em-blogPost__meta--excerpt {
+                display: flex;
+                justify-content: flex-end;
+            }
+            a {
+                text-decoration: none;
+            }
         }
     }
 }
