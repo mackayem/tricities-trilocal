@@ -15692,6 +15692,7 @@ footer#em-footerNav {
   background-color: #228D98;
   color: #EEEEEE;
   position: relative;
+  margin-top: 15rem;
 }
 
 footer#em-footerNav h6.em-heading__h6, footer#em-footerNav .em-heading__h6.h6 {
@@ -16258,10 +16259,6 @@ div#em-wrapperAbout div#em-aboutImages div.em-img__wrapper img {
     width: 35%;
   }
 }
-div#em-containerBlog {
-  margin-bottom: 10rem;
-}
-
 div#em-wrapperBlog div#em-blogHeadingWrapper h1#em-blogHeading, div#em-wrapperBlog div#em-blogHeadingWrapper #em-blogHeading.h1 {
   color: #EEEEEE;
   font-size: 60px;

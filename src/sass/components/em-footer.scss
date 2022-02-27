@@ -10,6 +10,7 @@ footer#em-footerNav {
     background-color: variables.$turquoise;
     color: variables.$lightgrey;
     position: relative;
+    margin-top: 15rem;
 
     h6.em-heading__h6 {
         @include em-mixins.heading-footer-h6(variables.$lightgrey, 0.8rem);
