@@ -248,3 +248,44 @@ if ( ! function_exists( 'understrap_link_pages' ) ) {
 		wp_link_pages( $args );
 	}
 }
+
+
+
+
+
+
+// ==============================================================
+// ============== TRI-LOCAL CUSTOM THEME FUNCTIONS ==============
+// =========== All Code Below Written By Emily Mackay ===========
+// ==============================================================
+
+
+if ( ! function_exists( 'em_posted_on_excerpt' ) ) {
+	/**
+	 * CUSTOM TRI-LOCAL
+	 * Prints only the date of the post for post excerpts
+	 */
+	function em_posted_on_excerpt() {
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+		}
+		$time_string = sprintf(
+			$time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() ),
+			esc_attr( get_the_modified_date( 'c' ) ),
+			esc_html( get_the_modified_date() )
+		);
+		$posted_on   = apply_filters(
+			'em_posted_on_excerpt',
+			sprintf(
+				'<span class="posted-on">%1$s <a href="%2$s" rel="bookmark">%3$s</a></span>',
+				esc_html_x( '', 'post date', 'understrap' ),
+				esc_url( get_permalink() ),
+				apply_filters( 'em_posted_on_excerpt_time', $time_string )
+			)
+		);
+		echo $posted_on; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
+}
