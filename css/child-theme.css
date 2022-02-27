@@ -16258,6 +16258,19 @@ div#em-wrapperAbout div#em-aboutImages div.em-img__wrapper img {
     width: 35%;
   }
 }
+div#em-wrapperBlog article.post.type-post.status-publish {
+  background-color: #EEEEEE;
+  margin: 2rem 0 2rem 0;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish a, div#em-wrapperBlog article.post.type-post.status-publish header h5 a {
+  color: #093A6B;
+}
+
+div#em-wrapperBlog article.post.type-post.status-publish div.entry-content {
+  padding: 1rem;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

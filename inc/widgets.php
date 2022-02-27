@@ -170,6 +170,12 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		// ==============================================================
+		// ============== TRI-LOCAL CUSTOM THEME WIDGETS ================
+		// =========== All Code Below Written By Emily Mackay ===========
+		// ==============================================================
+
+
 		register_sidebar(
 			array(
 				'name'          => __( 'TRILOCAL-Social', 'understrap' ),

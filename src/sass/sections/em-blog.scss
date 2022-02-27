@@ -6,6 +6,24 @@
 
 // Default EXTRA-SMALL viewport using Bootstrap breakpoints
 
+div#em-wrapperBlog {
+
+
+    article.post.type-post.status-publish {
+        background-color: variables.$lightgrey;
+        margin: 2rem 0 2rem 0;
+
+        a, header h5 a {
+            color: variables.$darkblue;
+        }
+
+        div.entry-content {
+            padding: 1rem;
+        }
+    }
+}
+
+
 
 
 // SMALL (sm) viewport using Bootstrap breakpoints
