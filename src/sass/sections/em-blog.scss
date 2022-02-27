@@ -17,10 +17,11 @@ div#em-blogHeadingWrapper {
 
 
 div#em-wrapperBlog {
+    display: grid;
+    grid-template-columns: 1fr;
 
-    article.post.type-post.status-publish {
+    article.post.type-post {
         display: grid;
-        grid-template-rows: repeat(4 1fr);
         grid-template-columns: 1fr;
         background-color: variables.$lightgrey;
         margin: 2rem 0 2rem 0;
@@ -80,15 +81,6 @@ div#em-wrapperBlog {
 
 
 
-// SMALL (sm) viewport using Bootstrap breakpoints
-@media screen and (min-width: 576px) {
-
-} // end SMALL viewport media-query
-
-
-
-
-
 
 // =========== DESKTOP LAYOUT ===============
 // ==========================================
@@ -97,10 +89,9 @@ div#em-wrapperBlog {
 @media screen and (min-width: 768px) {
 
     div#em-wrapperBlog {
-        display: grid;
         grid-template-columns: 1fr 1fr;
 
-        article.post.type-post.status-publish {
+        article.post.type-post {
             margin: 2rem 1rem 2rem 1rem;
         }
     }
@@ -110,12 +101,53 @@ div#em-wrapperBlog {
 
 // LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 992px) {
+
+    div#em-wrapperBlog {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        article.post.type-post.sticky {
+            // any featured articles will show as larger
+            grid-column: 1 / 4;
+            // featured articles will now have 2 columns
+            grid-template-columns: 1fr 1fr;
+
+            header.em-blogPost__header--excerpt {
+                grid-row: 1 / 2;
+            }
+
+            div.em-blogPost__photo--excerpt {
+                grid-row: 1 / 4;
+                grid-column: 2 / 3;
+                height: 21rem;
+            }
+
+            div.em-blogPost__content--excerpt {
+                grid-row: 2 / 3;
+            }
+
+            footer.em-blogPost__footer--excerpt {
+                grid-row: 3 / 4;
+            }
+        }
+    }
     
 } // end LARGE viewport media-query
 
 
 // EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1200px) {
+    div#em-wrapperBlog {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        article.post.type-post {
+            margin: 2rem 2rem 2rem 2rem;
+        }
+
+        article.post.type-post.sticky {
+            // any featured articles will show as larger
+            grid-column: 1 / 5;
+        }
+    }
 
 } // end EXTRA-LARGE viewport media-query
 
