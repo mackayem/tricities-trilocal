@@ -6,7 +6,19 @@
 
 // Default EXTRA-SMALL viewport using Bootstrap breakpoints
 
+div#em-containerBlog {
+    margin-bottom: 10rem;
+}
+
 div#em-wrapperBlog {
+
+    div#em-blogHeadingWrapper {
+        h1#em-blogHeading {
+            color: variables.$lightgrey;
+            font-size: 60px;
+            text-align: center;
+        }
+    }
 
 
     article.post.type-post.status-publish {

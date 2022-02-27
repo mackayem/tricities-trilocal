@@ -16258,6 +16258,16 @@ div#em-wrapperAbout div#em-aboutImages div.em-img__wrapper img {
     width: 35%;
   }
 }
+div#em-containerBlog {
+  margin-bottom: 10rem;
+}
+
+div#em-wrapperBlog div#em-blogHeadingWrapper h1#em-blogHeading, div#em-wrapperBlog div#em-blogHeadingWrapper #em-blogHeading.h1 {
+  color: #EEEEEE;
+  font-size: 60px;
+  text-align: center;
+}
+
 div#em-wrapperBlog article.post.type-post.status-publish {
   display: grid;
   grid-template-rows: repeat(4 1fr);
