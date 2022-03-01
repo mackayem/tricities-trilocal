@@ -9,31 +9,19 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header em-partnersPost em-partnersPost__header">
-		<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
-	</header><!-- .entry-header -->
-
-	<div class="entry-content em-partnersPost em-partnersPost__content">
-
-		<?php
-            the_content();
-            understrap_link_pages();
-		?>
-
-	</div><!-- .entry-content -->
-
-    <footer class="entry-footer em-partnersPost em-partnersPost__footer">
+<div class="carousel-item" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+    <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>	
+<div class="carousel-caption d-none">
+    <?php
+        the_content();
+	?>
+    <div class="entry-meta em-partnersPost em-partnersPost__meta">
+        <button type="button" href="<?php echo carbon_get_the_post_meta('partner_website'); ?>">Learn More</button>
+    </div><!-- .entry-meta -->
+</div>
+</div>
 
 
 
-            <div class="entry-meta em-partnersPost em-partnersPost__meta">
-                <button type="button" href="<?php echo carbon_get_the_post_meta('partner_website'); ?>">Learn More</button>
-            </div><!-- .entry-meta -->
 
-
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->

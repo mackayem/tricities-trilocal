@@ -333,3 +333,18 @@ function em_custom_carbonfields_business() {
 		)); // end add_fields
 } // end em_attach_post_meta_business
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_business');
+
+
+// function em_display_partner_post_content ($partner_post, $partner_url) {
+
+	// ?>
+		<!-- <div>
+			<?php echo get_the_post_thumbnail($partner_post); ?>
+		</div>
+		<div>
+			<?php echo apply_filters( 'the_content', $partner_post->post_content ); ?>
+		</div>
+		<button type="button" href="<?php echo $partner_url ?>">Learn More</button> -->
+	<?php
+// }
+// add_action( 'wp_enqueue_scripts', 'em_display_partner_post_content' );
