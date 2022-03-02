@@ -5,7 +5,42 @@
 // ==========================================
 
 // Default EXTRA-SMALL viewport using Bootstrap breakpoints
+div#em-containerPartners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    div#em-partnersHeadingWrapper {
+        order: 1;
+        h1#em-partnersHeading {
+            color: variables.$lightgrey;
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+
+    div#em-partnersPostsWrapper {
+        order: 3;
+    }
+
+    div#em-partnersListWrapper {
+        order: 2;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li h2 {
+            font-size: 15px;
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+    }
+}
 
 
 // SMALL (sm) viewport using Bootstrap breakpoints

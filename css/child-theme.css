@@ -16259,6 +16259,44 @@ div#em-wrapperAbout div#em-aboutImages div.em-img__wrapper img {
     width: 35%;
   }
 }
+div#em-containerPartners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#em-containerPartners div#em-partnersHeadingWrapper {
+  order: 1;
+}
+
+div#em-containerPartners div#em-partnersHeadingWrapper h1#em-partnersHeading, div#em-containerPartners div#em-partnersHeadingWrapper #em-partnersHeading.h1 {
+  color: #EEEEEE;
+  font-size: 60px;
+  text-align: center;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper {
+  order: 3;
+}
+
+div#em-containerPartners div#em-partnersListWrapper {
+  order: 2;
+}
+
+div#em-containerPartners div#em-partnersListWrapper ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+div#em-containerPartners div#em-partnersListWrapper ul li h2, div#em-containerPartners div#em-partnersListWrapper ul li .h2 {
+  font-size: 15px;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
   color: #EEEEEE;
   font-size: 60px;
