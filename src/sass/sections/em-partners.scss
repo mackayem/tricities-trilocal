@@ -9,6 +9,7 @@ div#em-containerPartners {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: variables.$darkblue;
 
     div#em-partnersHeadingWrapper {
         order: 1;
@@ -21,6 +22,57 @@ div#em-containerPartners {
 
     div#em-partnersPostsWrapper {
         order: 3;
+        border-style: solid;
+        border-color: variables.$turquoise;
+        border-width: 15px;
+        background-color: variables.$darkblue;
+        padding: 1.5rem;
+        height: 40rem;
+        p {
+            color: variables.$lightgrey;
+            font-size: 0.8rem;
+        }
+
+        div.carousel-inner {
+            overflow: unset;
+            div.carousel-item {
+                height: 35rem;
+                position: relative;
+            }
+        }
+
+        div.carousel-item-img {
+            position: absolute;
+            height: 5rem;
+        }
+
+        div.carousel-item-copy {
+            height: 25.5rem;
+            overflow: auto;
+            margin: 5rem 0 0 0;
+        }
+
+        div.carousel-item-button {
+            position: absolute;
+            top: 32rem;
+            display: flex;
+            width: 100%;
+            button {
+                @include em-mixins.bold-button(variables.$lightgrey, variables.$turquoise);
+                font-size: 0.8rem;
+            }
+        }
+
+        button.carousel-control-prev {
+            left: -4rem;
+        }
+        button.carousel-control-next {
+            right: -4rem;
+        }
+        div.carousel-indicators {
+            bottom: -5.5rem;
+        }
+
     }
 
     div#em-partnersListWrapper {

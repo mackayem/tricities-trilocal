@@ -38,7 +38,7 @@ $shopLocalPortMoody = get_post(612);
 
 
 
-			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div id="carouselExampleCaptions" class="carousel" data-bs-interval="false">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="" class="active" aria-current="true"></button>
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label=""></button>
@@ -50,97 +50,117 @@ $shopLocalPortMoody = get_post(612);
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label=""></button>
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label=""></button>
 				</div>
+
+
 				<div class="carousel-inner">
 
 
 					<div class="carousel-item active">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($triCitiesChamber); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $triCitiesChamber->post_content ); ?>
 						</div>
-						<button type="button" href="https://tricitieschamber.com">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://tricitieschamber.com">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($cityofCoq); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $cityofCoq->post_content ); ?>
 						</div>
-						<button type="button" href="https://www.coquitlam.ca">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://www.coquitlam.ca">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($cityofPoco); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $cityofPoco->post_content ); ?>
 						</div>
-						<button type="button" href="https://www.portcoquitlam.ca">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://www.portcoquitlam.ca">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($cityOfPortMoody); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $cityOfPortMoody->post_content ); ?>
 						</div>
-						<button type="button" href="https://www.portmoody.ca">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://www.portmoody.ca">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($triCityNews); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $triCityNews->post_content ); ?>
 						</div>
-						<button type="button" href="https://www.tricitynews.com">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://www.tricitynews.com">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($austinHeightsBIA); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $austinHeightsBIA->post_content ); ?>
 						</div>
-						<button type="button" href="https://austinheights.ca">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://austinheights.ca">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($downtownPocoBIA); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $downtownPocoBIA->post_content ); ?>
 						</div>
-						<button type="button" href="https://downtownpocobia.com">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://downtownpocobia.com">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($portMoodyAndCo); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $portMoodyAndCo->post_content ); ?>
 						</div>
-						<button type="button" href="https://www.portmoodyandco.com">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://www.portmoodyandco.com">Learn More</button>
+						</div>
 					</div>
 
 					<div class="carousel-item">
-						<div>
+						<div class="carousel-item-img">
 							<?php echo get_the_post_thumbnail($shopLocalPortMoody); ?>
 						</div>
-						<div>
+						<div class="carousel-item-copy">
 							<?php echo apply_filters( 'the_content', $shopLocalPortMoody->post_content ); ?>
 						</div>
-						<button type="button" href="https://shoplocalportmoody.ca">Learn More</button>
+						<div class="carousel-item-button">
+							<button type="button" href="https://shoplocalportmoody.ca">Learn More</button>
+						</div>
 					</div>
 
 

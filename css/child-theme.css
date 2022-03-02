@@ -16263,6 +16263,7 @@ div#em-containerPartners {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #093A6B;
 }
 
 div#em-containerPartners div#em-partnersHeadingWrapper {
@@ -16277,6 +16278,71 @@ div#em-containerPartners div#em-partnersHeadingWrapper h1#em-partnersHeading, di
 
 div#em-containerPartners div#em-partnersPostsWrapper {
   order: 3;
+  border-style: solid;
+  border-color: #228D98;
+  border-width: 15px;
+  background-color: #093A6B;
+  padding: 1.5rem;
+  height: 40rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper p {
+  color: #EEEEEE;
+  font-size: 0.8rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
+  overflow: unset;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item {
+  height: 35rem;
+  position: relative;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-img {
+  position: absolute;
+  height: 5rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-copy {
+  height: 25.5rem;
+  overflow: auto;
+  margin: 5rem 0 0 0;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-button {
+  position: absolute;
+  top: 32rem;
+  display: flex;
+  width: 100%;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-button button {
+  background-color: #EEEEEE;
+  color: #228D98;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
+  left: -4rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
+  right: -4rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators {
+  bottom: -5.5rem;
 }
 
 div#em-containerPartners div#em-partnersListWrapper {
