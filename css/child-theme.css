@@ -16341,10 +16341,12 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-button bu
 
 div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
   left: -3.5rem;
+  width: 32px;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
   right: -3.5rem;
+  width: 32px;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators {
