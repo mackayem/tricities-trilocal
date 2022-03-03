@@ -16302,13 +16302,15 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-img {
   position: absolute;
-  height: 5rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-copy {
   height: 25.5rem;
   overflow: auto;
-  margin: 5rem 0 0 0;
+  margin: 10rem 0 0 0;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-button {
