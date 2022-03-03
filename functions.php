@@ -190,15 +190,17 @@ function em_custom_post_education() {
 		'view_item' => 'View Fact',
 		'add_new_item' => 'Add New Fact',
 		'search_items' => 'Search Facts',
+		'featured_image' => 'Fact Infographic',
+		'set_featured_image' => 'Set an infographic',
+		'remove_featured_image' => 'Remove infographic',
 	);
 	$args = array(
 		'labels' => $labels,
 		'public' => true,
 		'has_archive' => true,
-		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Facts about buying local',
-		'supports' => array('title', 'revisions'),
+		'supports' => array('title', 'editor', 'thumbnail'),
 		'rewrite' => array('slug' => 'education'),
 		'menu_icon' => 'dashicons-lightbulb',
 	);
@@ -223,8 +225,8 @@ function em_custom_carbonfields_education() {
 		->add_fields(array(
 			Field::make('textarea', 'fact_blurb', 'Fact Blurb')
 				->set_attribute( 'placeholder', 'Blurb that displays under the title'),
-			Field::make('textarea', 'fact_learnmore', 'Learn More')
-				->set_attribute( 'placeholder', 'Detailed info to display after user clicks LEARN MORE')
+			Field::make('textarea', 'fact_cite', 'Fact Citation(s)')
+				->set_attribute( 'placeholder', 'Enter any citations here'),
 		)); // end add_fields
 } // end em_attach_post_meta_education
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_education');
@@ -249,7 +251,6 @@ function em_custom_post_businesses() {
 		'labels' => $labels,
 		'public' => true,
 		'has_archive' => true,
-		'show_in_rest' => false, // if true, switches to gutenberg block editor
 		'capability_type' => 'post',
 		'description' => 'Local Tri-City Businesses for use in the Business Directory',
 		'supports' => array('title', 'thumbnail', 'revisions'),
@@ -333,18 +334,3 @@ function em_custom_carbonfields_business() {
 		)); // end add_fields
 } // end em_attach_post_meta_business
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_business');
-
-
-// function em_display_partner_post_content ($partner_post, $partner_url) {
-
-	// ?>
-		<!-- <div>
-			<?php echo get_the_post_thumbnail($partner_post); ?>
-		</div>
-		<div>
-			<?php echo apply_filters( 'the_content', $partner_post->post_content ); ?>
-		</div>
-		<button type="button" href="<?php echo $partner_url ?>">Learn More</button> -->
-	<?php
-// }
-// add_action( 'wp_enqueue_scripts', 'em_display_partner_post_content' );
