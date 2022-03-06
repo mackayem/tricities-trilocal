@@ -16045,6 +16045,10 @@ div#em-wrapperLandingCTA div#em-wrapperNewsletterWidget button {
     margin: 0 auto 1.8rem auto;
   }
 
+  div#em-wrapperLanding div#em-contentLanding h4#em-landingTagline2, div#em-wrapperLanding div#em-contentLanding #em-landingTagline2.h4 {
+    font-weight: 600;
+  }
+
   div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy {
     display: block;
   }
