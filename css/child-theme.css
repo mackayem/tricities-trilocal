@@ -16045,12 +16045,31 @@ div#em-wrapperLandingCTA div#em-wrapperNewsletterWidget button {
     margin: 0 auto 1.8rem auto;
   }
 
-  div#em-wrapperLanding div#em-contentLanding h4#em-landingTagline2, div#em-wrapperLanding div#em-contentLanding #em-landingTagline2.h4 {
-    font-weight: 600;
-  }
-
   div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy {
     display: block;
+  }
+
+  div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy div#em-wrapperLandingHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy div#em-wrapperLandingHeading div.em-landing__quoteIconWrapper {
+    font-size: 3rem;
+    margin: 0 1rem 0 1rem;
+  }
+
+  div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy div#em-wrapperLandingHeading div.em-landing__quoteIconWrapper i {
+    color: #228D98;
+  }
+
+  div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy div#em-wrapperLandingHeading div#em-wrapperLandingQuoteIcon2 {
+    transform: rotate(180deg);
+  }
+
+  div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy h4#em-landingTagline2, div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCopy #em-landingTagline2.h4 {
+    font-weight: 600;
   }
 
   div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCTA {

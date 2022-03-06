@@ -86,19 +86,36 @@ div#em-wrapperLandingCTA {
                 margin: 0 auto 1.8rem auto;
             }
 
-            h4#em-landingTagline2 {
-                font-weight: 600;
-            }
-
             div#em-wrapperLandingCopy {
                 // display property enables photos in md viewport
                 display: block;
+
+                div#em-wrapperLandingHeading {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    div.em-landing__quoteIconWrapper {
+                        font-size: 3rem;
+                        margin: 0 1rem 0 1rem;
+                        i {
+                            color: variables.$turquoise;
+                        }
+                    }
+                    div#em-wrapperLandingQuoteIcon2 {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                h4#em-landingTagline2 {
+                    font-weight: 600;
+                }
             }
 
             div#em-wrapperLandingCTA {
                 margin: 1rem 0 0 0;
             }
         }
+
     }
     
 }

@@ -37,11 +37,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="col-12 col-lg-6">
                     <div id="em-wrapperLandingCopy" class="wrapper em-wrapper">
                         <div id="em-wrapperLandingHeading">
-                            <div id="em-wrapperLandingQuoteIcon1">
+                            <div id="em-wrapperLandingQuoteIcon1" class="em-landing__quoteIconWrapper">
                                 <i class="bi bi-quote"></i>
                             </div>
-                            <h2 id="em-landingHeading" class="em-heading__h2"><?php echo carbon_get_the_post_meta('landing_title'); ?></h2>
-                            <div id="em-wrapperLandingQuoteIcon2">
+                            <div id="em-wrapperLandingH1">
+                                <h2 id="em-landingHeading" class="em-heading__h2"><?php echo carbon_get_the_post_meta('landing_title'); ?></h2>
+                            </div>
+                            <div id="em-wrapperLandingQuoteIcon2" class="em-landing__quoteIconWrapper">
                                 <i class="bi bi-quote"></i>
                             </div>
                         </div>
