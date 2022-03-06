@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     <!-- wrapperLandingCopy --> 
                     <div id="em-wrapperLandingCTA" class="wrapper em-wrapper">
-                        <h3 id="em-landingHeadingCTA" class="em-heading__h3">Subscribe for Tri-Local News</h3>
+                        <h3 id="em-landingHeadingCTA" class="em-heading__h3"><?php echo carbon_get_the_post_meta('landing_cta_heading'); ?></h3>
                         <?php get_template_part('sidebar-templates/_em-sidebar', 'trilocalnewsletter'); ?>
                     </div>
                     <!-- wrapperLandingCTA --> 
