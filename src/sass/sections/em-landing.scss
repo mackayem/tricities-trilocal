@@ -37,7 +37,7 @@ div#em-wrapperLandingCTA {
     h3 {
         font-size: 2rem;
     }
-    div#em-wrapperNewsletterWidget {
+    .yikes-mailchimp-container {
         input {
             @include em-mixins.form-input();
         }

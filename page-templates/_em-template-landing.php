@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <!-- wrapperLandingCopy --> 
                     <div id="em-wrapperLandingCTA" class="wrapper em-wrapper">
                         <h3 id="em-landingHeadingCTA" class="em-heading__h3"><?php echo carbon_get_the_post_meta('landing_cta_heading'); ?></h3>
-                        <?php get_template_part('sidebar-templates/_em-sidebar', 'trilocalnewsletter'); ?>
+                        <?php echo do_shortcode(carbon_get_the_post_meta('landing_cta_shortcode')); ?>
                     </div>
                     <!-- wrapperLandingCTA --> 
                 </div><!-- col -->
