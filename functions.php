@@ -133,9 +133,11 @@ function em_custom_carbonfields_landing() {
 		->where('post_id', '=', get_option('page_on_front'))
 		->add_fields(array(
 			Field::make('text', 'landing_title', 'Title')
-				->set_attribute( 'placeholder', 'Enter the heading for the Landing page'),
-			Field::make('textarea', 'landing_tagline', 'Tagline(s)')
-				->set_attribute( 'placeholder', 'Enter the tagline copy for the Landing page, on seperate lines')
+				->set_attribute( 'placeholder', 'Enter the heading, which will display in quotation marks'),
+			Field::make('text', 'landing_tagline1', 'Tagline #1')
+				->set_attribute( 'placeholder', 'Enter the first tagline copy'),
+			Field::make('text', 'landing_tagline2', 'Tagline #2')
+				->set_attribute( 'placeholder', 'Enter the second tagline copy, which will display in bold')
 		)); // end add_fields
 } // end em_attach_post_meta_partners
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_landing');
