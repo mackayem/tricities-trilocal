@@ -36,7 +36,9 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-lg-6">
                     <div id="em-wrapperLandingCopy" class="wrapper em-wrapper">
-                        <?php the_content(); ?>
+
+                        <h2 id="em-landingHeading" class="em-heading__h2"><?php echo carbon_get_the_post_meta('landing_title'); ?> </h2>
+                         
                     </div>
                     <!-- wrapperLandingCopy --> 
                     <div id="em-wrapperLandingCTA" class="wrapper em-wrapper">
