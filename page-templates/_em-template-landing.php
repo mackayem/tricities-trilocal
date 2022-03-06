@@ -53,7 +53,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <!-- wrapperLandingCopy --> 
                     <div id="em-wrapperLandingCTA" class="wrapper em-wrapper">
                         <h3 id="em-landingHeadingCTA" class="em-heading__h3"><?php echo carbon_get_the_post_meta('landing_cta_heading'); ?></h3>
-                        <?php echo do_shortcode(carbon_get_the_post_meta('landing_cta_shortcode')); ?>
+                        <?php 
+                            if (!empty(carbon_get_the_post_meta('landing_cta_shortcode'))) {
+                                echo do_shortcode(carbon_get_the_post_meta('landing_cta_shortcode')); 
+                            } else {
+                                // if the short-code custom field is empty, used the widget instead
+                                get_template_part('sidebar-templates/_em-sidebar', 'trilocalnewsletter');
+                            }
+                    
+                        
+                        ?>
                     </div>
                     <!-- wrapperLandingCTA --> 
                 </div><!-- col -->

@@ -50,7 +50,7 @@ div#em-wrapperLandingCTA {
 // breakpoint starting at bootstrap sm (small)
 @media (min-width: 576px) {
     div#em-wrapperLanding {
-        div#em-wrapperNewsletterWidget {
+        .yikes-mailchimp-container {
             width: 60%;
             margin: auto;
         }

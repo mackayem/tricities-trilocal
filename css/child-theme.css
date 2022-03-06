@@ -16016,7 +16016,7 @@ div#em-wrapperLandingCTA .yikes-mailchimp-container button {
 }
 
 @media (min-width: 576px) {
-  div#em-wrapperLanding div#em-wrapperNewsletterWidget {
+  div#em-wrapperLanding .yikes-mailchimp-container {
     width: 60%;
     margin: auto;
   }
