@@ -60,6 +60,7 @@
 @mixin form-input () {
     border: none;
     padding: 1rem;
+    color: variables.$darkblue;
 }
 
 @mixin text-justify-and-intercharacter() {
