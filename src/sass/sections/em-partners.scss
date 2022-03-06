@@ -44,6 +44,7 @@ div#em-containerPartners {
         div.carousel-item-img {
             position: absolute;
             height: 9.5rem;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -55,6 +56,9 @@ div#em-containerPartners {
             overflow: auto;
             margin: 10rem 0 0 0;
             padding: 0 1rem 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         div.carousel-item-button {
@@ -105,6 +109,15 @@ div#em-containerPartners {
 
 // SMALL (sm) viewport using Bootstrap breakpoints
 @media screen and (min-width: 576px) {
+
+    div#em-containerPartners {
+        div.carousel-item-img {
+            img {
+                max-width: 200px;
+            }
+        }
+
+    }
 
 } // end SMALL viewport media-query
 

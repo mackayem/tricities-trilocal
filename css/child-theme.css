@@ -15516,6 +15516,10 @@ a.skip-link {
   display: block;
 }
 
+body {
+  background-color: #093A6B;
+}
+
 h1, .h1 {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
@@ -16303,6 +16307,7 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-img {
   position: absolute;
   height: 9.5rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16314,6 +16319,9 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-copy {
   overflow: auto;
   margin: 10rem 0 0 0;
   padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-button {
@@ -16371,6 +16379,11 @@ div#em-containerPartners div#em-partnersListWrapper ul li h2, div#em-containerPa
   margin: 0 0 1rem 0;
 }
 
+@media screen and (min-width: 576px) {
+  div#em-containerPartners div.carousel-item-img img {
+    max-width: 200px;
+  }
+}
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
   color: #EEEEEE;
   font-size: 60px;
