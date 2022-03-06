@@ -139,7 +139,13 @@ function em_custom_carbonfields_landing() {
 			Field::make('text', 'landing_tagline2', 'Tagline #2')
 				->set_attribute( 'placeholder', 'Enter the second tagline copy, which will display in bold')
 		)); // end add_fields
-} // end em_attach_post_meta_partners
+	Container::make('post_meta', 'Landing CTA')
+		->where('post_id', '=', get_option('page_on_front'))
+		->add_fields(array(
+			Field::make('text', 'landing_cta_heading', 'CTA Heading')
+				->set_attribute( 'placeholder', 'Enter the heading for the Call-To-Action')
+		)); // end add_fields
+} // end em_custom_carbonfields_landing
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_landing');
 
 
