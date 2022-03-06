@@ -133,20 +133,20 @@ function em_custom_carbonfields_landing() {
 		->where('post_id', '=', get_option('page_on_front'))
 		->add_fields(array(
 			Field::make('text', 'landing_title', 'Title')
-				->set_attribute( 'placeholder', 'Enter the heading, which will display in quotation marks'),
+				->set_help_text('Enter the heading, which will display in quotation marks'),
 			Field::make('text', 'landing_tagline1', 'Tagline #1')
-				->set_attribute( 'placeholder', 'Enter the first tagline copy'),
+				->set_help_text('Enter the first tagline'),
 			Field::make('text', 'landing_tagline2', 'Tagline #2')
-				->set_attribute( 'placeholder', 'Enter the second tagline copy, which will display in bold')
+				->set_help_text('Enter the second tagline, which will display in bold')
 		)); // end add_fields
 	Container::make('post_meta', 'Landing CTA')
 		->where('post_id', '=', get_option('page_on_front'))
 		->add_fields(array(
 			Field::make('text', 'landing_cta_heading', 'CTA Heading')
-				->set_attribute( 'placeholder', 'Enter the heading for the Call-To-Action'),
+				->set_help_text('Enter the heading to display above the Call-To-Action form'),
 			Field::make('text', 'landing_cta_shortcode', 'MailChimp Form Shortcode')
-				->set_attribute( 'placeholder', 'Paste the shortcode for the MailChimp form here, e.g. [yikes-mailchimp form="#"]')
-				->set_help_text('The shortcode can be copied from: EASY FORMS > OPT-IN FORMS > under desired form, click "Shortcode" to toggle')
+				->set_attribute( 'placeholder', 'e.g. [yikes-mailchimp form="#"]')
+				->set_help_text('The shortcode can be copied from: EASY FORMS > OPT-IN FORMS > under desired form, click "Shortcode" to toggle the view')
 		)); // end add_fields
 } // end em_custom_carbonfields_landing
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_landing');
