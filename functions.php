@@ -143,7 +143,10 @@ function em_custom_carbonfields_landing() {
 		->where('post_id', '=', get_option('page_on_front'))
 		->add_fields(array(
 			Field::make('text', 'landing_cta_heading', 'CTA Heading')
-				->set_attribute( 'placeholder', 'Enter the heading for the Call-To-Action')
+				->set_attribute( 'placeholder', 'Enter the heading for the Call-To-Action'),
+			Field::make('text', 'landing_cta_shortcode', 'MailChimp Form Shortcode')
+				->set_attribute( 'placeholder', 'Paste the shortcode for the MailChimp form here, e.g. [yikes-mailchimp form="#"]')
+				->set_help_text('The shortcode can be copied from: EASY FORMS > OPT-IN FORMS > under desired form, click "Shortcode" to toggle')
 		)); // end add_fields
 } // end em_custom_carbonfields_landing
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_landing');
