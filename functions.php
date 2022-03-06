@@ -125,6 +125,23 @@ function crb_attach_theme_options() {
 // ==============================================================
 
 
+
+// this adds custom fields to the Landing page for use of the heading and following tagline
+// allows the client to edit the copy without changing the styling
+function em_custom_carbonfields_landing() {
+	Container::make('post_meta', 'Landing Copy')
+		->where('post_id', '=', get_option('page_on_front'))
+		->add_fields(array(
+			Field::make('text', 'landing_title', 'Title')
+				->set_attribute( 'placeholder', 'Enter the heading for the Landing page'),
+			Field::make('textarea', 'landing_tagline', 'Tagline(s)')
+				->set_attribute( 'placeholder', 'Enter the tagline copy for the Landing page, on seperate lines')
+		)); // end add_fields
+} // end em_attach_post_meta_partners
+add_action('carbon_fields_register_fields', 'em_custom_carbonfields_landing');
+
+
+
 // All Tri-Local Custom Posts for use in Custom Theme
 // **************************************************
 
