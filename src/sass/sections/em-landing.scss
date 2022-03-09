@@ -188,13 +188,12 @@ div#em-wrapperLandingCTA {
         }
         div#em-wrapperLandingPhoto {
             grid-column: 2 / 3;
-            grid-row: 2 / 4;
+            grid-row: 1 / 4;
             // display property enables photos in lg viewport
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0;
-            margin: auto;
             div#em-containerLandingPhoto {
                 border-radius: 50%;
                 overflow: hidden;
@@ -218,7 +217,7 @@ div#em-wrapperLandingCTA {
         
         div#em-contentLanding.em-content__div {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 2fr 2fr;
+            grid-template-rows: 9rem 1fr 1fr;
 
             div#em-wrapperLandingHeading {
                 grid-column: 1 / 2;
@@ -259,10 +258,16 @@ div#em-wrapperLandingCTA {
 // breakpoint starting at bootstrap xxl (extra-extra large)
 @media (min-width: 1400px) {
 
+    div#em-wrapperLandingCTA {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 
     div#em-wrapperLandingPhoto {
         div#em-containerLandingPhoto > img {
-            width: 35vw;
+            width: 30vw;
         }
     }
 
