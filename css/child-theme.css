@@ -15655,7 +15655,7 @@ ul#main-menu.em-ulist__menu li a:hover {
 @media (min-width: 768px) {
   header#em-headerNavbar {
     height: 4rem;
-    margin: 0 0 7rem 0;
+    margin: 0 0 12rem 0;
   }
 
   div#em-headerLogoWrapper {
