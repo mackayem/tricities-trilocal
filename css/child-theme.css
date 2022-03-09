@@ -15689,7 +15689,7 @@ ul#main-menu.em-ulist__menu li a:hover {
   }
 
   ul#main-menu.em-ulist__menu li {
-    padding: 0;
+    padding: 0 0.5rem 0 0.5rem;
   }
 }
 @media (min-width: 992px) {
