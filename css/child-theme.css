@@ -15977,7 +15977,6 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
 }
 div#em-wrapperLanding {
   background-color: #093A6B;
-  height: 100vh;
   width: 100%;
 }
 
@@ -16082,6 +16081,10 @@ div#em-wrapperLandingCTA .yikes-mailchimp-container button {
 
   div#em-wrapperLanding div#em-contentLanding div#em-wrapperLandingCTA {
     margin: 1rem 0 0 0;
+  }
+
+  div#em-wrapperLanding div#em-contentLanding > div {
+    margin: 0;
   }
 }
 @media (min-width: 992px) {
