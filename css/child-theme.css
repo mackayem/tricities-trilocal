@@ -15595,12 +15595,12 @@ div#em-headerLogoWrapper {
   width: 100%;
   position: absolute;
   top: 8rem;
+  display: flex;
+  justify-content: center;
 }
 
 div#em-headerLogoWrapper img#em-headerLogo {
-  display: block;
   height: 10rem;
-  margin: auto;
 }
 
 div#em-headerDiagonalBox {
@@ -15658,10 +15658,11 @@ ul#main-menu.em-ulist__menu li a {
     top: 0;
     z-index: 4;
     width: 20vw;
+    justify-content: flex-start;
   }
 
   div#em-headerLogoWrapper img#em-headerLogo {
-    height: 7.5rem;
+    height: 7.3rem;
     margin: 1rem 0 0 1rem;
   }
 
