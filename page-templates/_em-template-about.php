@@ -19,6 +19,9 @@ defined( 'ABSPATH' ) || exit;
 
 get_header(); //load header/navbar
 $container = get_theme_mod( 'understrap_container_type' );
+$imageID_1 = carbon_get_the_post_meta('about_image1');
+$imageID_2 = carbon_get_the_post_meta('about_image2');
+$imageID_3 = carbon_get_the_post_meta('about_image3');
 ?>
 
 
@@ -38,15 +41,43 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div id="em-aboutImages" class="em-section__div">
             <div id="em-backgroundBox" class="em-div__box--bg"></div>
                 <div class="em-img__wrapper">
-                    <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-team 1@1x.png" alt="The Tri-Local team presenting a Tri-Local branded sign"> 
+                    <?php 
+                        // imports the featured image on the page
+                        if (!empty($imageID_1)) {
+                            echo wp_get_attachment_image($imageID_1, array('', '700'));
+                        } else {
+                            ?>
+                            <!-- if no image#1 uploaded, use one from the assets folder -->
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-team@1x.png" alt="Four members of the Tri-Local team presenting a Tri-Local branded sign"> 
+                            <?php
+                        }
+                    ?>
                 </div>
-
                 <div class="em-img__wrapper">
-                    <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-logo 1@1x.png" alt="The Tri-Local logo">
+                    <?php 
+                        // imports the featured image on the page
+                        if (!empty($imageID_2)) {
+                            echo wp_get_attachment_image($imageID_2, array('', '700'));
+                        } else {
+                            ?>
+                            <!-- if no image#1 uploaded, use one from the assets folder -->
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-logo@1x.png" alt="The Tri-Local logo"> 
+                            <?php
+                        }
+                    ?>
                 </div>
-
                 <div class="em-img__wrapper">
-                    <img id="" class="em-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-shop 1@1x.png" alt="A shopkeeper hanging an open sign on a door"> 
+                    <?php 
+                        // imports the featured image on the page
+                        if (!empty($imageID_3)) {
+                            echo wp_get_attachment_image($imageID_3, array('', '700'));
+                        } else {
+                            ?>
+                            <!-- if no image#1 uploaded, use one from the assets folder -->
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imgs/about/trilocal-shop@1x.png" alt="A woman standing by a shop door with an open sign"> 
+                            <?php
+                        }
+                    ?>
                 </div>
         </div><!-- col -->
 
