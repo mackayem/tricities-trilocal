@@ -97,18 +97,29 @@ div#em-wrapperLandingCTA {
             div#em-wrapperLandingHeading {
                 flex-direction: row;
                 justify-content: center;
+                margin: 0 0 0 2rem;
                 div.em-landing__quoteIconWrapper {
                     font-size: 3rem;
+                    position: relative;
                     i {
                         color: variables.$turquoise;
+                        position: absolute;
                     }
                 }
                 div#em-wrapperLandingQuoteIcon1 {
                     margin: 0 0.7rem 0 0;
+                    i {
+                        top: -1rem;
+                        left: -2.5rem;
+                    }
                 }
                 div#em-wrapperLandingQuoteIcon2 {
                     margin: 0 0 0 0.7rem;
                     transform: rotate(180deg);
+                    i {
+                        top: 0.5rem;
+                        right: -0.5rem;
+                    }
                 }
             }
 
@@ -138,7 +149,7 @@ div#em-wrapperLandingCTA {
             grid-column: 1 / 3;
             grid-row: 1 / 2;
             justify-content: flex-start;
-            margin: 0 0 2rem 0;
+            margin: 0 0 2rem 2rem;
         }
         div#em-wrapperLandingTaglines {
             grid-column: 1 / 2;
@@ -207,14 +218,18 @@ div#em-wrapperLandingCTA {
         
         div#em-contentLanding.em-content__div {
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr 2fr;
 
             div#em-wrapperLandingHeading {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
+                justify-content: center;
+                margin: 0 0 2rem 0;
             }
 
             div#em-wrapperLandingTaglines {
-                margin: 0 0 0 4rem;
+                margin: 0;
+                align-items: center;
             }
 
             
@@ -244,13 +259,11 @@ div#em-wrapperLandingCTA {
 // breakpoint starting at bootstrap xxl (extra-extra large)
 @media (min-width: 1400px) {
 
+
     div#em-wrapperLandingPhoto {
         div#em-containerLandingPhoto > img {
             width: 35vw;
         }
-        // img {
-        //     max-width: 37rem;
-        // }
     }
 
 }
