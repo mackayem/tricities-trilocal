@@ -16658,6 +16658,23 @@ div#em-wrapperBlog article.post.type-post footer.em-blogPost__footer--excerpt a 
     grid-column: 1/5;
   }
 }
+section.no-results.not-found {
+  color: #EEEEEE;
+}
+
+section.no-results.not-found .page-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+section.no-results.not-found form input {
+  border: none;
+  padding: 1rem;
+  color: #093A6B;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

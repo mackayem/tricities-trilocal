@@ -1,0 +1,21 @@
+@use "../theme/child_theme_variables.scss" as variables;
+@use "../theme/em-mixins.scss" as em-mixins;
+
+// =========== MOBILE LAYOUT ================
+// ==========================================
+
+// Default EXTRA-SMALL viewport using Bootstrap breakpoints
+section.no-results.not-found {
+    color: variables.$lightgrey;
+
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    form input {
+        @include em-mixins.form-input();
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 0;
+    }
+}
