@@ -16199,6 +16199,9 @@ div#em-wrapperLandingCTA .yikes-mailchimp-container button {
 
   div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingCTA {
     margin: 0 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingCTA section.yikes-mailchimp-container {
@@ -16215,13 +16218,11 @@ div#em-wrapperLandingCTA .yikes-mailchimp-container button {
   }
 }
 @media (min-width: 1400px) {
-  div#em-wrapperLandingCTA {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  div#em-wrapperLanding div#em-wrapperLandingTaglines > h4.em-heading__h4, div#em-wrapperLanding div#em-wrapperLandingTaglines > .em-heading__h4.h4 {
+    width: 60%;
   }
 
-  div#em-wrapperLandingPhoto div#em-containerLandingPhoto > img {
+  div#em-wrapperLanding div#em-wrapperLandingPhoto div#em-containerLandingPhoto > img {
     width: 30vw;
   }
 }

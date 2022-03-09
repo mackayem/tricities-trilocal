@@ -234,6 +234,9 @@ div#em-wrapperLandingCTA {
             
             div#em-wrapperLandingCTA {
                 margin: 0 0 0 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 section.yikes-mailchimp-container {
                     width: 100%;
                 }
@@ -258,16 +261,16 @@ div#em-wrapperLandingCTA {
 // breakpoint starting at bootstrap xxl (extra-extra large)
 @media (min-width: 1400px) {
 
-    div#em-wrapperLandingCTA {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    div#em-wrapperLanding {
 
+        div#em-wrapperLandingTaglines > h4.em-heading__h4 {
+            width: 60%;
+        }
 
-    div#em-wrapperLandingPhoto {
-        div#em-containerLandingPhoto > img {
-            width: 30vw;
+        div#em-wrapperLandingPhoto {
+            div#em-containerLandingPhoto > img {
+                width: 30vw;
+            }
         }
     }
 
