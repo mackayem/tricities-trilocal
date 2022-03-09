@@ -67,6 +67,11 @@ ul#main-menu.em-ulist__menu {
     }
     li a {
         @include em-mixins.font-navbar-links (variables.$lightgrey, 1rem);
+        &:hover {
+            // text-decoration: underline;
+            border-bottom: 2px solid variables.$lightgrey;
+            padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+        }
     }
 }
 
@@ -123,6 +128,6 @@ ul#main-menu.em-ulist__menu {
 
     // increases the spacing between links on larger viewports
     ul#main-menu.em-ulist__menu li {
-        padding: 0 1rem 0 1rem;
+        padding: 0 1.5rem 0 1.5rem;
     }
 }

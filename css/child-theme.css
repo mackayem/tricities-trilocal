@@ -15645,7 +15645,11 @@ ul#main-menu.em-ulist__menu li a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  padding-left: 1rem;
+}
+
+ul#main-menu.em-ulist__menu li a:hover {
+  border-bottom: 2px solid #EEEEEE;
+  padding: 0.5rem 0.5rem 0.1rem 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -15690,7 +15694,7 @@ ul#main-menu.em-ulist__menu li a {
 }
 @media (min-width: 992px) {
   ul#main-menu.em-ulist__menu li {
-    padding: 0 1rem 0 1rem;
+    padding: 0 1.5rem 0 1.5rem;
   }
 }
 footer#em-footerNav {
