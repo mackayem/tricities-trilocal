@@ -11,9 +11,9 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<header class="entry-header em-blogPost__header">
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title em-blogPost__title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
 
@@ -23,9 +23,11 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    <div class="entry-photo em-blogPost__photo">
+        <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    </div>
 
-	<div class="entry-content">
+	<div class="entry-content em-blogPost__content">
 
 		<?php
 		the_content();
@@ -34,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer em-blogPost__footer">
 
 		<?php understrap_entry_footer(); ?>
 
