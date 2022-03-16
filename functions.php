@@ -155,7 +155,9 @@ add_action('carbon_fields_register_fields', 'em_custom_carbonfields_landing');
 // this adds custom fields to the About page for uploading the 3 images
 function em_custom_carbonfields_about() {
 	Container::make('post_meta', 'About Photos')
-		->where('post_id', '=', '17')
+		->where('post_type', '=', 'page')
+		// show only on pages that use the "About" custom template
+		->where('post_template', '=', 'page-templates/_em-template-about.php')
 		->add_fields(array(
 			Field::make('image', 'about_image1', 'Image #1')
 				->set_help_text('Upload the 1st image to display on the About page'),
