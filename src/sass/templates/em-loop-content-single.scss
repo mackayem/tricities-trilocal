@@ -13,7 +13,8 @@ div#em-wrapperSingle {
 
     article.post.type-post {
         display: grid;
-        @include em-mixins.article-blog-grid();
+        background-color: variables.$lightgrey;
+        margin: 2rem auto 2rem auto;
 
         a, h5 a {
             color: variables.$darkblue;
@@ -92,6 +93,16 @@ div#em-wrapperSingle {
 
 // LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 992px) {
+
+    div#em-wrapperSingle {
+        article.post.type-post {
+            width: 70%;
+        }
+        nav.post-navigation {
+            width: 70%;
+            margin: auto;
+        }
+    }
     
 } // end LARGE viewport media-query
 

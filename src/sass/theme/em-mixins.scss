@@ -66,8 +66,3 @@
     text-align: justify;
     text-justify: inter-character;
 }
-
-@mixin article-blog-grid() {
-    background-color: variables.$lightgrey;
-    margin: 2rem 0 2rem 0;
-}

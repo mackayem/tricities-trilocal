@@ -16682,7 +16682,7 @@ div.em-container#em-containerSingle {
 div#em-wrapperSingle article.post.type-post {
   display: grid;
   background-color: #EEEEEE;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem auto 2rem auto;
 }
 
 div#em-wrapperSingle article.post.type-post a, div#em-wrapperSingle article.post.type-post h5 a {
@@ -16753,6 +16753,16 @@ div#em-wrapperSingle nav.post-navigation {
   padding: 0;
 }
 
+@media screen and (min-width: 992px) {
+  div#em-wrapperSingle article.post.type-post {
+    width: 70%;
+  }
+
+  div#em-wrapperSingle nav.post-navigation {
+    width: 70%;
+    margin: auto;
+  }
+}
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
