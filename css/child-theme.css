@@ -16744,10 +16744,6 @@ div#em-wrapperSingle article.post.type-post footer.em-blogPost__footer {
   opacity: 70%;
 }
 
-div#em-wrapperSingle article.post.type-post footer.em-blogPost__footer a {
-  text-decoration: none;
-}
-
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
