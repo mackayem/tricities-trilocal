@@ -5,6 +5,10 @@
 // ==========================================
 
 
+div.em-container#em-containerSingle {
+    padding: 0 2rem 0 2rem;
+}
+
 div#em-wrapperSingle {
 
     article.post.type-post {
@@ -67,5 +71,38 @@ div#em-wrapperSingle {
             font-weight: 600;
             opacity: 70%;
         }
+
+    }
+
+    nav.post-navigation {
+        margin: 0;
+        padding: 0;
     }
 }
+
+
+// =========== DESKTOP LAYOUT ===============
+// ==========================================
+
+// MEDIUM (md) viewport using Bootstrap breakpoints
+@media screen and (min-width: 768px) {
+    
+} // end MEDIUM viewport media-query
+
+
+// LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 992px) {
+    
+} // end LARGE viewport media-query
+
+
+// EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 1200px) {
+
+} // end EXTRA-LARGE viewport media-query
+
+
+// EXTRA-EXTRA LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 1400px) {
+    
+} // end EXTRA-EXTRA-LARGE viewport media-query

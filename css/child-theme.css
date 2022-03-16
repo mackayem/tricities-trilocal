@@ -16675,6 +16675,10 @@ section.no-results.not-found form input {
   border-radius: 0;
 }
 
+div.em-container#em-containerSingle {
+  padding: 0 2rem 0 2rem;
+}
+
 div#em-wrapperSingle article.post.type-post {
   display: grid;
   background-color: #EEEEEE;
@@ -16742,6 +16746,11 @@ div#em-wrapperSingle article.post.type-post footer.em-blogPost__footer {
   letter-spacing: 0.5px;
   font-weight: 600;
   opacity: 70%;
+}
+
+div#em-wrapperSingle nav.post-navigation {
+  margin: 0;
+  padding: 0;
 }
 
 .has-blue-color,
