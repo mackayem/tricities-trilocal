@@ -16675,6 +16675,60 @@ section.no-results.not-found form input {
   border-radius: 0;
 }
 
+div#em-wrapperSingle article.post.type-post {
+  display: grid;
+  background-color: #EEEEEE;
+  margin: 2rem 0 2rem 0;
+}
+
+div#em-wrapperSingle article.post.type-post a, div#em-wrapperSingle article.post.type-post h5 a {
+  color: #093A6B;
+}
+
+div#em-wrapperSingle article.post.type-post header.em-blogPost__header {
+  grid-row: 2/3;
+}
+
+div#em-wrapperSingle article.post.type-post header.em-blogPost__header h5.em-blogPost__title, div#em-wrapperSingle article.post.type-post header.em-blogPost__header .em-blogPost__title.h5 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 2rem 1rem 0 1rem;
+}
+
+div#em-wrapperSingle article.post.type-post header.em-blogPost__header h5.em-blogPost__title a, div#em-wrapperSingle article.post.type-post header.em-blogPost__header .em-blogPost__title.h5 a {
+  text-decoration: none;
+}
+
+div#em-wrapperSingle article.post.type-post header.em-blogPost__header div.em-blogPost__meta {
+  padding: 2rem 1rem 0 1rem;
+}
+
+div#em-wrapperSingle article.post.type-post div.em-blogPost__photo {
+  grid-row: 1/2;
+  height: 15rem;
+}
+
+div#em-wrapperSingle article.post.type-post div.em-blogPost__photo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+div#em-wrapperSingle article.post.type-post div.em-blogPost__content {
+  grid-row: 3/4;
+  padding: 1rem;
+}
+
+div#em-wrapperSingle article.post.type-post div.em-blogPost__content p:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+div#em-wrapperSingle article.post.type-post div.em-blogPost__content a {
+  font-weight: 700;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

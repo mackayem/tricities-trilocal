@@ -3,3 +3,54 @@
 
 // =========== MOBILE LAYOUT ================
 // ==========================================
+
+
+div#em-wrapperSingle {
+
+    article.post.type-post {
+        display: grid;
+        @include em-mixins.article-blog-grid();
+
+        a, h5 a {
+            color: variables.$darkblue;
+        }
+
+        header.em-blogPost__header {
+            grid-row: 2 / 3;
+            h5.em-blogPost__title {
+                margin: 0;
+                font-weight: 700;
+                font-size: 25px;
+                padding: 2rem 1rem 0 1rem;
+                a {
+                    text-decoration: none;
+                }
+            }
+            div.em-blogPost__meta {
+                padding: 2rem 1rem 0 1rem;
+            }
+        }
+
+        div.em-blogPost__photo {
+            grid-row: 1 / 2;
+            height: 15rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        div.em-blogPost__content {
+            grid-row: 3 / 4;
+            padding: 1rem;
+            p:first-of-type {
+                margin-bottom: 0.5rem;
+            }
+            a {
+                font-weight: 700;
+            }
+        }
+    }
+}

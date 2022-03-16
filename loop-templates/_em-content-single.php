@@ -13,9 +13,9 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="entry-header em-blogPost__header">
 
-		<?php the_title( '<h1 class="entry-title em-blogPost__title">', '</h1>' ); ?>
+		<?php the_title( '<h5 class="entry-title em-blogPost__title">', '</h5>' ); ?>
 
-		<div class="entry-meta">
+		<div class="entry-meta em-blogPost__meta">
 
 			<?php understrap_posted_on(); ?>
 
