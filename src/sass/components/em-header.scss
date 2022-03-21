@@ -61,16 +61,11 @@ div#navbarNavDropdown {
 
 // menu links
 ul#main-menu.em-ulist__menu {
-    padding: 1rem 0 0 0;
-    li {
-        padding: 0 0 1rem 0;
-    }
-    li a {
-        @include em-mixins.font-navbar-links (variables.$lightgrey, 1rem);
-        &:hover {
-            // text-decoration: underline;
-            border-bottom: 2px solid variables.$lightgrey;
-            padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    margin: 1rem 0 0 0;
+    li.nav-item {
+        padding: 0 0 1rem 1.7rem;
+        a.nav-link {
+            @include em-mixins.font-navbar-links (variables.$lightgrey, 1rem);
         }
     }
 }
@@ -116,8 +111,15 @@ ul#main-menu.em-ulist__menu {
     // menu links
     ul#main-menu.em-ulist__menu {
         padding: 0;
-        li {
-            padding: 0 0.5rem 0 0.5rem;
+        margin: 0;
+        li.nav-item {
+            padding: 0 0 1rem 1rem;
+            a.nav-link {
+                padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+                &:hover {
+                    border-bottom: 2px solid variables.$lightgrey;
+                }
+            }
         }
     }
 
@@ -127,7 +129,9 @@ ul#main-menu.em-ulist__menu {
 @media (min-width: 992px) {
 
     // increases the spacing between links on larger viewports
-    ul#main-menu.em-ulist__menu li {
-        padding: 0 1.5rem 0 1.5rem;
+    ul#main-menu.em-ulist__menu {
+        li.nav-item {
+            padding: 0 1rem 1rem 1rem;
+        }
     }
 }

@@ -15631,25 +15631,20 @@ div#navbarNavDropdown {
 }
 
 ul#main-menu.em-ulist__menu {
-  padding: 1rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
-ul#main-menu.em-ulist__menu li {
-  padding: 0 0 1rem 0;
+ul#main-menu.em-ulist__menu li.nav-item {
+  padding: 0 0 1rem 1.7rem;
 }
 
-ul#main-menu.em-ulist__menu li a {
+ul#main-menu.em-ulist__menu li.nav-item a.nav-link {
   color: #EEEEEE;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-}
-
-ul#main-menu.em-ulist__menu li a:hover {
-  border-bottom: 2px solid #EEEEEE;
-  padding: 0.5rem 0.5rem 0.1rem 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -15686,15 +15681,24 @@ ul#main-menu.em-ulist__menu li a:hover {
 
   ul#main-menu.em-ulist__menu {
     padding: 0;
+    margin: 0;
   }
 
-  ul#main-menu.em-ulist__menu li {
-    padding: 0 0.5rem 0 0.5rem;
+  ul#main-menu.em-ulist__menu li.nav-item {
+    padding: 0 0 1rem 1rem;
+  }
+
+  ul#main-menu.em-ulist__menu li.nav-item a.nav-link {
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  }
+
+  ul#main-menu.em-ulist__menu li.nav-item a.nav-link:hover {
+    border-bottom: 2px solid #EEEEEE;
   }
 }
 @media (min-width: 992px) {
-  ul#main-menu.em-ulist__menu li {
-    padding: 0 1.5rem 0 1.5rem;
+  ul#main-menu.em-ulist__menu li.nav-item {
+    padding: 0 1rem 1rem 1rem;
   }
 }
 footer#em-footerNav {
