@@ -1,14 +1,14 @@
 // Import all sub-stylesheets
 @use "em-global.scss"; // global styles
-@use "../components/em-header.scss"; // header/navbar styles
+@use "../components/em-header.scss"; // header (navbar) styles
 @use "../components/em-footer.scss"; // footer styles
 
 
 @use "../sections/em-landing.scss"; // landing page styles
-@use "../sections/em-about.scss"; // landing page styles
-@use "../sections/em-partners.scss"; // landing page styles
-@use "../sections/em-blog.scss"; // landing page styles
+@use "../sections/em-about.scss"; // about page styles
+@use "../sections/em-partners.scss"; // partners page styles
+@use "../sections/em-blog.scss"; // blog page styles
 
 
-@use "../templates/em-loop-content-none.scss"; // landing page styles
-@use "../templates/em-loop-content-single.scss"; // landing page styles
+@use "../templates/em-loop-content-none.scss"; // no post content styles
+@use "../templates/em-loop-content-single.scss"; // single post styles

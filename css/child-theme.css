@@ -16429,10 +16429,6 @@ div#em-containerPartners {
   background-color: #093A6B;
 }
 
-div#em-containerPartners div#em-partnersHeadingWrapper {
-  order: 1;
-}
-
 div#em-containerPartners div#em-partnersHeadingWrapper h1#em-partnersHeading, div#em-containerPartners div#em-partnersHeadingWrapper #em-partnersHeading.h1 {
   color: #EEEEEE;
   font-size: 60px;
@@ -16463,49 +16459,6 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
   position: relative;
 }
 
-div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-img {
-  position: absolute;
-  height: 9.5rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem 0 1rem;
-}
-
-div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-copy {
-  height: 20rem;
-  overflow: auto;
-  margin: 10rem 0 0 0;
-  padding: 0 1rem 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-button {
-  position: absolute;
-  top: 32rem;
-  display: flex;
-  width: 100%;
-  padding: 0 1rem 0 1rem;
-}
-
-div#em-containerPartners div#em-partnersPostsWrapper div.carousel-item-button button {
-  background-color: #EEEEEE;
-  color: #228D98;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border: 0;
-  border-radius: 0;
-  padding: 1rem;
-  font-size: 0.8rem;
-}
-
 div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
   left: -3.5rem;
   width: 32px;
@@ -16520,29 +16473,6 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators {
   bottom: -6.5rem;
 }
 
-div#em-containerPartners div#em-partnersListWrapper {
-  order: 2;
-}
-
-div#em-containerPartners div#em-partnersListWrapper ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-}
-
-div#em-containerPartners div#em-partnersListWrapper ul li h2, div#em-containerPartners div#em-partnersListWrapper ul li .h2 {
-  font-size: 15px;
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-@media screen and (min-width: 576px) {
-  div#em-containerPartners div.carousel-item-img img {
-    max-width: 200px;
-  }
-}
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
   color: #EEEEEE;
   font-size: 60px;

@@ -12,7 +12,6 @@ div#em-containerPartners {
     background-color: variables.$darkblue;
 
     div#em-partnersHeadingWrapper {
-        order: 1;
         h1#em-partnersHeading {
             color: variables.$lightgrey;
             font-size: 60px;
@@ -41,37 +40,37 @@ div#em-containerPartners {
             }
         }
 
-        div.carousel-item-img {
-            position: absolute;
-            height: 9.5rem;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 1rem 0 1rem;
-        }
+        // div.carousel-item-img {
+        //     position: absolute;
+        //     height: 9.5rem;
+        //     width: 100%;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     padding: 0 1rem 0 1rem;
+        // }
 
-        div.carousel-item-copy {
-            height: 20rem;
-            overflow: auto;
-            margin: 10rem 0 0 0;
-            padding: 0 1rem 0 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+        // div.carousel-item-copy {
+        //     height: 20rem;
+        //     overflow: auto;
+        //     margin: 10rem 0 0 0;
+        //     padding: 0 1rem 0 1rem;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        // }
 
-        div.carousel-item-button {
-            position: absolute;
-            top: 32rem;
-            display: flex;
-            width: 100%;
-            padding: 0 1rem 0 1rem;
-            button {
-                @include em-mixins.bold-button(variables.$lightgrey, variables.$turquoise);
-                font-size: 0.8rem;
-            }
-        }
+        // div.carousel-item-button {
+        //     position: absolute;
+        //     top: 32rem;
+        //     display: flex;
+        //     width: 100%;
+        //     padding: 0 1rem 0 1rem;
+        //     button {
+        //         @include em-mixins.bold-button(variables.$lightgrey, variables.$turquoise);
+        //         font-size: 0.8rem;
+        //     }
+        // }
 
         button.carousel-control-prev {
             left: -3.5rem;
@@ -86,38 +85,12 @@ div#em-containerPartners {
         }
 
     }
-
-    div#em-partnersListWrapper {
-        order: 2;
-        
-        ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li h2 {
-            font-size: 15px;
-            text-align: center;
-            margin: 0 0 1rem 0;
-        }
-    }
 }
 
 
 // SMALL (sm) viewport using Bootstrap breakpoints
 @media screen and (min-width: 576px) {
 
-    div#em-containerPartners {
-        div.carousel-item-img {
-            img {
-                max-width: 200px;
-            }
-        }
-
-    }
 
 } // end SMALL viewport media-query
 
