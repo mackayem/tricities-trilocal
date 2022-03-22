@@ -16427,6 +16427,7 @@ div#em-containerPartners {
   flex-direction: column;
   align-items: center;
   background-color: #093A6B;
+  padding: 0 2rem 0 2rem;
 }
 
 div#em-containerPartners div#em-partnersHeadingWrapper h1#em-partnersHeading, div#em-containerPartners div#em-partnersHeadingWrapper #em-partnersHeading.h1 {
@@ -16436,7 +16437,6 @@ div#em-containerPartners div#em-partnersHeadingWrapper h1#em-partnersHeading, di
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper {
-  order: 3;
   border-style: solid;
   border-color: #228D98;
   border-width: 15px;
@@ -16452,25 +16452,51 @@ div#em-containerPartners div#em-partnersPostsWrapper p {
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
   overflow: unset;
+  width: 70vw;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item {
-  height: 35rem;
-  position: relative;
+  height: 37rem;
 }
 
-div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
-  left: -3.5rem;
-  width: 32px;
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-image {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
-  right: -3.5rem;
-  width: 32px;
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-caption {
+  position: static;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 24rem;
+  overflow: scroll;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-button {
+  height: 3rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-button button {
+  background-color: #228D98;
+  color: #EEEEEE;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0;
+  padding: 1rem;
+  padding: 0.5rem;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators {
-  bottom: -6.5rem;
+  bottom: -100px;
 }
 
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {

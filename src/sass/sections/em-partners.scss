@@ -10,6 +10,7 @@ div#em-containerPartners {
     flex-direction: column;
     align-items: center;
     background-color: variables.$darkblue;
+    padding: 0 2rem 0 2rem;
 
     div#em-partnersHeadingWrapper {
         h1#em-partnersHeading {
@@ -20,7 +21,6 @@ div#em-containerPartners {
     }
 
     div#em-partnersPostsWrapper {
-        order: 3;
         border-style: solid;
         border-color: variables.$turquoise;
         border-width: 15px;
@@ -34,10 +34,35 @@ div#em-containerPartners {
 
         div.carousel-inner {
             overflow: unset;
+            width: 70vw;
             div.carousel-item {
-                height: 35rem;
-                position: relative;
+                height: 37rem;
+                div.carousel-image {
+                    height: 10rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                div.carousel-caption {
+                    position: static;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 24rem;
+                    overflow: scroll;
+                }
+                div.carousel-button {
+                    height: 3rem;
+                    button {
+                        @include em-mixins.bold-button(variables.$turquoise, variables.$lightgrey);
+                        padding: 0.5rem;
+                    }
+                }
             }
+        }
+        div.carousel-indicators {
+            bottom: -100px;
         }
 
         // div.carousel-item-img {
@@ -72,17 +97,17 @@ div#em-containerPartners {
         //     }
         // }
 
-        button.carousel-control-prev {
-            left: -3.5rem;
-            width: 32px;
-        }
-        button.carousel-control-next {
-            right: -3.5rem;
-            width: 32px;
-        }
-        div.carousel-indicators {
-            bottom: -6.5rem;
-        }
+        // button.carousel-control-prev {
+        //     left: -3.5rem;
+        //     width: 32px;
+        // }
+        // button.carousel-control-next {
+        //     right: -3.5rem;
+        //     width: 32px;
+        // }
+        // div.carousel-indicators {
+        //     bottom: -6.5rem;
+        // }
 
     }
 }

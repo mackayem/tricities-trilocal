@@ -11,14 +11,14 @@ defined( 'ABSPATH' ) || exit;
 
 
 <div class="carousel-item" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>	
+    <div class="carousel-image">
+        <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>	
+    </div>
     <div class="carousel-caption">
-        <?php
-            the_content();
-        ?>
-        <div class="entry-meta em-partnersPost em-partnersPost__meta">
+        <?php the_content(); ?>
+    </div>
+    <div class="carousel-button">
             <button type="button" href="<?php echo carbon_get_the_post_meta('partner_website'); ?>">Learn More</button>
-        </div>
     </div>
 </div>
 
