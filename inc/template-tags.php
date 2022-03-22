@@ -219,6 +219,7 @@ if ( ! function_exists( 'understrap_post_nav' ) ) {
 	 */
 	function understrap_post_nav() {
 		// Don't print empty markup if there's nowhere to navigate.
+		$archive = get_permalink( get_option( 'page_for_posts' ) );
 		$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 		$next     = get_adjacent_post( false, '', false );
 		if ( ! $next && ! $previous ) {
@@ -232,6 +233,11 @@ if ( ! function_exists( 'understrap_post_nav' ) ) {
 				if ( get_previous_post_link() ) {
 					previous_post_link( '<span class="nav-previous">%link</span>', _x( '<i class="fa fa-angle-left"></i>&nbsp;%title', 'Previous post link', 'understrap' ) );
 				}
+				?>
+				<span class="blog-main">
+					<a href="<?php echo $archive ?>">Blog Main</a>
+				</span>				
+				<?php
 				if ( get_next_post_link() ) {
 					next_post_link( '<span class="nav-next">%link</span>', _x( '%title&nbsp;<i class="fa fa-angle-right"></i>', 'Next post link', 'understrap' ) );
 				}

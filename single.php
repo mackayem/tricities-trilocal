@@ -17,6 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div id="em-wrapperSingle" class="wrapper em-wrapper__div">
 			<?php
 			while ( have_posts() ) {
+				understrap_post_nav();
 				the_post();
 				get_template_part( 'loop-templates/_em-content', 'single' );
 				understrap_post_nav();
