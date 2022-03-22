@@ -16503,6 +16503,7 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators {
   bottom: -75px;
+  margin: 0 0 1rem 0;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators button {
@@ -16511,6 +16512,7 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators but
   width: 10px;
   height: 10px;
   border: none;
+  margin: 0 5px 0 5px;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
@@ -16548,6 +16550,39 @@ div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-nex
 
   div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
     right: -3.3rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
+    width: 40vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
+    width: 25vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
+    width: 20vw;
+  }
+
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
+    left: -4rem;
+  }
+
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
+    right: -4rem;
   }
 }
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
