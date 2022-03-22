@@ -16209,19 +16209,32 @@ div#em-wrapperLandingCTA .yikes-mailchimp-container button {
   }
 
   div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingCTA {
-    margin: 0 0 0 2rem;
+    margin: 1rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingCTA section.yikes-mailchimp-container {
     width: 100%;
   }
 
+  div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingCTA section.yikes-mailchimp-container form {
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingCTA section.yikes-mailchimp-container form button {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+
   div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingPhoto {
     grid-column: 2/3;
     grid-row: 1/4;
+    justify-content: flex-start;
   }
 
   div#em-wrapperLanding div#em-contentLanding.em-content__div div#em-wrapperLandingPhoto div#em-containerLandingPhoto {
@@ -16235,8 +16248,18 @@ div#em-wrapperLandingCTA .yikes-mailchimp-container button {
   }
 
   div#em-wrapperLanding div.em-content__div > div.em-wrapper > div#em-containerLandingPhoto {
-    height: 400px !important;
-    width: 400px !important;
+    height: 450px !important;
+    width: 450px !important;
+  }
+}
+@media (min-width: 1900px) {
+  div#em-wrapperLanding div#em-wrapperLandingCTA section.yikes-mailchimp-container form {
+    width: 40%;
+  }
+
+  div#em-wrapperLanding div.em-content__div > div.em-wrapper > div#em-containerLandingPhoto {
+    height: 500px !important;
+    width: 500px !important;
   }
 }
 div.em-container#em-containerAbout {

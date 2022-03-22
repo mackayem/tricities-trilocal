@@ -237,18 +237,29 @@ div#em-wrapperLandingCTA {
 
             
             div#em-wrapperLandingCTA {
-                margin: 0 0 0 2rem;
+                margin: 1rem 0 0 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 section.yikes-mailchimp-container {
                     width: 100%;
+                    form {
+                        width: 50%;
+                        margin: auto;
+                        flex-direction: column;
+                        button {
+                            width: 100%;
+                            margin: 1rem 0 0 0;
+                        }
+                    }
                 }
             }
 
             div#em-wrapperLandingPhoto {
                 grid-column: 2 / 3;
                 grid-row: 1 / 4;
+                justify-content: flex-start;
                 div#em-containerLandingPhoto {
                     height: 350px;
                     width: 350px;
@@ -272,8 +283,30 @@ div#em-wrapperLandingCTA {
         }
 
         div.em-content__div > div.em-wrapper > div#em-containerLandingPhoto {
-            height: 400px !important;
-            width: 400px !important;
+            height: 450px !important;
+            width: 450px !important;
+        }
+    }
+
+}
+
+
+// breakpoint starting at bootstrap xxl (extra-extra large)
+@media (min-width: 1900px) {
+
+    div#em-wrapperLanding {
+
+        div#em-wrapperLandingCTA {
+            section.yikes-mailchimp-container {
+                form {
+                    width: 40%;
+                }
+            }
+        }
+
+        div.em-content__div > div.em-wrapper > div#em-containerLandingPhoto {
+            height: 500px !important;
+            width: 500px !important;
         }
     }
 
