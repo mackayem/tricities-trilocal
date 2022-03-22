@@ -43,17 +43,23 @@ div#em-containerPartners {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    padding: 0 1rem 0 1rem;
                 }
                 div.carousel-caption {
                     position: static;
                     right: 0;
                     bottom: 0;
                     left: 0;
-                    height: 24rem;
+                    height: 20rem;
                     overflow: scroll;
+                    padding: 0 1rem 0 1rem;
+                    margin: 2rem 0 2rem 0;
+                    text-align: justify;
+                    line-height: 1.3rem;
                 }
                 div.carousel-button {
                     height: 3rem;
+                    padding: 0 1rem 0 1rem;
                     button {
                         @include em-mixins.bold-button(variables.$turquoise, variables.$lightgrey);
                         padding: 0.5rem;
@@ -62,52 +68,48 @@ div#em-containerPartners {
             }
         }
         div.carousel-indicators {
-            bottom: -100px;
+            bottom: -75px;
+            button {
+                border-radius: 50%;
+                background-clip: border-box;
+                width: 10px;
+                height: 10px;
+                border: none;
+            }
         }
 
-        // div.carousel-item-img {
-        //     position: absolute;
-        //     height: 9.5rem;
-        //     width: 100%;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     padding: 0 1rem 0 1rem;
-        // }
-
-        // div.carousel-item-copy {
-        //     height: 20rem;
-        //     overflow: auto;
-        //     margin: 10rem 0 0 0;
-        //     padding: 0 1rem 0 1rem;
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: center;
-        // }
-
-        // div.carousel-item-button {
-        //     position: absolute;
-        //     top: 32rem;
-        //     display: flex;
-        //     width: 100%;
-        //     padding: 0 1rem 0 1rem;
-        //     button {
-        //         @include em-mixins.bold-button(variables.$lightgrey, variables.$turquoise);
-        //         font-size: 0.8rem;
-        //     }
-        // }
-
-        // button.carousel-control-prev {
-        //     left: -3.5rem;
-        //     width: 32px;
-        // }
-        // button.carousel-control-next {
-        //     right: -3.5rem;
-        //     width: 32px;
-        // }
-        // div.carousel-indicators {
-        //     bottom: -6.5rem;
-        // }
+        button.carousel-control-prev {
+            left: -2.5rem;
+            width: 10%;
+        }
+        button.carousel-control-next {
+            right: -2.5rem;
+            width: 10%;
+        }
+        @media screen and (min-width: 320px) {
+            button.carousel-control-prev {
+                left: -2.8rem;
+            }
+            button.carousel-control-next {
+                right: -2.8rem;
+            }
+        }
+        @media screen and (min-width: 375px) {
+            button.carousel-control-prev {
+                left: -3rem;
+            }
+            button.carousel-control-next {
+                right: -3rem;
+            }
+        }
+        @media screen and (min-width: 425px) {
+            button.carousel-control-prev {
+                left: -3.3rem;
+            }
+            button.carousel-control-next {
+                right: -3.3rem;
+            }
+        }
 
     }
 }

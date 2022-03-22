@@ -39,8 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						}
 					?>
 				</div>
-
-					
+			
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="" class="active" aria-current="true"></button>
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label=""></button>

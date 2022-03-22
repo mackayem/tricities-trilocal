@@ -16465,6 +16465,7 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem 0 1rem;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-caption {
@@ -16472,12 +16473,17 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
   right: 0;
   bottom: 0;
   left: 0;
-  height: 24rem;
+  height: 20rem;
   overflow: scroll;
+  padding: 0 1rem 0 1rem;
+  margin: 2rem 0 2rem 0;
+  text-align: justify;
+  line-height: 1.3rem;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-button {
   height: 3rem;
+  padding: 0 1rem 0 1rem;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-button button {
@@ -16496,9 +16502,54 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators {
-  bottom: -100px;
+  bottom: -75px;
 }
 
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators button {
+  border-radius: 50%;
+  background-clip: border-box;
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
+  left: -2.5rem;
+  width: 10%;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
+  right: -2.5rem;
+  width: 10%;
+}
+
+@media screen and (min-width: 320px) {
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
+    left: -2.8rem;
+  }
+
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
+    right: -2.8rem;
+  }
+}
+@media screen and (min-width: 375px) {
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
+    left: -3rem;
+  }
+
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
+    right: -3rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-prev {
+    left: -3.3rem;
+  }
+
+  div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-next {
+    right: -3.3rem;
+  }
+}
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
   color: #EEEEEE;
   font-size: 60px;
