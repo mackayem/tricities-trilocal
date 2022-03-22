@@ -15760,6 +15760,10 @@ div#em-footerAddress {
   order: 0;
 }
 
+div#em-footerAddress div {
+  margin: 0.75rem 0 0 0;
+}
+
 div#em-footerAddress i {
   margin: 0 1rem 0 0;
 }

@@ -53,6 +53,9 @@ div.col.em-footer__col {
 
 div#em-footerAddress {
     order: 0;
+    div {
+        margin: 0.75rem 0 0 0;
+    }
     i {
         margin: 0 1rem 0 0;
     }
@@ -125,6 +128,7 @@ div#em-footerPartners {
         }
     }
 }
+
 
 @media (min-width: 576px) {
     div#em-footerContentMain {

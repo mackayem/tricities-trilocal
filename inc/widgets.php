@@ -200,18 +200,5 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
-
-		register_sidebar(
-			array(
-				'name'          => __( 'TRILOCAL-Email', 'understrap' ),
-				'id'            => 'trilocalemail',
-				'description'   => __( 'Widget for Email in Footer', 'understrap' ),
-				'before_widget' => '<div id="%1$s" class="email-link-widget %2$s dynamic-classes">',
-				'after_widget'  => '</div><!-- .featemail-link-widget -->',
-				'before_title'  => '<h3 class="widget-title">',
-				'after_title'   => '</h3>',
-			)
-		);
-
 	}
 } // End of function_exists( 'understrap_widgets_init' ).

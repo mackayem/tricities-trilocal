@@ -39,7 +39,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<div class="d-flex">
 						<i class="bi bi-envelope"></i>
-						<a href="#">Email</a>
+						<a href="#" class="em-maskedemail" data-emailname="info" data-domain="tricitieschamber" data-tld="com"
+   							onclick="window.location.href = 'mailto:' + this.dataset.emailname + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+						Email Us
+						</a>
 					</div>
 				</div><!-- column end -->
 
