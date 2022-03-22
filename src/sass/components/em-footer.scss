@@ -63,20 +63,22 @@ div#em-footerAddress {
 
 div#em-footerSocial {
     order: 1;
-    ul {
+    div.social-widget {
+        width: 100%;
+    }
+    ul.wp-block-social-links {
         padding: 0;
         display: flex;
-        &:first-of-type {
-            flex-direction: row;
-        }
-        &:last-of-type {
-            flex-direction: column;
-        }
+        flex-direction: row;
     }
-    ul li {
-        list-style-type: none;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
+    ul:not(.wp-block-social-links) {
+        flex-direction: column;
+        padding: 0;
+        li {
+            list-style-type: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+        }
     }
 }
 

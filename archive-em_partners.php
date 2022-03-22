@@ -24,9 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>	
 
 		<div id="em-partnersPostsWrapper" class="wrapper">
-
 			<div id="carouselExampleCaptions" class="carousel" data-bs-interval="false">
-
 				<div class="carousel-inner">
 					<?php
 						if (have_posts()) {
@@ -60,16 +58,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
-
-				
 			</div>
-
-
 
 		</div>
 			
-
-	</div><!-- containerPartners -->
+	</div>
 
 <?php
 get_footer();

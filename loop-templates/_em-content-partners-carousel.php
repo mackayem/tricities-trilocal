@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
         <?php the_content(); ?>
     </div>
     <div class="carousel-button">
-            <button type="button" href="<?php echo carbon_get_the_post_meta('partner_website'); ?>">Learn More</button>
+        <button type="button" href="<?php echo carbon_get_the_post_meta('partner_website'); ?>">Learn More</button>
     </div>
 </div>
 
