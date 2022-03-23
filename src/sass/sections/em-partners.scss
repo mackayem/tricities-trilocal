@@ -13,6 +13,7 @@ div#em-containerPartners {
     padding: 0 2rem 0 2rem;
 
     div#em-partnersHeadingWrapper {
+        order: 1;
         h1#em-partnersHeading {
             color: variables.$lightgrey;
             font-size: 60px;
@@ -21,6 +22,7 @@ div#em-containerPartners {
     }
 
     div#em-partnersPostsWrapper {
+        order: 3;
         border-style: solid;
         border-color: variables.$turquoise;
         border-width: 15px;
@@ -114,6 +116,24 @@ div#em-containerPartners {
             }
         }
 
+    }
+
+    div#em-partnersListWrapper {
+        order: 2;
+        padding: 0 0 2rem 0;
+        ul.em-partnersList {
+            color: variables.$lightgrey;
+            opacity: 70%;
+            padding: 0;
+            text-align: center;
+            li {
+                list-style-type: none;
+                margin: 1rem 0 1rem 0;
+            }
+            .entry-title {
+                font-size: 1rem;
+            }
+        }
     }
 }
 

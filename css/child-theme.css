@@ -16459,6 +16459,10 @@ div#em-containerPartners {
   padding: 0 2rem 0 2rem;
 }
 
+div#em-containerPartners div#em-partnersHeadingWrapper {
+  order: 1;
+}
+
 div#em-containerPartners div#em-partnersHeadingWrapper h1#em-partnersHeading, div#em-containerPartners div#em-partnersHeadingWrapper #em-partnersHeading.h1 {
   color: #EEEEEE;
   font-size: 60px;
@@ -16466,6 +16470,7 @@ div#em-containerPartners div#em-partnersHeadingWrapper h1#em-partnersHeading, di
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper {
+  order: 3;
   border-style: solid;
   border-color: #228D98;
   border-width: 15px;
@@ -16582,6 +16587,27 @@ div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-nex
     right: -3.3rem;
   }
 }
+div#em-containerPartners div#em-partnersListWrapper {
+  order: 2;
+  padding: 0 0 2rem 0;
+}
+
+div#em-containerPartners div#em-partnersListWrapper ul.em-partnersList {
+  color: #EEEEEE;
+  opacity: 70%;
+  padding: 0;
+  text-align: center;
+}
+
+div#em-containerPartners div#em-partnersListWrapper ul.em-partnersList li {
+  list-style-type: none;
+  margin: 1rem 0 1rem 0;
+}
+
+div#em-containerPartners div#em-partnersListWrapper ul.em-partnersList .entry-title {
+  font-size: 1rem;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

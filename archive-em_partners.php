@@ -59,7 +59,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
+		</div>
 
+		<div id="em-partnersListWrapper" class="wrapper">
+			<ul class="em-partnersList">
+				<?php
+					if (have_posts()) {
+						while (have_posts()) {
+							the_post();
+							get_template_part('loop-templates/_em-content', 'partners-title');
+						}
+					} else {
+						get_template_part('loop-templates/content', 'none');
+					}
+				?>
+			</ul>
 		</div>
 			
 	</div>
