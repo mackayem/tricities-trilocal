@@ -51,7 +51,8 @@ div#em-containerPartners {
                     bottom: 0;
                     left: 0;
                     height: 20rem;
-                    overflow: scroll;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
                     padding: 0 1rem 0 1rem;
                     margin: 2rem 0 2rem 0;
                     text-align: justify;
@@ -114,6 +115,22 @@ div#em-containerPartners {
         }
 
     }
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(238, 238, 238, 0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(238, 238, 238, 0.7);
+    border-radius: 10px;
 }
 
 

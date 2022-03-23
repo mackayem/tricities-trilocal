@@ -16503,7 +16503,8 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
   bottom: 0;
   left: 0;
   height: 20rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding: 0 1rem 0 1rem;
   margin: 2rem 0 2rem 0;
   text-align: justify;
@@ -16581,6 +16582,24 @@ div#em-containerPartners div#em-partnersPostsWrapper button.carousel-control-nex
     right: -3.3rem;
   }
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(238, 238, 238, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(238, 238, 238, 0.7);
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 576px) {
   div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner {
     width: 50vw;
