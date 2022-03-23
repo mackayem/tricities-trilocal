@@ -189,14 +189,37 @@ div#em-containerPartners {
 @media screen and (min-width: 992px) {
     div#em-containerPartners {
         div#em-partnersPostsWrapper {
+            order: 2;
             div.carousel-inner {
                 width: 30vw;
             }
         }
+        div#em-partnersListWrapper {
+            order: 3;
+            padding: 0;
+            margin: 4rem 0 0 0;
+            ul.em-partnersList {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 60rem;
+                margin: auto;
+                margin-top: 2rem;
+                li {
+                    margin: 0 1rem 0 1rem;
+                    list-style-type: disc;
+                    &::marker {
+                        font-size: 150%;
+                    }
+                }
+                li:nth-child(1), li:nth-child(5), li:nth-child(9) {
+                    list-style-type: none;
+                    margin-top: 0.75rem;
+                }
+            }
+        }
     }
-
 } // end LARGE viewport media-query
-
 
 // EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1200px) {
@@ -204,6 +227,19 @@ div#em-containerPartners {
         div#em-partnersPostsWrapper {
             div.carousel-inner {
                 width: 25vw;
+            }
+        }
+        div#em-partnersListWrapper {
+            ul.em-partnersList {
+                width: 70rem;
+                li:nth-child(5), li:nth-child(9) {
+                    list-style-type: disc;
+                    margin-top: 0;
+                }
+                li:nth-child(6) {
+                    list-style-type: none;
+                    margin-top: 0.75rem;
+                }
             }
         }
     }
