@@ -99,8 +99,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</section><!-- section end -->
 
 		<section id="em-footerSiteInfo" class="row">
-			<p>Design & Development by <a href="https://www.mackayem.dev">Emily Mackay</a></p>
-			<p><a href="<?php echo get_privacy_policy_url() ?>">Privacy Policy</a></p>
+			<div class="em-siteinfo__wrapper">
+				<p>Design & Development by <a href="https://www.mackayem.dev">Emily Mackay</a></p>
+				<p><a href="<?php echo get_privacy_policy_url() ?>">Privacy Policy</a></p>
+			</div>
 		</section><!-- section end -->
 
 	</div><!-- container end -->

@@ -129,6 +129,18 @@ div#em-footerPartners {
     }
 }
 
+section#em-footerSiteInfo {
+    width: 100%;
+    margin: 0;
+    font-size: 0.7rem;
+    opacity: 50%;
+    p {
+        text-align: center;
+        margin: 0 0 0.5rem 0;
+    }
+
+}
+
 
 @media (min-width: 576px) {
     div#em-footerContentMain {
@@ -144,6 +156,15 @@ div#em-footerPartners {
             &:last-of-type {
                 align-items: start;
             }
+        }
+    }
+
+    section#em-footerSiteInfo {
+        padding: 0 2rem 1rem 2rem;
+        div.em-siteinfo__wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 }
