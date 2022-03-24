@@ -16725,15 +16725,30 @@ div#em-containerPartners div#em-partnersListWrapper ul.em-partnersList .entry-ti
     right: -4rem;
   }
 }
-div.em-fact__circle {
+div#em-containerEducation {
+  padding: 3rem 0 0 0;
+}
+
+div#em-containerEducation div#em-educationHeadingWrapper > h1.em-heading__h1, div#em-containerEducation div#em-educationHeadingWrapper > .em-heading__h1.h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+div#em-containerEducation div.wrapper {
+  background-image: url("../assets/decorative/education-bg-mobile.png");
+  background-position: center;
+  background-size: cover;
+}
+
+div#em-containerEducation div.em-fact__circle {
   background-color: #228D98;
   width: 90vw;
   height: 90vw;
   border-radius: 50%;
-  margin: 2rem 0.2rem 2rem 0.2rem;
+  margin: 3rem auto;
 }
 
-div.em-fact__circle div.em-fact__content {
+div#em-containerEducation div.em-fact__circle div.em-fact__content {
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -16742,17 +16757,17 @@ div.em-fact__circle div.em-fact__content {
   padding: 0 1rem 0 1rem;
 }
 
-div.em-fact__circle h4.em-fact__title, div.em-fact__circle .em-fact__title.h4 {
+div#em-containerEducation div.em-fact__circle h4.em-fact__title, div#em-containerEducation div.em-fact__circle .em-fact__title.h4 {
   font-size: 16px;
   font-weight: 600;
 }
 
-div.em-fact__circle p.em-fact__blurb {
+div#em-containerEducation div.em-fact__circle p.em-fact__blurb {
   font-size: 12px;
   letter-spacing: 0.9px;
 }
 
-div.em-fact__circle a.em-fact__link {
+div#em-containerEducation div.em-fact__circle a.em-fact__link {
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;

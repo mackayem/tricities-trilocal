@@ -6,35 +6,50 @@
 
 // Default EXTRA-SMALL viewport using Bootstrap breakpoints
 
-div.em-fact__circle {
-    background-color: variables.$turquoise;
-    width: 90vw;
-    height: 90vw;
-    border-radius: 50%;
-    margin: 2rem 0.2rem 2rem 0.2rem;
-    div.em-fact__content {
-        height: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+div#em-containerEducation {
+    padding: 3rem 0 0 0;
+
+    div#em-educationHeadingWrapper > h1.em-heading__h1 {
+        font-size: 40px;
         text-align: center;
-        padding: 0 1rem 0 1rem;
-    }
-    h4.em-fact__title {
-        font-size: 16px;
-        font-weight: 600;
-    }
-    p.em-fact__blurb {
-        font-size: 12px;
-        letter-spacing: 0.9px;
     }
 
-    a.em-fact__link {
-        text-transform: uppercase;
-        font-weight: 600;
-        text-decoration: none;
-        border-bottom: 1px solid white;
-        font-size: 12px;
+    div.wrapper {
+        background-image: url("../assets/decorative/education-bg-mobile.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    div.em-fact__circle {
+        background-color: variables.$turquoise;
+        width: 90vw;
+        height: 90vw;
+        border-radius: 50%;
+        margin: 3rem auto;
+        div.em-fact__content {
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1rem 0 1rem;
+        }
+        h4.em-fact__title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        p.em-fact__blurb {
+            font-size: 12px;
+            letter-spacing: 0.9px;
+        }
+
+        a.em-fact__link {
+            text-transform: uppercase;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            font-size: 12px;
+        }
     }
 }
 
