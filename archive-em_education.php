@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<h1 id="em-educationHeading" class="em-heading__h1">Did You Know?</h1>
 		</div>	
 
-		<div id="em-partnersListWrapper" class="wrapper">
+		<div id="em-partnersListWrapper" class="em-wrapper">
 			<?php
 				if (have_posts()) {
 					while (have_posts()) {
