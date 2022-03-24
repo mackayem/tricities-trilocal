@@ -16513,7 +16513,11 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
   padding: 0 1rem 0 1rem;
   margin: 2rem 0 2rem 0;
   text-align: justify;
-  line-height: 1.3rem;
+  line-height: 1.6rem;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-caption p {
+  font-size: 1rem;
 }
 
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.carousel-item div.carousel-button {
