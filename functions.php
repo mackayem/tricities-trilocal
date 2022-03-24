@@ -226,6 +226,14 @@ function em_custom_carbonfields_partners() {
 add_action('carbon_fields_register_fields', 'em_custom_carbonfields_partners');
 
 
+// function em_custom_show_all_partner_posts ( $query ) {
+//     if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'partners' )) {
+//         $query->set( 'posts_per_archive_page', '10' );
+//     }
+// }
+// add_action( 'pre_get_posts', 'em_custom_show_all_partner_posts' );
+
+
 // ----------------- CUSTOM POST TYPE: EDUCATION (FACTS)
 function em_custom_post_education() {
 	$labels = array(

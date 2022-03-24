@@ -1,0 +1,39 @@
+@use "../theme/child_theme_variables.scss" as variables;
+@use "../theme/em-mixins.scss" as em-mixins;
+
+// =========== MOBILE LAYOUT ================
+// ==========================================
+
+// Default EXTRA-SMALL viewport using Bootstrap breakpoints
+
+
+
+
+// =========== DESKTOP LAYOUT ===============
+// ==========================================
+
+// MEDIUM (md) viewport using Bootstrap breakpoints
+@media screen and (min-width: 768px) {
+
+    
+} // end MEDIUM viewport media-query
+
+
+// LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 992px) {
+
+
+} // end LARGE viewport media-query
+
+
+// EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 1200px) {
+
+
+} // end EXTRA-LARGE viewport media-query
+
+
+// EXTRA-EXTRA LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 1400px) {
+    
+} // end EXTRA-EXTRA-LARGE viewport media-query
