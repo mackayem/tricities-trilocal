@@ -100,7 +100,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<section id="em-footerSiteInfo" class="row">
 			<div class="em-siteinfo__wrapper">
-				<p>Design & Development by <a href="https://www.mackayem.dev">Emily Mackay</a></p>
+				<p>Design & Development by <a href="https://www.mackayem.dev" target="_blank">Emily Mackay</a></p>
 				<p><a href="<?php echo get_privacy_policy_url() ?>">Privacy Policy</a></p>
 			</div>
 		</section><!-- section end -->

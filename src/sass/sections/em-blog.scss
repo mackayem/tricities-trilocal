@@ -9,7 +9,7 @@
 
 div#em-blogHeadingWrapper {
     h1#em-blogHeading {
-        color: variables.$lightgrey;
+        // color: variables.$lightgrey;
         font-size: 60px;
         text-align: center;
     }
@@ -23,10 +23,10 @@ div#em-wrapperBlog {
     article.post.type-post {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: variables.$lightgrey;
+        background-color: darken(variables.$lightgrey, 10%);
         margin: 2rem 0 2rem 0;
 
-        a, h5 a {
+        a, h5 a, p {
             color: variables.$darkblue;
         }
 

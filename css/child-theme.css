@@ -15516,10 +15516,6 @@ a.skip-link {
   display: block;
 }
 
-body {
-  background-color: #093A6B;
-}
-
 h1, .h1 {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
@@ -15863,13 +15859,13 @@ div#em-footerPartners div#em-footerPartnersWrapper img.em-img__logo--partner {
 section#em-footerSiteInfo {
   width: 100%;
   margin: 0;
-  font-size: 0.7rem;
   opacity: 50%;
 }
 
 section#em-footerSiteInfo p {
   text-align: center;
   margin: 0 0 0.5rem 0;
+  font-size: 0.7rem;
 }
 
 @media (min-width: 576px) {
@@ -16008,7 +16004,6 @@ section#em-footerSiteInfo p {
   }
 }
 div#em-wrapperLanding {
-  background-color: #093A6B;
   width: 100%;
 }
 
@@ -16477,7 +16472,6 @@ div#em-containerPartners {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #093A6B;
   padding: 0 2rem 0 2rem;
 }
 
@@ -16496,7 +16490,6 @@ div#em-containerPartners div#em-partnersPostsWrapper {
   border-style: solid;
   border-color: #228D98;
   border-width: 15px;
-  background-color: #093A6B;
   padding: 0.5rem;
   height: 40rem;
 }
@@ -16733,7 +16726,6 @@ div#em-containerPartners div#em-partnersListWrapper ul.em-partnersList .entry-ti
   }
 }
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
-  color: #EEEEEE;
   font-size: 60px;
   text-align: center;
 }
@@ -16746,11 +16738,11 @@ div#em-wrapperBlog {
 div#em-wrapperBlog article.post.type-post {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #EEEEEE;
+  background-color: #d5d5d5;
   margin: 2rem 0 2rem 0;
 }
 
-div#em-wrapperBlog article.post.type-post a, div#em-wrapperBlog article.post.type-post h5 a {
+div#em-wrapperBlog article.post.type-post a, div#em-wrapperBlog article.post.type-post h5 a, div#em-wrapperBlog article.post.type-post p {
   color: #093A6B;
 }
 

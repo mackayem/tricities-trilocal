@@ -9,7 +9,6 @@ div#em-containerPartners {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: variables.$darkblue;
     padding: 0 2rem 0 2rem;
 
     div#em-partnersHeadingWrapper {
@@ -26,7 +25,6 @@ div#em-containerPartners {
         border-style: solid;
         border-color: variables.$turquoise;
         border-width: 15px;
-        background-color: variables.$darkblue;
         padding: 0.5rem;
         height: 40rem;
         p {
