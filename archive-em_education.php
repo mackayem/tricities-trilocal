@@ -23,16 +23,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>	
 
 		<div id="em-partnersListWrapper" class="wrapper">
-				<?php
-					if (have_posts()) {
-						while (have_posts()) {
-							the_post();
-							get_template_part('loop-templates/_em-content', 'education-bubble');
-						}
-					} else {
-						get_template_part('loop-templates/content', 'none');
+			<?php
+				if (have_posts()) {
+					while (have_posts()) {
+						the_post();
+						get_template_part('loop-templates/_em-content', 'education-bubble');
 					}
-				?>
+				} else {
+					get_template_part('loop-templates/content', 'none');
+				}
+			?>
 		</div>
 			
 	</div>
