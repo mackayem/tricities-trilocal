@@ -11,4 +11,3 @@
 
 let first_carousel_item = document.querySelector("div#carouselExampleCaptions > div.carousel-inner > div.carousel-item:first-child");
 first_carousel_item.classList.add("active");
-
