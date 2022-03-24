@@ -8,9 +8,9 @@
 @use "../sections/em-about.scss"; // about page styles
 @use "../sections/em-partners.scss"; // partners page styles
 @use "../sections/em-blog.scss"; // blog page styles
-@use "../sections/em-privacypolicy.scss"; // blog page styles
 
 
 @use "../templates/em-loop-content-none.scss"; // no post content styles
 @use "../templates/em-loop-content-single.scss"; // single post styles
+@use "../templates/em-loop-content-page.scss"; // blog page styles
 

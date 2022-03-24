@@ -17,15 +17,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-<main id="em-main" class="site-main">
+	<?php get_template_part( 'loop-templates/content', 'page' ); ?>
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
-		<?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-	</div><!-- #content -->
-</main><!-- #main -->
+</div>
 
 <?php
 get_footer();
