@@ -16800,6 +16800,10 @@ div#em-wrapperBlog article.post.type-post footer.em-blogPost__footer--excerpt a 
   text-decoration: none;
 }
 
+div#em-wrapperSingle article div.em-blogPost__content > p {
+  color: #093A6B;
+}
+
 @media screen and (min-width: 768px) {
   div#em-wrapperBlog {
     grid-template-columns: 1fr 1fr;

@@ -78,6 +78,12 @@ div#em-wrapperBlog {
     }
 }
 
+div#em-wrapperSingle {
+    article div.em-blogPost__content > p {
+        color: variables.$darkblue;
+    }
+}
+
 
 
 
