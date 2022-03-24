@@ -16562,6 +16562,24 @@ div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner div.caro
   padding: 0.5rem;
 }
 
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner ::-webkit-scrollbar {
+  width: 5px;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner ::-webkit-scrollbar-thumb {
+  background: rgba(238, 238, 238, 0.3);
+  border-radius: 10px;
+}
+
+div#em-containerPartners div#em-partnersPostsWrapper div.carousel-inner ::-webkit-scrollbar-thumb:hover {
+  background: rgba(238, 238, 238, 0.7);
+  border-radius: 10px;
+}
+
 div#em-containerPartners div#em-partnersPostsWrapper div.carousel-indicators {
   bottom: -75px;
   margin: 0 0 1rem 0;
@@ -16632,24 +16650,6 @@ div#em-containerPartners div#em-partnersListWrapper ul.em-partnersList li {
 
 div#em-containerPartners div#em-partnersListWrapper ul.em-partnersList .entry-title {
   font-size: 1rem;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(238, 238, 238, 0.3);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(238, 238, 238, 0.7);
-  border-radius: 10px;
 }
 
 @media screen and (min-width: 576px) {

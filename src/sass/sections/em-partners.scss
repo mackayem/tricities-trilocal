@@ -72,6 +72,20 @@ div#em-containerPartners {
                     }
                 }
             }
+            ::-webkit-scrollbar {
+                width: 5px;
+            }
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgba(238, 238, 238, 0.3);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgba(238, 238, 238, 0.7);
+                border-radius: 10px;
+            }
         }
         div.carousel-indicators {
             bottom: -75px;
@@ -138,22 +152,6 @@ div#em-containerPartners {
             }
         }
     }
-}
-
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(238, 238, 238, 0.3);
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(238, 238, 238, 0.7);
-    border-radius: 10px;
 }
 
 
