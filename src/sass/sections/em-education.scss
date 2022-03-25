@@ -229,78 +229,83 @@ div.em-fact__circle:nth-of-type(5) {
 
 // EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1200px) {
-    // div#em-containerEducation {
-    //     div#em-educationHeadingWrapper {
-    //         margin: 0 0 0 3rem;
-    //         h1.em-heading__h1 {
-    //             font-size: 75px;
-    //             text-align: left;
-    //         }
-    //     }
-    
-    //     div#em-educationFactsWrapper {
-    //         position: relative;
-    //         height: 100vh;
+    div#em-containerEducation {
+        div#em-educationHeadingWrapper {
+            margin: 0 0 0 3rem;
+            h1.em-heading__h1 {
+                font-size: 75px;
+                text-align: left;
+            }
+        }
+    }
+    div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper {
+        position: relative;
+        height: 100vh;
 
-    //         div.em-fact__circle {
-    //             position: absolute;
-    //         }
-    //         div.em-fact__circle:nth-of-type(1) {
-    //             height: 25vw !important;
-    //             width: 25vw !important;
-    //             top: 2rem;
-    //             left: -14rem;
-    //             h4.em-fact__title {
-    //                 font-size: 20px !important;
-    //             }
-    //             p.em-fact__blurb {
-    //                 font-size: 13px !important;
-    //             }
-    //         }
-    //         div.em-fact__circle:nth-of-type(3) {
-    //             height: 30vw !important;
-    //             width: 30vw !important;
-    //             top: 29rem;
-    //             left: 5rem;
-    //             div.em-fact__content {
-    //                 padding: 1rem 3rem 0 3rem;
-    //             }
-    //         }
-    //         div.em-fact__circle:nth-of-type(5) {
-    //             height: 35vw !important;
-    //             width: 35vw !important;
-    //             top: 6rem;
-    //             left: 9rem;
-    //             div.em-fact__content {
-    //                 padding: 1rem 3rem 0 3rem;
-    //                 h4.em-fact__title {
-    //                     font-size: 50px !important;
-    //                 }
-    //             }
-    //         }
-    //         div.em-fact__circle:nth-of-type(7) {
-    //             height: 25vw !important;
-    //             width: 25vw !important;
-    //             top: -8rem;
-    //             left: 50rem;
-    //         }
-    //         div.em-fact__circle:nth-of-type(9) {
-    //             height: 28vw !important;
-    //             width: 28vw !important;
-    //             top: 30rem;
-    //             left: 31rem;
-    //             div.em-fact__content {
-    //                 padding: 1rem 3rem 0 3rem;
-    //             }
-    //             h4.em-fact__title {
-    //                 font-size: 20px !important;
-    //             }
-    //             p.em-fact__blurb {
-    //                 font-size: 13px !important;
-    //             }
-    //         }
-    //     }
-    // }
+        div.em-fact__circle {
+            position: absolute;
+        }
+        div.em-fact__circle:nth-of-type(1) {
+            height: 25vw;
+            width: 25vw;
+            top: 1rem;
+            left: 2rem;
+            h4.em-fact__title {
+                font-size: 20px;
+            }
+            div.em-fact__blurb--wrapper {
+                padding: 0 1rem 0 1rem;
+                p.em-fact__blurb {
+                    font-size: 13px;
+                }
+            }
+        }
+        div.em-fact__circle:nth-of-type(3) {
+            height: 30vw;
+            width: 30vw;
+            top: 33rem;
+            left: 2rem;
+            div.em-fact__content {
+                padding: 1rem 3rem 0 3rem;
+            }
+        }
+        div.em-fact__circle:nth-of-type(5) {
+            height: 35vw;
+            width: 35vw;
+            top: 10rem;
+            left: 22rem;
+            div.em-fact__content {
+                padding: 1rem 3rem 0 3rem;
+                h4.em-fact__title {
+                    font-size: 50px;
+                }
+            }
+        }
+        div.em-fact__circle:nth-of-type(7) {
+            height: 25vw;
+            width: 25vw;
+            top: -1rem;
+            left: 50rem;
+            div.em-fact__content {
+                padding: 0 3rem 0 3rem;
+            }
+        }
+        div.em-fact__circle:nth-of-type(9) {
+            height: 28vw;
+            width: 28vw;
+            top: 30rem;
+            left: 49rem;
+            div.em-fact__content {
+                padding: 1rem 3rem 0 3rem;
+            }
+            h4.em-fact__title {
+                font-size: 20px;
+            }
+            p.em-fact__blurb {
+                font-size: 13px;
+            }
+        }
+    }
 
 } // end EXTRA-LARGE viewport media-query
 
