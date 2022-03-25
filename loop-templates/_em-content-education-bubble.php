@@ -29,17 +29,19 @@ defined( 'ABSPATH' ) || exit;
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="em-fact__title--wrapper">
-          <?php the_title( '<h4 class="em-fact__title">', '</h4>' ); ?>
-        </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <?php the_content(); ?>
-        <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>	
+        <div class="em-modal__heading">
+          <?php the_title( '<h4 class="em-fact__title">', '</h4>' ); ?>
+        </div>
+        <div class="em-modal__postContent">
+          <?php the_content(); ?>
+          <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+          <p class="em-modal__citation"><?php echo carbon_get_the_post_meta('fact_cite'); ?></p>
+        </div>
       </div>
       <div class="modal-footer">
-        <p class="em-fact__blurb"><?php echo carbon_get_the_post_meta('fact_cite'); ?></p>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>

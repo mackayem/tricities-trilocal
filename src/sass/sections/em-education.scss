@@ -73,7 +73,64 @@ div#em-containerEducation {
             }
         }
     }
+
+    // MODAL STYLING
+    div.modal {
+        div.modal-dialog {
+            div.modal-content {
+                background-color: variables.$turquoise;
+                div.modal-header {
+                    padding: 1rem 1rem 0 1rem;
+                    border-bottom: 0;
+                    button {
+                        border: 2px solid variables.$lightgrey;
+                        border-radius: 50%;
+                        color: variables.$turquoise;
+                        opacity: 1;
+                    }
+                }
+                div.modal-body {
+                    div.em-modal__heading {
+                        margin: 0 0 2rem 0;
+                        h4 {
+                            text-align: center;
+                            font-weight: 700;
+                        }
+                    }
+                    div.em-modal__postContent {
+                        
+                        margin: 0 1rem;
+                        img {
+                            margin: 1.5rem 0 0 0;
+                        }
+                    }
+                    p.em-modal__citation {
+                        margin: 2rem 0 0 0;
+                        font-size: 10px;
+                        text-align: left;
+                        opacity: 80%;
+                    }
+                }
+                div.modal-footer {
+                    padding: 0 1rem 1rem 1rem;
+                    border-top: 0;
+                    justify-content: center;
+                    button {
+                        background-color: variables.$lightgrey;
+                        border: none;
+                        color: variables.$turquoise;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }
+        
+    }
+
 }
+
+
 @media screen and (min-width: 320px) {
     div.em-fact__circle {
         div.em-fact__content {
@@ -136,8 +193,8 @@ div#em-containerEducation {
             }
         }
     }
-}
 
+}
 
 // =========== DESKTOP LAYOUT ===============
 // ==========================================

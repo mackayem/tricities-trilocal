@@ -16795,6 +16795,59 @@ div#em-containerEducation div.em-fact__circle:nth-of-type(5) div.em-fact__conten
   color: #093A6B;
 }
 
+div#em-containerEducation div.modal div.modal-dialog div.modal-content {
+  background-color: #228D98;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-header {
+  padding: 1rem 1rem 0 1rem;
+  border-bottom: 0;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-header button {
+  border: 2px solid #EEEEEE;
+  border-radius: 50%;
+  color: #228D98;
+  opacity: 1;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-body div.em-modal__heading {
+  margin: 0 0 2rem 0;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-body div.em-modal__heading h4, div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-body div.em-modal__heading .h4 {
+  text-align: center;
+  font-weight: 700;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-body div.em-modal__postContent {
+  margin: 0 1rem;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-body div.em-modal__postContent img {
+  margin: 1.5rem 0 0 0;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-body p.em-modal__citation {
+  margin: 2rem 0 0 0;
+  font-size: 10px;
+  text-align: left;
+  opacity: 80%;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-footer {
+  padding: 0 1rem 1rem 1rem;
+  border-top: 0;
+  justify-content: center;
+}
+
+div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal-footer button {
+  background-color: #EEEEEE;
+  border: none;
+  color: #228D98;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 320px) {
   div.em-fact__circle div.em-fact__content div > h4.em-fact__title, div.em-fact__circle div.em-fact__content div > .em-fact__title.h4 {
     font-size: 18px !important;
