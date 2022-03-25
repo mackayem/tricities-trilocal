@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							get_template_part('loop-templates/_em-content', 'education-bubble');
 						}
 					} else {
-						get_template_part('loop-templates/content', 'none');
+						get_template_part('loop-templates/_em-content', 'none');
 					}
 				?>
 			</div>

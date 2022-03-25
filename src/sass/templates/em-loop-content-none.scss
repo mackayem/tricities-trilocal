@@ -5,17 +5,21 @@
 // ==========================================
 
 // Default EXTRA-SMALL viewport using Bootstrap breakpoints
-section.no-results.not-found {
+section.no-results.not-found, section.em-notFound {
     color: variables.$lightgrey;
     margin: 5rem 1rem 0 1rem;
 
-    .page-content {
+    .page-title, .em-notFound__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .page-content, .em-notFound__content {
         width: 100%;
     }
 
-    .page-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+    .em-notFound__title, .em-notFound__content p {
+        text-align: center;
     }
 
     form input {
@@ -31,7 +35,7 @@ section.no-results.not-found {
 
 // MEDIUM (md) viewport using Bootstrap breakpoints
 @media screen and (min-width: 768px) {
-    section.no-results.not-found {
+    section.no-results.not-found, section.em-notFound {
         grid-column: 1 / 3;
         width: 80%;
         margin: 5rem auto 0 auto;
@@ -41,7 +45,7 @@ section.no-results.not-found {
 
 // LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 992px) {
-    section.no-results.not-found {
+    section.no-results.not-found, section.em-notFound {
         grid-column: 1 / 4;
         width: 65%;
     }
@@ -50,7 +54,7 @@ section.no-results.not-found {
 
 // EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1200px) {
-    section.no-results.not-found {
+    section.no-results.not-found, section.em-notFound {
         grid-column: 2 / 4;
         width: 100%;
     }
@@ -65,7 +69,7 @@ section.no-results.not-found {
 
 // EXTRA-EXTRA LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1920px) {
-    section.no-results.not-found {
+    section.no-results.not-found, section.em-notFound {
         width: 60%;
     }
 } // end EXTRA-EXTRA-LARGE viewport media-query

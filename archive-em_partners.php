@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							get_template_part('loop-templates/_em-content', 'partners-title');
 						}
 					} else {
-						get_template_part('loop-templates/content', 'none');
+						get_template_part('loop-templates/_em-content', 'none');
 					}
 				?>
 			</ul>
