@@ -7,9 +7,14 @@
 // Default EXTRA-SMALL viewport using Bootstrap breakpoints
 section.no-results.not-found {
     color: variables.$lightgrey;
+    margin: 5rem 1rem 0 1rem;
+
+    .page-content {
+        width: 100%;
+    }
 
     .page-title {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
 
@@ -19,3 +24,48 @@ section.no-results.not-found {
         border-radius: 0;
     }
 }
+
+
+// =========== DESKTOP LAYOUT ===============
+// ==========================================
+
+// MEDIUM (md) viewport using Bootstrap breakpoints
+@media screen and (min-width: 768px) {
+    section.no-results.not-found {
+        grid-column: 1 / 3;
+        width: 80%;
+        margin: 5rem auto 0 auto;
+    }
+} // end MEDIUM viewport media-query
+
+
+// LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 992px) {
+    section.no-results.not-found {
+        grid-column: 1 / 4;
+        width: 65%;
+    }
+} // end LARGE viewport media-query
+
+
+// EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 1200px) {
+    section.no-results.not-found {
+        grid-column: 2 / 4;
+        width: 100%;
+    }
+} // end EXTRA-LARGE viewport media-query
+
+
+// EXTRA-EXTRA LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 1400px) {
+    
+} // end EXTRA-EXTRA-LARGE viewport media-query
+
+
+// EXTRA-EXTRA LARGE (lg) viewport using Bootstrap breakpoints
+@media screen and (min-width: 1920px) {
+    section.no-results.not-found {
+        width: 60%;
+    }
+} // end EXTRA-EXTRA-LARGE viewport media-query
