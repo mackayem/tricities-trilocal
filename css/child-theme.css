@@ -16309,6 +16309,7 @@ div#em-wrapperAbout div#em-aboutTitle h2, div#em-wrapperAbout div#em-aboutTitle 
   top: 3.8rem;
   font-size: 2.7rem;
   text-align: center;
+  margin: 0.75rem 0 0.5rem 0;
 }
 
 div#em-wrapperAbout div#em-aboutTitle img:not(:first-of-type) {
@@ -16319,6 +16320,7 @@ div#em-wrapperAbout div#em-aboutTitle img:not(:first-of-type) {
 div#em-wrapperAbout div#em-aboutTitle img:first-of-type {
   width: 14rem;
   height: auto;
+  opacity: 40%;
 }
 
 div#em-wrapperAbout div#em-aboutCopy {

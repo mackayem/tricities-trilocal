@@ -30,6 +30,7 @@ div#em-wrapperAbout {
             top: 3.8rem;
             font-size: 2.7rem;
             text-align: center;
+            margin: 0.75rem 0 0.5rem 0;
         }
         img:not(:first-of-type) {
             z-index: 1;
@@ -38,6 +39,7 @@ div#em-wrapperAbout {
         img:first-of-type{
             width: 14rem;
             height: auto;
+            opacity: 40%;
         }
     }
 
