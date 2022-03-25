@@ -202,6 +202,7 @@ div#em-containerEducation {
 // MEDIUM (md) viewport using Bootstrap breakpoints
 @media screen and (min-width: 768px) {
     div#em-containerEducation {
+        padding: 0;
         div#em-educationHeadingWrapper > h1.em-heading__h1 {
             font-size: 75px;
         }
@@ -210,21 +211,22 @@ div#em-containerEducation {
             background-image: none;
             background-repeat: repeat;
             background-size: auto;
+
+            div.em-fact__circle:nth-of-type(1), div.em-fact__circle:nth-of-type(5), div.em-fact__circle:nth-of-type(9) {
+                height: 60vw !important;
+                width: 60vw !important;
+            }
+            div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
+                height: 50vw !important;
+                width: 50vw !important;
+            }
+            div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
+                margin: 3rem 2rem 3rem !important;
+            }
+            div.em-fact__circle:nth-of-type(1), div.em-fact__circle:nth-of-type(5), div.em-fact__circle:nth-of-type(9) {
+                margin: 3rem 0 3rem 17rem !important;
+            }
         }
-    }
-    div.em-fact__circle:nth-of-type(1), div.em-fact__circle:nth-of-type(5), div.em-fact__circle:nth-of-type(9) {
-        height: 60vw !important;
-        width: 60vw !important;
-    }
-    div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
-        height: 50vw !important;
-        width: 50vw !important;
-    }
-    div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
-        margin: 3rem 2rem 3rem !important;
-    }
-    div.em-fact__circle:nth-of-type(1), div.em-fact__circle:nth-of-type(5), div.em-fact__circle:nth-of-type(9) {
-        margin: 3rem 0 3rem 17rem !important;
     }
     
 } // end MEDIUM viewport media-query
@@ -238,6 +240,78 @@ div#em-containerEducation {
 
 // EXTRA-LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1200px) {
+    div#em-containerEducation {
+        div#em-educationHeadingWrapper {
+            margin: 0 0 0 3rem;
+            h1.em-heading__h1 {
+                font-size: 75px;
+                text-align: left;
+            }
+        }
+    
+        div#em-educationFactsWrapper {
+            position: relative;
+            height: 100vh;
+
+            div.em-fact__circle {
+                position: absolute;
+            }
+            div.em-fact__circle:nth-of-type(1) {
+                height: 25vw !important;
+                width: 25vw !important;
+                top: 2rem;
+                left: -14rem;
+                h4.em-fact__title {
+                    font-size: 20px !important;
+                }
+                p.em-fact__blurb {
+                    font-size: 13px !important;
+                }
+            }
+            div.em-fact__circle:nth-of-type(3) {
+                height: 30vw !important;
+                width: 30vw !important;
+                top: 29rem;
+                left: 5rem;
+                div.em-fact__content {
+                    padding: 1rem 3rem 0 3rem;
+                }
+            }
+            div.em-fact__circle:nth-of-type(5) {
+                height: 35vw !important;
+                width: 35vw !important;
+                top: 6rem;
+                left: 9rem;
+                div.em-fact__content {
+                    padding: 1rem 3rem 0 3rem;
+                    h4.em-fact__title {
+                        font-size: 50px !important;
+                    }
+                }
+            }
+            div.em-fact__circle:nth-of-type(7) {
+                height: 25vw !important;
+                width: 25vw !important;
+                top: -8rem;
+                left: 50rem;
+            }
+            div.em-fact__circle:nth-of-type(9) {
+                height: 28vw !important;
+                width: 28vw !important;
+                top: 30rem;
+                left: 31rem;
+                div.em-fact__content {
+                    padding: 1rem 3rem 0 3rem;
+                }
+                h4.em-fact__title {
+                    font-size: 20px !important;
+                }
+                p.em-fact__blurb {
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
 
 } // end EXTRA-LARGE viewport media-query
 

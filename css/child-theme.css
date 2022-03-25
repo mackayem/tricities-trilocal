@@ -16906,6 +16906,10 @@ div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal
   }
 }
 @media screen and (min-width: 768px) {
+  div#em-containerEducation {
+    padding: 0;
+  }
+
   div#em-containerEducation div#em-educationHeadingWrapper > h1.em-heading__h1, div#em-containerEducation div#em-educationHeadingWrapper > .em-heading__h1.h1 {
     font-size: 75px;
   }
@@ -16916,22 +16920,108 @@ div#em-containerEducation div.modal div.modal-dialog div.modal-content div.modal
     background-size: auto;
   }
 
-  div.em-fact__circle:nth-of-type(1), div.em-fact__circle:nth-of-type(5), div.em-fact__circle:nth-of-type(9) {
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(1), div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(5), div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(9) {
     height: 60vw !important;
     width: 60vw !important;
   }
 
-  div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(3), div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(7) {
     height: 50vw !important;
     width: 50vw !important;
   }
 
-  div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(3), div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(7) {
     margin: 3rem 2rem 3rem !important;
   }
 
-  div.em-fact__circle:nth-of-type(1), div.em-fact__circle:nth-of-type(5), div.em-fact__circle:nth-of-type(9) {
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(1), div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(5), div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(9) {
     margin: 3rem 0 3rem 17rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div#em-containerEducation div#em-educationHeadingWrapper {
+    margin: 0 0 0 3rem;
+  }
+
+  div#em-containerEducation div#em-educationHeadingWrapper h1.em-heading__h1, div#em-containerEducation div#em-educationHeadingWrapper .em-heading__h1.h1 {
+    font-size: 75px;
+    text-align: left;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper {
+    position: relative;
+    height: 100vh;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle {
+    position: absolute;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(1) {
+    height: 25vw !important;
+    width: 25vw !important;
+    top: 2rem;
+    left: -14rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(1) h4.em-fact__title, div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(1) .em-fact__title.h4 {
+    font-size: 20px !important;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(1) p.em-fact__blurb {
+    font-size: 13px !important;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(3) {
+    height: 30vw !important;
+    width: 30vw !important;
+    top: 29rem;
+    left: 5rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(3) div.em-fact__content {
+    padding: 1rem 3rem 0 3rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(5) {
+    height: 35vw !important;
+    width: 35vw !important;
+    top: 6rem;
+    left: 9rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content {
+    padding: 1rem 3rem 0 3rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content h4.em-fact__title, div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content .em-fact__title.h4 {
+    font-size: 50px !important;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(7) {
+    height: 25vw !important;
+    width: 25vw !important;
+    top: -8rem;
+    left: 50rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(9) {
+    height: 28vw !important;
+    width: 28vw !important;
+    top: 30rem;
+    left: 31rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(9) div.em-fact__content {
+    padding: 1rem 3rem 0 3rem;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(9) h4.em-fact__title, div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(9) .em-fact__title.h4 {
+    font-size: 20px !important;
+  }
+
+  div#em-containerEducation div#em-educationFactsWrapper div.em-fact__circle:nth-of-type(9) p.em-fact__blurb {
+    font-size: 13px !important;
   }
 }
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
