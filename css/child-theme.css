@@ -16964,7 +16964,7 @@ div.em-fact__circle:nth-of-type(5) div.em-fact__content h4, div.em-fact__circle:
     padding: 0 1rem 0 1rem;
   }
 
-  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) div.em-fact__blurb--wrapper p.em-fact__blurb {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) p.em-fact__blurb {
     font-size: 13px;
   }
 
@@ -17051,9 +17051,25 @@ div.em-fact__circle:nth-of-type(5) div.em-fact__content h4, div.em-fact__circle:
   }
 }
 @media screen and (min-width: 1550px) {
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle p.em-fact__blurb {
+    font-size: 16px;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle h4.em-fact__title, main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle .em-fact__title.h4 {
+    font-size: 28px;
+  }
+
   main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) {
     top: 7rem;
     left: 30rem;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) div.em-fact__blurb--wrapper {
+    padding: 0 7rem 0 7rem;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) h4.em-fact__title, main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) .em-fact__title.h4 {
+    font-size: 50px;
   }
 
   main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(7) {

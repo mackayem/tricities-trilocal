@@ -255,9 +255,9 @@ div.em-fact__circle:nth-of-type(5) {
             }
             div.em-fact__blurb--wrapper {
                 padding: 0 1rem 0 1rem;
-                p.em-fact__blurb {
-                    font-size: 13px;
-                }
+            }
+            p.em-fact__blurb {
+                font-size: 13px;
             }
         }
         div.em-fact__circle:nth-of-type(3) {
@@ -341,9 +341,23 @@ div.em-fact__circle:nth-of-type(5) {
 @media screen and (min-width: 1550px) {
 
     main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper {
+        div.em-fact__circle {
+            p.em-fact__blurb {
+                font-size: 16px;
+            }
+            h4.em-fact__title {
+                font-size: 28px;
+            }
+        }
         div.em-fact__circle:nth-of-type(5) {
             top: 7rem;
             left: 30rem;
+            div.em-fact__blurb--wrapper {
+                padding: 0 7rem 0 7rem;
+            }
+            h4.em-fact__title {
+                font-size: 50px;
+            }
         }
         div.em-fact__circle:nth-of-type(7) {
             top: -5rem;
