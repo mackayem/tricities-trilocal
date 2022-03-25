@@ -55,6 +55,62 @@ div#em-containerEducation {
     div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
         background-color: variables.$lightgrey;
         div.em-fact__content {
+            h4, p {
+                color: variables.$darkblue;
+            }
+            a.em-fact__link {
+                color: variables.$turquoise;
+                border-bottom: 1px solid variables.$turquoise;
+            }
+        }
+    }
+    div.em-fact__circle:nth-of-type(5) {
+        div.em-fact__content {
+            h4 {
+                font-family: "Lobster", sans-serif;
+                font-weight: 400 !important;
+                color: variables.$darkblue;
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) {
+    div.em-fact__circle {
+        div.em-fact__content {
+            div > h4.em-fact__title {
+                font-size: 18px !important;
+            }
+            div > p.em-fact__blurb {
+                font-size: 12px !important;
+            }
+            div > a.em-fact__link {
+                font-size: 12px !important;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 425px) {
+    div.em-fact__circle {
+        div.em-fact__content {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            div > h4.em-fact__title {
+                font-size: 25px !important;
+                font-weight: 700 !important;
+            }
+            div > p.em-fact__blurb {
+                font-size: 14px !important;
+            }
+            div > a.em-fact__link {
+                font-size: 14px !important;
+            }
+        }
+    }
+    div.em-fact__circle:nth-of-type(3), div.em-fact__circle:nth-of-type(7) {
+        height: 80vw !important;
+        width: 80vw !important;
+        div.em-fact__content {
             h4, p, a {
                 color: #093A6B;
             }
@@ -63,8 +119,24 @@ div#em-containerEducation {
             }
         }
     }
+    div.em-fact__circle:nth-of-type(5) {
+        div.em-fact__content {
+            h4.em-fact__title {
+                font-size: 35px !important;
+            }
+        }
+    }
+    div.em-fact__circle:nth-of-type(1), div.em-fact__circle:nth-of-type(9) {
+        div.em-fact__content {
+            div.em-fact__blurb--wrapper {
+                padding: 0 2rem 0 2rem;
+                p {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
 }
-
 
 
 // =========== DESKTOP LAYOUT ===============
