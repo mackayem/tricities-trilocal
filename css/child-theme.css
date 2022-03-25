@@ -16776,6 +16776,18 @@ div#em-containerEducation div.em-fact__circle div.em-fact__content a.em-fact__li
   font-size: 10px;
 }
 
+div#em-containerEducation div.em-fact__circle:nth-of-type(3), div#em-containerEducation div.em-fact__circle:nth-of-type(7) {
+  background-color: #EEEEEE;
+}
+
+div#em-containerEducation div.em-fact__circle:nth-of-type(3) div.em-fact__content h4, div#em-containerEducation div.em-fact__circle:nth-of-type(3) div.em-fact__content .h4, div#em-containerEducation div.em-fact__circle:nth-of-type(3) div.em-fact__content p, div#em-containerEducation div.em-fact__circle:nth-of-type(3) div.em-fact__content a, div#em-containerEducation div.em-fact__circle:nth-of-type(7) div.em-fact__content h4, div#em-containerEducation div.em-fact__circle:nth-of-type(7) div.em-fact__content .h4, div#em-containerEducation div.em-fact__circle:nth-of-type(7) div.em-fact__content p, div#em-containerEducation div.em-fact__circle:nth-of-type(7) div.em-fact__content a {
+  color: #093A6B;
+}
+
+div#em-containerEducation div.em-fact__circle:nth-of-type(3) div.em-fact__content a.em-fact__link, div#em-containerEducation div.em-fact__circle:nth-of-type(7) div.em-fact__content a.em-fact__link {
+  border-bottom: 1px solid #093A6B;
+}
+
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {
   font-size: 60px;
   text-align: center;
