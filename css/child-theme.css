@@ -16940,88 +16940,157 @@ div.em-fact__circle:nth-of-type(5) div.em-fact__content h4, div.em-fact__circle:
     text-align: left;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper {
     position: relative;
     height: 100vh;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle {
     position: absolute;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(1) {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) {
     height: 25vw;
     width: 25vw;
     top: 1rem;
     left: 2rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(1) h4.em-fact__title, div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(1) .em-fact__title.h4 {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) h4.em-fact__title, div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) .em-fact__title.h4 {
     font-size: 20px;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(1) div.em-fact__blurb--wrapper {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) div.em-fact__blurb--wrapper {
     padding: 0 1rem 0 1rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(1) div.em-fact__blurb--wrapper p.em-fact__blurb {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) div.em-fact__blurb--wrapper p.em-fact__blurb {
     font-size: 13px;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(3) {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(3) {
     height: 30vw;
     width: 30vw;
     top: 33rem;
     left: 2rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(3) div.em-fact__content {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(3) div.em-fact__content {
     padding: 1rem 3rem 0 3rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(5) {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) {
     height: 35vw;
     width: 35vw;
     top: 10rem;
     left: 22rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content {
     padding: 1rem 3rem 0 3rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content h4.em-fact__title, div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content .em-fact__title.h4 {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content h4.em-fact__title, div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) div.em-fact__content .em-fact__title.h4 {
     font-size: 50px;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(7) {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(7) {
     height: 25vw;
     width: 25vw;
     top: -1rem;
     left: 50rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(7) div.em-fact__content {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(7) div.em-fact__content {
     padding: 0 3rem 0 3rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(9) {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(9) {
     height: 28vw;
     width: 28vw;
     top: 30rem;
     left: 49rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(9) div.em-fact__content {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(9) div.em-fact__content {
     padding: 1rem 3rem 0 3rem;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(9) h4.em-fact__title, div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(9) .em-fact__title.h4 {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(9) h4.em-fact__title, div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(9) .em-fact__title.h4 {
     font-size: 20px;
   }
 
-  div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(9) p.em-fact__blurb {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(9) p.em-fact__blurb {
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(1) {
+    top: -1rem;
+    left: 2rem;
+  }
+
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(3) {
+    top: 31rem;
+    left: 2rem;
+  }
+
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) {
+    top: 10rem;
+    left: 27rem;
+  }
+
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(7) {
+    top: -5rem;
+    left: 58rem;
+  }
+
+  div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(9) {
+    top: 30rem;
+    left: 58rem;
+  }
+}
+@media screen and (min-width: 1550px) {
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(5) {
+    top: 7rem;
+    left: 30rem;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(7) {
+    top: -5rem;
+    left: 66rem;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper div.em-fact__circle:nth-of-type(9) {
+    top: 30rem;
+    left: 64rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper {
+    margin: 5rem 3rem 0 6rem;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(3) {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(5) {
+    top: 7rem;
+    left: 34rem;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(7) {
+    top: -5rem;
+    left: 75rem;
+  }
+
+  main#em-main > div#em-containerEducation > div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper div.em-fact__circle:nth-of-type(9) {
+    height: 25vw;
+    width: 25vw;
+    top: 30rem;
+    left: 74rem;
   }
 }
 div#em-blogHeadingWrapper h1#em-blogHeading, div#em-blogHeadingWrapper #em-blogHeading.h1 {

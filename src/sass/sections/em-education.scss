@@ -238,7 +238,7 @@ div.em-fact__circle:nth-of-type(5) {
             }
         }
     }
-    div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper {
+    div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper {
         position: relative;
         height: 100vh;
 
@@ -313,4 +313,72 @@ div.em-fact__circle:nth-of-type(5) {
 // EXTRA-EXTRA LARGE (lg) viewport using Bootstrap breakpoints
 @media screen and (min-width: 1400px) {
 
+    div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper {
+        div.em-fact__circle:nth-of-type(1) {
+            top: -1rem;
+            left: 2rem;
+        }
+        div.em-fact__circle:nth-of-type(3) {
+            top: 31rem;
+            left: 2rem;
+        }
+        div.em-fact__circle:nth-of-type(5) {
+            top: 10rem;
+            left: 27rem;
+        }
+        div.em-fact__circle:nth-of-type(7) {
+            top: -5rem;
+            left: 58rem;
+        }
+        div.em-fact__circle:nth-of-type(9) {
+            top: 30rem;
+            left: 58rem;
+        }
+    }
+
 } // end EXTRA-EXTRA-LARGE viewport media-query
+
+@media screen and (min-width: 1550px) {
+
+    main#em-main > div#em-containerEducation > div#em-educationFactsWrapper > div#em-educationBubblesWrapper {
+        div.em-fact__circle:nth-of-type(5) {
+            top: 7rem;
+            left: 30rem;
+        }
+        div.em-fact__circle:nth-of-type(7) {
+            top: -5rem;
+            left: 66rem;
+        }
+        div.em-fact__circle:nth-of-type(9) {
+            top: 30rem;
+            left: 64rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1800px) {
+
+    main#em-main > div#em-containerEducation > div#em-educationFactsWrapper.em-wrapper > div#em-educationBubblesWrapper.em-wrapper {
+        margin: 5rem 3rem 0 6rem;
+        div.em-fact__circle:nth-of-type(3) {
+            height: 25vw;
+            width: 25vw;
+        }
+        div.em-fact__circle:nth-of-type(5) {
+            top: 7rem;
+            left: 34rem;
+        }
+        div.em-fact__circle:nth-of-type(7) {
+            top: -5rem;
+            left: 75rem;
+        }
+        div.em-fact__circle:nth-of-type(9) {
+            height: 25vw;
+            width: 25vw;
+            top: 30rem;
+            left: 74rem;
+        }
+    }
+
+}
